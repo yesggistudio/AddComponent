@@ -10,7 +10,7 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="Jaeyun" t="Include">
-            <e p="SImpleTest.cs" t="Include" />
+            <e p="JaeyunTest.cs" t="Include" />
           </e>
           <e p="SimpleCameraController.cs" t="Include" />
         </e>
@@ -21,6 +21,9 @@
             </e>
             <e p="Readme.cs" t="Include" />
           </e>
+        </e>
+        <e p="이예석" t="Include">
+          <e p="test.cs" t="Include" />
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />
