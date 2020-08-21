@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using UnityEditor.SceneManagement;
+using UnityEngine;
 
 namespace UnityTemplateProjects.Jaeyun.Script.Development_Tool
 {
@@ -6,5 +7,6 @@ namespace UnityTemplateProjects.Jaeyun.Script.Development_Tool
     public abstract class ComponentType : ScriptableObject
     {
         
+
     }
 }

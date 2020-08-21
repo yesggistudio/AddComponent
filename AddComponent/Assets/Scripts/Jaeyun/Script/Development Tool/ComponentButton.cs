@@ -10,6 +10,8 @@ namespace UnityTemplateProjects.Jaeyun.Script.Development_Tool
     public class ComponentButton : MonoBehaviour
     {
 
+        public ComponentType componentType;
+        
         public Drag dragSprite;
         
         private Button _button;
@@ -34,8 +36,9 @@ namespace UnityTemplateProjects.Jaeyun.Script.Development_Tool
             
             StopAllCoroutines();
             var actor = _drag.GetActor();
-            if (actor != null)
+            if (actor != null && !actor.isLocked)
             {
+                actor.AddComponent(componentType);
                 _button.interactable = false;
             }
             

@@ -1,9 +1,16 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
+using UnityTemplateProjects.Jaeyun.Script.Development_Tool;
 
 namespace UnityTemplateProjects.Jaeyun.Script.Actor
 {
     public class Actor : MonoBehaviour
     {
+
+        public bool isLocked;
+        
+        private List<ComponentType> _componentTypes = new List<ComponentType>();
+
         private Material _myMat;
 
         private Shader _defaultShader;
@@ -24,7 +31,25 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
         public void DrawOutline()
         {
             _myMat.shader = _OutlineShader;
+            if (isLocked)
+            {
+                _myMat.SetColor("_OutlineColor", Color.magenta);
+            }
+            else
+            {
+                _myMat.SetColor("_OutlineColor", Color.cyan);
+            }
+        }
+
+        public void AddComponent(ComponentType componentType)
+        {
+            _componentTypes.Add(componentType);
         }
         
+        public void RemoveComponent(ComponentType componentType)
+        {
+            _componentTypes.Remove(componentType);
+        }
+
     }
 }

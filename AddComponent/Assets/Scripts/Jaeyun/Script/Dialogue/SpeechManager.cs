@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityTemplateProjects.Jaeyun.Script.Dialogue;
@@ -7,7 +8,7 @@ public class SpeechManager : MonoBehaviour
 {
     public SpeechBubble bubblePrefab;
 
-    public SpeechNode test;
+    public SpeechGraph test;
 
     [ContextMenu("Test")]
     private void Test()
@@ -15,10 +16,26 @@ public class SpeechManager : MonoBehaviour
         PlaySpeech(test);
     }
 
-    public SpeechBubble PlaySpeech(SpeechNode node)
+    public SpeechBubble PlaySpeech(SpeechGraph speechGraph)
     {
+        var node = speechGraph.GetFirstNode();
         var bubble = Instantiate(bubblePrefab, transform);
-        bubble.PlaySpeech(node, () => {Debug.Log("Done"); });
+
+        void PlayNextNode(SpeechNode speechNode)
+        {
+            var nextNode = speechNode.GetNextNode();
+            if (nextNode == null)
+            {
+                bubble.CloseSpeech();
+            }
+            else
+            {
+                bubble.PlaySpeech(nextNode, () => PlayNextNode(nextNode));
+            }
+        }
+        
+        
+        bubble.PlaySpeech(node, () => PlayNextNode(node));
         return bubble;
     }
     

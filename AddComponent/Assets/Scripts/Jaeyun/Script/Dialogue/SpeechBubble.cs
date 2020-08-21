@@ -13,9 +13,17 @@ namespace UnityTemplateProjects.Jaeyun.Script.Dialogue
         public Image bubbleBox;
         public Image portrait;
         public TextMeshProUGUI _textMeshPro;
+
+        private bool _isFirst = true;
+
+        private SpeechNode _node;
+        
         
         public void PlaySpeech(SpeechNode node, Action callback)
         {
+
+            _node = node;
+            
             portrait.sprite = node.portrait;
             
             node.speakerData.textColor.a = 1;
@@ -31,12 +39,7 @@ namespace UnityTemplateProjects.Jaeyun.Script.Dialogue
             var pixelRect = new Vector2(rootCanvas.pixelRect.width / rootCanvas.scaleFactor, 
                 rootCanvas.pixelRect.height / rootCanvas.scaleFactor);
             var rectTransform = portrait.rectTransform;
-            
-            Debug.Log(pixelRect);
-            Debug.Log(rectTransform.sizeDelta);
-            
-            Debug.Log(-pixelRect.y / 2 + rectTransform.sizeDelta.y);
-            
+
             var startPos = new Vector2(pixelRect.x / 2 + rectTransform.sizeDelta.x * 2,
                 -pixelRect.y / 2 + rectTransform.sizeDelta.y * .6f);
             
@@ -59,7 +62,16 @@ namespace UnityTemplateProjects.Jaeyun.Script.Dialogue
 
         IEnumerator ShowTextRoutine(string text, float delayPerWord, Action callback)
         {
-            yield return StartCoroutine(MovePortrait());
+            if (_isFirst)
+            {
+                yield return StartCoroutine(MovePortrait());
+                _isFirst = false;
+            }
+            else
+            {
+                yield return new WaitForSeconds(.3f);
+            }
+
             var delay = new WaitForSeconds(delayPerWord);
 
             var sb = new StringBuilder();
@@ -68,6 +80,14 @@ namespace UnityTemplateProjects.Jaeyun.Script.Dialogue
             
             while (index < text.Length)
             {
+
+                yield return null;
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    SkipSpeech(callback);
+                    yield break;
+                }
+                
                 sb.Append(text[index]);
                 _textMeshPro.text = sb.ToString();
                 
@@ -77,12 +97,32 @@ namespace UnityTemplateProjects.Jaeyun.Script.Dialogue
                 
             }
             
-            callback?.Invoke();
+            StartCoroutine(WaitInput(callback));
+
         }
 
-        public void SkipSpeech()
+        public void SkipSpeech(Action callback)
         {
+            StopAllCoroutines();
+            _textMeshPro.text = _node.text;
+            _textMeshPro.ForceMeshUpdate();
+            bubbleBox.rectTransform.sizeDelta = _textMeshPro.GetPreferredValues();
+            StartCoroutine(WaitInput(callback));
+        }
+
+        IEnumerator WaitInput(Action callback)
+        {
+            yield return null;
             
+            while (true)
+            {
+                if (Input.GetKeyDown(KeyCode.E))
+                {
+                    break;
+                }
+                yield return null;
+            }
+            callback?.Invoke();
         }
 
         public void CloseSpeech()
