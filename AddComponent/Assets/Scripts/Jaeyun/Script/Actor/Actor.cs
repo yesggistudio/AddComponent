@@ -10,13 +10,13 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
         public bool isLocked;
 
         private List<Drag> _drags = new List<Drag>();
-
-        private List<ComponentType> _componentTypes = new List<ComponentType>();
+        
 
         private Material _myMat;
 
         private Shader _defaultShader;
         private Shader _OutlineShader;
+        
         private static readonly int OutlineColor = Shader.PropertyToID("_OutlineColor");
 
         private void Awake()
@@ -69,7 +69,7 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
 
             var index = _drags.FindIndex(x => x == drag);
 
-            result.y += + (_componentTypes.Count + index + 1) * .6f;
+            result.y += + (index + 1) * .6f;
 
             return result;
         }
