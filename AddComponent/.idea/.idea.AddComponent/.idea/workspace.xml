@@ -20,7 +20,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="02109610-2fc1-4c59-82d2-87514a86ad69" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/Belonging.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/Belonging.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/ConnectDataInfo.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/ConnectDataInfo.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Level/ConnectDataSave.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Level/ConnectDataSave.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AddComponent/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AddComponent/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AddComponent/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AddComponent/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Levels/Level - 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Levels/Level - 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/JaeyunScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/JaeyunScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Component/ComponentType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Component/ComponentType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/ComponentButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/ComponentButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/ComponentManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/ComponentManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/Drag.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/Drag.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Level/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Level/LevelManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/UI/Ui_Lock.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/UI/Ui_Lock.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/Volume Profile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/Volume Profile.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +49,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../../Sannabi-URP/Sannabi/Assets/03.Scripts/Jaeyun/Speech/Graph And Node/TimelineSpeechNode.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Sannabi-URP/Sannabi/Assets/03.Scripts/Jaeyun/Speech/Graph And Node/Editor/TimelineSpeechGraphEditor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A979F18D-51AF-4117-9D12-B797E8C5BE14/1d/d88c1b56/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Sannabi-URP/Sannabi/Assets/03.Scripts/Jaeyun/Speech/Graph And Node/Editor/TimelineSpeechNodeEditor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Sannabi-URP/Sannabi/Assets/03.Scripts/Jaeyun/Speech/Graph And Node/BaseSpeechNode.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/SpeechManager.cs" root0="FORCE_HIGHLIGHTING" />
@@ -62,19 +79,22 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/ComponentType.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/ComponentTypeA.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/ComponentTypeB.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Component/ComponentType.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Component/Editor/ComponentTypeDrawer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/SpeechManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/ComponentManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Level/Level.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Audio/AudioManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Level/LevelManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/UI/UICanvas.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/StopButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/SpeechBubble.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/ComponentButton.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/Drag.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Actor/Actor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/Belonging.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Component/ComponentType.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/ComponentManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/Drag.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/ConnectDataInfo.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/ComponentButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Level/ConnectDataSave.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Level/LevelManager.cs" />
       </list>
     </option>
   </component>
@@ -128,7 +148,7 @@
       <option name="presentableId" value="Default" />
       <updated>1597974340931</updated>
       <workItem from="1597974374059" duration="6975000" />
-      <workItem from="1597982686904" duration="25385000" />
+      <workItem from="1597982686904" duration="30366000" />
     </task>
     <servers />
   </component>
@@ -161,10 +181,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="372" y="10" width="792" height="804" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1597995555234" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1597997972418">
+    <state x="425" y="187" key="run.anything.popup" timestamp="1598016471071">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1597997972418" />
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1598016471071" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1597982349340">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

@@ -29,7 +29,6 @@ namespace UnityTemplateProjects.Jaeyun.Script.Level
         
         private IEnumerator LoadLevelAsync(Level loadLevel)
         {
-            
             AudioManager.Instance.StopAllBgm();
             
             var unloadSceneAsync = SceneManager.UnloadSceneAsync(thisLevel.sceneName);
@@ -39,8 +38,8 @@ namespace UnityTemplateProjects.Jaeyun.Script.Level
             {
                 yield return null;
             }
-            
-            AudioManager.Instance.PlayBgm(loadLevel.bgm);
+
+            yield return null;
         }
         
     }

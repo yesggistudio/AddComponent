@@ -21,7 +21,6 @@ namespace UnityTemplateProjects.Jaeyun.Script.Development_Tool
         private void Awake()
         {
             _button = GetComponent<Button>();
-            
         }
 
         public void SetInteractable(bool value)
@@ -33,9 +32,27 @@ namespace UnityTemplateProjects.Jaeyun.Script.Development_Tool
         {
             if (!_button.interactable) return;
             
-            _drag = Instantiate(dragSprite, _button.image.canvas.transform);
-            _drag.InitializeDrag(this, _button.image.sprite);
+            MakeDrag();
+            _drag.InitializeDrag(this);
+            _drag.BeginDrag();
+        }
 
+        private void MakeDrag()
+        {
+            _drag = Instantiate(dragSprite, _button.image.canvas.transform);
+        }
+
+        public Drag LinkToDrag()
+        {
+            MakeDrag();
+            _drag.InitializeDrag(this);
+            Debug.Log(_drag.name);
+            return _drag;
+        }
+
+        public Sprite GetSprite()
+        {
+            return _button.image.sprite;
         }
         
         public void EndDrag()

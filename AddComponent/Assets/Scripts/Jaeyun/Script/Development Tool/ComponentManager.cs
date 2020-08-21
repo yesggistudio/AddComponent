@@ -17,7 +17,6 @@ namespace UnityTemplateProjects.Jaeyun.Script.Development_Tool
         public class ComponentUIData
         {
             public ComponentType type;
-            public ComponentButton componentButton;
             public int count;
         }
         
@@ -39,12 +38,8 @@ namespace UnityTemplateProjects.Jaeyun.Script.Development_Tool
                 }
             }
         }
-
-
-
-
-
-
+        
+        
 
         [ContextMenu("Make components")]
         private void MakeComponents()
@@ -53,7 +48,7 @@ namespace UnityTemplateProjects.Jaeyun.Script.Development_Tool
             {
                 for (int i = 0; i < componentUIData.count; i++)
                 {
-                    Instantiate(componentUIData.componentButton, componentContent.transform);
+                    Instantiate(componentUIData.type.buttonPrefab, componentContent.transform);
                 }
             }
         }

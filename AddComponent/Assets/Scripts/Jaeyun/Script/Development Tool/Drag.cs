@@ -19,18 +19,27 @@ namespace UnityTemplateProjects.Jaeyun.Script.Development_Tool
 
         private Camera _cam;
 
-        public void InitializeDrag(ComponentButton componentButton, Sprite sprite)
+        public void InitializeDrag(ComponentButton componentButton)
         {
             _button = GetComponent<Button>();
             
             _rectTransform = GetComponent<RectTransform>();
             
             _componentButton = componentButton;
-            _button.image.sprite = sprite;
+            _button.image.sprite = componentButton.GetSprite();
             
             _cam = Camera.main;
             
-            BeginDrag();
+        }
+
+        public ComponentButton GetButton()
+        {
+            return _componentButton;
+        }
+
+        public Actor.Actor GetActor()
+        {
+            return _actor;
         }
 
         public void BeginDrag()
@@ -64,11 +73,16 @@ namespace UnityTemplateProjects.Jaeyun.Script.Development_Tool
             }
             else
             {
-                
                 return false;
             }
-
             
+        }
+        
+        public void LinkToActor(Actor.Actor actor)
+        {
+            _actor = actor;
+            actor.AddDrag(this);
+            SortUpperActorHead();
         }
 
         public void SortUpperActorHead()

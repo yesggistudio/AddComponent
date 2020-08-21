@@ -375,8 +375,10 @@
                 </e>
               </e>
               <e p="Development Tool" t="Include">
+                <e p="Belonging.cs" t="Include" />
                 <e p="ComponentButton.cs" t="Include" />
                 <e p="ComponentManager.cs" t="Include" />
+                <e p="ConnectDataInfo.cs" t="Include" />
                 <e p="Drag.cs" t="Include" />
                 <e p="StopButton.cs" t="Include" />
               </e>
@@ -402,6 +404,7 @@
                 <e p="GenericSelectablePropertyDrawer.cs" t="Include" />
               </e>
               <e p="Level" t="Include">
+                <e p="ConnectDataSave.cs" t="Include" />
                 <e p="Level.cs" t="Include" />
                 <e p="LevelManager.cs" t="Include" />
               </e>
