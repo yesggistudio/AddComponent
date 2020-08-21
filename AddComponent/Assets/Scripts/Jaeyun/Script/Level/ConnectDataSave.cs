@@ -24,9 +24,7 @@ namespace UnityTemplateProjects.Jaeyun.Script.Level
         public void SaveConnectData()
         {
             connectDatas.Clear();
-            
-            Debug.Log("Save");
-            
+
             var drags = FindObjectsOfType<Drag>();
             var connectInfo = FindObjectOfType<ConnectDataInfo>();
             foreach (var drag in drags)
@@ -38,7 +36,6 @@ namespace UnityTemplateProjects.Jaeyun.Script.Level
 
         public void LoadConnectData()
         {
-            Debug.Log("Load");
             var connectInfo = FindObjectOfType<ConnectDataInfo>();
             foreach (var connectData in connectDatas)
             {
@@ -47,7 +44,6 @@ namespace UnityTemplateProjects.Jaeyun.Script.Level
                 var drag = button.LinkToDrag();
                 
                 drag.LinkToActor(actor);
-                
             }
         }
         

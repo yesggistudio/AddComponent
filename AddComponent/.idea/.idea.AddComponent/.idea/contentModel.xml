@@ -370,6 +370,7 @@
                 <e p="ComponentType.cs" t="Include" />
                 <e p="ComponentTypeA.cs" t="Include" />
                 <e p="ComponentTypeB.cs" t="Include" />
+                <e p="ComponentTypeC.cs" t="Include" />
                 <e p="Editor" t="Include">
                   <e p="ComponentTypeDrawer.cs" t="Include" />
                 </e>
@@ -406,6 +407,7 @@
               <e p="Level" t="Include">
                 <e p="ConnectDataSave.cs" t="Include" />
                 <e p="Level.cs" t="Include" />
+                <e p="LevelData.cs" t="Include" />
                 <e p="LevelManager.cs" t="Include" />
               </e>
               <e p="UI" t="Include">
@@ -420,6 +422,9 @@
           <e p="이예석" t="Include">
             <e p="CharacterMovement.cs" t="Include" />
             <e p="CharacterStates.cs" t="Include" />
+            <e p="manager" t="Include">
+              <e p="ControlManager.cs" t="Include" />
+            </e>
             <e p="StateMachine.cs" t="Include" />
             <e p="test.cs" t="Include" />
           </e>

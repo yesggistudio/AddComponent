@@ -9,7 +9,7 @@ namespace UnityTemplateProjects.Jaeyun.Script.Development_Tool
     {
         private Button _button;
 
-        private void Awake()
+        private void Start()
         {
             _button = GetComponent<Button>();
             var levelManager = FindObjectOfType<LevelManager>();

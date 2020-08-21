@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityTemplateProjects.Jaeyun.Script.Dialogue;
+using UnityTemplateProjects.Jaeyun.Script.Level;
 
 public class JaeyunTest : MonoBehaviour
 {
@@ -18,6 +19,13 @@ public class JaeyunTest : MonoBehaviour
         _myMat = GetComponent<SpriteRenderer>().material;
         _defaultShader = Shader.Find("Custom/2D Sprite");
         _OutlineShader = Shader.Find("Shader Graphs/2D DrawOutline");
+    }
+
+    [ContextMenu("test")]
+    public void Test()
+    {
+        var levelManager = FindObjectOfType<LevelManager>();
+        Debug.Log(levelManager.name);
     }
 
     private void OnMouseEnter()

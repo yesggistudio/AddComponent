@@ -45,8 +45,8 @@ namespace UnityTemplateProjects.Jaeyun.Script.Development_Tool
         public Drag LinkToDrag()
         {
             MakeDrag();
+            _button.interactable = false;
             _drag.InitializeDrag(this);
-            Debug.Log(_drag.name);
             return _drag;
         }
 
