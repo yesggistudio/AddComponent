@@ -20,23 +20,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="02109610-2fc1-4c59-82d2-87514a86ad69" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Component/Editor.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Component/Editor/ComponentTypeDrawer.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Component/Editor/ComponentTypeDrawer.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/Temp.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Levels.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Levels/Development Tool Canvas.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Levels/Development Tool Canvas.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Levels/Level - 1.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Levels/Level - 1.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Levels/Level - 1.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Levels/Level - 1.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Levels/Level - 2.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Levels/Level - 2.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Levels/Level - 2.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Levels/Level - 2.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Levels/Level - 3.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Levels/Level - 3.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Levels/Level - 3.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Resources/Levels/Level - 3.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/StopButton.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/StopButton.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Level.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Level/Level.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Level/Level.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Level/LevelManager.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Level/LevelManager.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/UI.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/UI/UICanvas.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/UI/UICanvas.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AddComponent/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AddComponent/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AddComponent/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AddComponent/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/DOTweenSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/DOTweenSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IndieMarc/Platformer2D/Materials/SpriteDiffuseP.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IndieMarc/Platformer2D/Materials/SpriteDiffuseP.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/JaeyunScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/JaeyunScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Actor/Actor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Actor/Actor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Actor/Drag.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Actor/Drag.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Component/ComponentType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Component/ComponentType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Actor/Drag.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Actor/Drag.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Audio/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Audio/AudioManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/ComponentButton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/ComponentButton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/ComponentManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/ComponentManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/Drag.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/Drag.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/New speechGraph.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/New speechGraph.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/SpeechBubble.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/SpeechBubble.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/SpeechManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/SpeechManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Shader/2D DrawOutline.shadergraph" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Shader/2D DrawOutline.shadergraph" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/UI/Ui_Button.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/UI/Ui_Button.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,7 +86,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Shader/2D Sprite.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Shader/2D DrawOneColor.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Shader/2D DrawOutline.shader" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Audio/AudioManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/SpeechGraph.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/SpeakerData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/SpeechNode.cs" />
@@ -80,14 +102,19 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/ComponentType.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/ComponentTypeA.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/ComponentTypeB.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/ComponentManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/Drag.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/ComponentButton.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Actor/Actor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Component/ComponentType.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Component/Editor/ComponentTypeDrawer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/SpeechManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/ComponentManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Level/Level.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Audio/AudioManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Level/LevelManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/UI/UICanvas.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/StopButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/SpeechBubble.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/ComponentButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/Drag.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Actor/Actor.cs" />
       </list>
     </option>
   </component>
@@ -141,7 +168,7 @@
       <option name="presentableId" value="Default" />
       <updated>1597974340931</updated>
       <workItem from="1597974374059" duration="6975000" />
-      <workItem from="1597982686904" duration="13595000" />
+      <workItem from="1597982686904" duration="22346000" />
     </task>
     <servers />
   </component>
@@ -174,6 +201,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="372" y="10" width="792" height="804" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1597995555234" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1597997972418">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1597997972418" />
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1597982349340">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

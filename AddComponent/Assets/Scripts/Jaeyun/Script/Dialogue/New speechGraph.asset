@@ -44,7 +44,7 @@ MonoBehaviour:
   nextNode: {fileID: 0}
   index: 2
   speakerData: {fileID: 11400000, guid: f9e3dc55bcbad9649adf3f655b44a8c5, type: 2}
-  textPerDelay: 0
+  textPerDelay: 0.03
   portrait: {fileID: 21300000, guid: 5a2b923fc2631b744bcafa58406fb68c, type: 3}
   text: Test Text 3
 --- !u!114 &11400000
@@ -107,7 +107,7 @@ MonoBehaviour:
   nextNode: {fileID: 0}
   index: 0
   speakerData: {fileID: 11400000, guid: f9e3dc55bcbad9649adf3f655b44a8c5, type: 2}
-  textPerDelay: 0.03
+  textPerDelay: 0.04
   portrait: {fileID: 21300000, guid: 8b00c59fe8b388d4d8293b70b47c2dd1, type: 3}
   text: Test Text 1
 --- !u!114 &8533793766691434061

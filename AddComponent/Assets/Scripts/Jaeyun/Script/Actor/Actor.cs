@@ -8,14 +8,17 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
     {
 
         public bool isLocked;
-        
+
+        private List<Drag> _drags = new List<Drag>();
+
         private List<ComponentType> _componentTypes = new List<ComponentType>();
 
         private Material _myMat;
 
         private Shader _defaultShader;
         private Shader _OutlineShader;
-        
+        private static readonly int OutlineColor = Shader.PropertyToID("_OutlineColor");
+
         private void Awake()
         {
             _myMat = GetComponent<SpriteRenderer>().material;
@@ -33,22 +36,42 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
             _myMat.shader = _OutlineShader;
             if (isLocked)
             {
-                _myMat.SetColor("_OutlineColor", Color.magenta);
+                _myMat.SetColor(OutlineColor, Color.magenta);
             }
             else
             {
-                _myMat.SetColor("_OutlineColor", Color.cyan);
+                _myMat.SetColor(OutlineColor, Color.cyan);
             }
         }
 
-        public void AddComponent(ComponentType componentType)
+        public void AddDrag(Drag drag)
         {
-            _componentTypes.Add(componentType);
+            _drags.Add(drag);
         }
         
-        public void RemoveComponent(ComponentType componentType)
+        public void RemoveDrag(Drag drag)
         {
-            _componentTypes.Remove(componentType);
+            _drags.Remove(drag);
+            ReSortDrags();
+        }
+
+        private void ReSortDrags()
+        {
+            foreach (var drag in _drags)
+            {
+                drag.SortUpperActorHead();
+            }
+        }
+
+        public Vector2 GetComponentPos(Drag drag)
+        {
+            var result = transform.position;
+
+            var index = _drags.FindIndex(x => x == drag);
+
+            result.y += + (_componentTypes.Count + index + 1) * .6f;
+
+            return result;
         }
 
     }

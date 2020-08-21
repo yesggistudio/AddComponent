@@ -12,9 +12,26 @@ namespace UnityTemplateProjects.Jaeyun.Script.Audio
 
         private List<AudioSource> bgms = new List<AudioSource>();
         private List<AudioSource> sfxs = new List<AudioSource>();
+        
+        
+        public static AudioManager Instance => instance;
+
+        private static AudioManager instance;
 
         private void Awake()
         {
+            if (instance == null)
+            {
+                instance = this;
+            }
+            else
+            {
+                if (instance != this)
+                {
+                    DestroyImmediate(gameObject);
+                }
+            }
+            
             for (int i = 0; i < bgmCount; i++)
             {
                 bgms.Add(MakeAudioSource(true));
