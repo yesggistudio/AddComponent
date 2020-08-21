@@ -1,0 +1,800 @@
+fileFormatVersion: 2
+guid: 132226662962b2e43b8356cb354e41ae
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3186575109649952775
+    second: Obj_HolyGrail_Idle (lp)_0
+  - first:
+      213: 7057803121963646019
+    second: Obj_HolyGrail_Idle (lp)_1
+  - first:
+      213: -6139186296500726785
+    second: Obj_HolyGrail_Idle (lp)_2
+  - first:
+      213: 5440098412941882279
+    second: Obj_HolyGrail_Idle (lp)_3
+  - first:
+      213: 6601599943511244706
+    second: Obj_HolyGrail_Idle (lp)_4
+  - first:
+      213: -3922503498857277312
+    second: Obj_HolyGrail_Idle (lp)_5
+  - first:
+      213: -3185226299564176410
+    second: Obj_HolyGrail_Idle (lp)_6
+  - first:
+      213: 3758465285688331453
+    second: Obj_HolyGrail_Idle (lp)_7
+  - first:
+      213: 8218635294937482929
+    second: Obj_HolyGrail_Idle (lp)_8
+  - first:
+      213: -3618474623289327360
+    second: Obj_HolyGrail_Idle (lp)_9
+  - first:
+      213: 6500185050082522389
+    second: Obj_HolyGrail_Idle (lp)_10
+  - first:
+      213: -414837344108911421
+    second: Obj_HolyGrail_Idle (lp)_11
+  - first:
+      213: -7092598692025894307
+    second: Obj_HolyGrail_Idle (lp)_12
+  - first:
+      213: -6737581993959174784
+    second: Obj_HolyGrail_Idle (lp)_13
+  - first:
+      213: -7376935116051496072
+    second: Obj_HolyGrail_Idle (lp)_14
+  - first:
+      213: 3226170756775697091
+    second: Obj_HolyGrail_Idle (lp)_15
+  - first:
+      213: 268428675337311516
+    second: Obj_HolyGrail_Idle (lp)_16
+  - first:
+      213: 5350062679774232960
+    second: Obj_HolyGrail_Idle (lp)_17
+  - first:
+      213: -5970409687801735036
+    second: Obj_HolyGrail_Idle (lp)_18
+  - first:
+      213: -6040332904769589837
+    second: Obj_HolyGrail_Idle (lp)_19
+  - first:
+      213: -6857530706713972186
+    second: Obj_HolyGrail_Idle (lp)_20
+  - first:
+      213: 8955926297795693471
+    second: Obj_HolyGrail_Idle (lp)_21
+  - first:
+      213: 216352556941696963
+    second: Obj_HolyGrail_Idle (lp)_22
+  - first:
+      213: 5700282179845574698
+    second: Obj_HolyGrail_Idle (lp)_23
+  - first:
+      213: 7631724811960068547
+    second: Obj_HolyGrail_Idle (lp)_24
+  - first:
+      213: -2796752163103990615
+    second: Obj_HolyGrail_Idle (lp)_25
+  - first:
+      213: 4834786290538961026
+    second: Obj_HolyGrail_Idle (lp)_26
+  - first:
+      213: -1980639397677107331
+    second: Obj_HolyGrail_Idle (lp)_27
+  - first:
+      213: -4461422930841637437
+    second: Obj_HolyGrail_Idle (lp)_28
+  - first:
+      213: 5246721783327275743
+    second: Obj_HolyGrail_Idle (lp)_29
+  - first:
+      213: -8684659703222550142
+    second: Obj_HolyGrail_Idle (lp)_30
+  - first:
+      213: 4942277050491861674
+    second: Obj_HolyGrail_Idle (lp)_31
+  - first:
+      213: -6051770521759064004
+    second: Obj_HolyGrail_Idle (lp)_32
+  - first:
+      213: -3277639855715124103
+    second: Obj_HolyGrail_Idle (lp)_33
+  - first:
+      213: -1239642002192541484
+    second: Obj_HolyGrail_Idle (lp)_34
+  - first:
+      213: 3805015279854009345
+    second: Obj_HolyGrail_Idle (lp)_35
+  - first:
+      213: 2937656934504475168
+    second: Obj_HolyGrail_Idle (lp)_36
+  - first:
+      213: -4978427126850573810
+    second: Obj_HolyGrail_Idle (lp)_37
+  - first:
+      213: -1153387758340915603
+    second: Obj_HolyGrail_Idle (lp)_38
+  - first:
+      213: -225262907510193390
+    second: Obj_HolyGrail_Idle (lp)_39
+  - first:
+      213: -1330412154776139026
+    second: Obj_HolyGrail_Idle (lp)_40
+  - first:
+      213: 8600647966810221887
+    second: Obj_HolyGrail_Idle (lp)_41
+  - first:
+      213: -761847006937246264
+    second: Obj_HolyGrail_Idle (lp)_42
+  - first:
+      213: -4982775292773275867
+    second: Obj_HolyGrail_Idle (lp)_43
+  - first:
+      213: 7805073668289112722
+    second: Obj_HolyGrail_Idle (lp)_44
+  - first:
+      213: 4285429782369241926
+    second: Obj_HolyGrail_Idle (lp)_45
+  - first:
+      213: -968112853479083337
+    second: Obj_HolyGrail_Idle (lp)_46
+  - first:
+      213: 2176702749853838822
+    second: Obj_HolyGrail_Idle (lp)_47
+  - first:
+      213: -2680408281887777340
+    second: Obj_HolyGrail_Idle (lp)_48
+  - first:
+      213: 4349076510107370949
+    second: Obj_HolyGrail_Idle (lp)_49
+  - first:
+      213: -2503879104283126746
+    second: Obj_HolyGrail_Idle (lp)_50
+  - first:
+      213: 3467115485334309804
+    second: Obj_HolyGrail_Idle (lp)_51
+  - first:
+      213: -4591527362440451646
+    second: Obj_HolyGrail_Idle (lp)_52
+  - first:
+      213: -6510116504958836788
+    second: Obj_HolyGrail_Idle (lp)_53
+  - first:
+      213: 3665534926480416400
+    second: Obj_HolyGrail_Idle (lp)_54
+  - first:
+      213: 6541349494517046635
+    second: Obj_HolyGrail_Idle (lp)_55
+  - first:
+      213: -1944871073809685311
+    second: Obj_HolyGrail_Idle (lp)_56
+  - first:
+      213: -9219342403516173952
+    second: Obj_HolyGrail_Idle (lp)_57
+  - first:
+      213: -1107335092566906375
+    second: Obj_HolyGrail_Idle (lp)_58
+  - first:
+      213: -1287599663327866449
+    second: Obj_HolyGrail_Idle (lp)_59
+  - first:
+      213: 32956951063714432
+    second: Obj_HolyGrail_Idle (lp)_60
+  - first:
+      213: -1844440841486485732
+    second: Obj_HolyGrail_Idle (lp)_61
+  - first:
+      213: 6308850077670250473
+    second: Obj_HolyGrail_Idle (lp)_62
+  - first:
+      213: -63889467423495159
+    second: Obj_HolyGrail_Idle (lp)_63
+  - first:
+      213: -8193603511380900151
+    second: Obj_HolyGrail_Idle (lp)_64
+  - first:
+      213: -5065241115780599497
+    second: Obj_HolyGrail_Idle (lp)_65
+  - first:
+      213: -6533369718743964231
+    second: Obj_HolyGrail_Idle (lp)_66
+  - first:
+      213: -9154101400472664934
+    second: Obj_HolyGrail_Idle (lp)_67
+  - first:
+      213: 7452921222740957508
+    second: Obj_HolyGrail_Idle (lp)_68
+  - first:
+      213: -2985546116131385207
+    second: Obj_HolyGrail_Idle (lp)_69
+  - first:
+      213: -1605681884012732800
+    second: Obj_HolyGrail_Idle (lp)_70
+  - first:
+      213: -4480493177548365400
+    second: Obj_HolyGrail_Idle (lp)_71
+  - first:
+      213: 4883513924097461625
+    second: Obj_HolyGrail_Idle (lp)_72
+  - first:
+      213: -5325603520676238219
+    second: Obj_HolyGrail_Idle (lp)_73
+  - first:
+      213: 7650990482492917009
+    second: Obj_HolyGrail_Idle (lp)_74
+  - first:
+      213: 1476837022494576096
+    second: Obj_HolyGrail_Idle (lp)_75
+  - first:
+      213: -5105646969929083188
+    second: Obj_HolyGrail_Idle (lp)_76
+  - first:
+      213: 3127365455340478624
+    second: Obj_HolyGrail_Idle (lp)_77
+  - first:
+      213: 2289938911017448405
+    second: Obj_HolyGrail_Idle (lp)_78
+  - first:
+      213: -5420215986064015993
+    second: Obj_HolyGrail_Idle (lp)_79
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 2
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 0
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Obj_HolyGrail_Idle (lp)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1216
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ff863b22d207c3d0800000000000000
+      internalID: -3186575109649952775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Obj_HolyGrail_Idle (lp)_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1152
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34c394bab8a52f160800000000000000
+      internalID: 7057803121963646019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Obj_HolyGrail_Idle (lp)_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1088
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff3d023179a3dcaa0800000000000000
+      internalID: -6139186296500726785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Obj_HolyGrail_Idle (lp)_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a331960fac1f7b40800000000000000
+      internalID: 5440098412941882279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Obj_HolyGrail_Idle (lp)_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 960
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2aff93efb289d9b50800000000000000
+      internalID: 6601599943511244706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Obj_HolyGrail_Idle (lp)_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 896
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0889260a9d77099c0800000000000000
+      internalID: -3922503498857277312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Obj_HolyGrail_Idle (lp)_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 832
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ebce3d7e8dcbc3d0800000000000000
+      internalID: -3185226299564176410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Obj_HolyGrail_Idle (lp)_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 768
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbc071e9340c82430800000000000000
+      internalID: 3758465285688331453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Obj_HolyGrail_Idle (lp)_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 704
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b68c3da1457e0270800000000000000
+      internalID: 8218635294937482929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Obj_HolyGrail_Idle (lp)_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 640
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 001031a608898cdc0800000000000000
+      internalID: -3618474623289327360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Obj_HolyGrail_Idle (lp)_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 576
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51539741ddb453a50800000000000000
+      internalID: 6500185050082522389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Obj_HolyGrail_Idle (lp)_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c462d822a33e3af0800000000000000
+      internalID: -414837344108911421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Obj_HolyGrail_Idle (lp)_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 448
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5a756b5117029d90800000000000000
+      internalID: -7092598692025894307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Obj_HolyGrail_Idle (lp)_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 384
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08dcefcafdc4f72a0800000000000000
+      internalID: -6737581993959174784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Obj_HolyGrail_Idle (lp)_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 320
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87345acb89cdf9990800000000000000
+      internalID: -7376935116051496072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Obj_HolyGrail_Idle (lp)_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 256
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ca5e56d539a5cc20800000000000000
+      internalID: 3226170756775697091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Obj_HolyGrail_Idle (lp)_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1552014576a9b300800000000000000
+      internalID: 268428675337311516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Obj_HolyGrail_Idle (lp)_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 081840259ad3f3a40800000000000000
+      internalID: 5350062679774232960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Obj_HolyGrail_Idle (lp)_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 488d6038508d42da0800000000000000
+      internalID: -5970409687801735036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Obj_HolyGrail_Idle (lp)_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bdea16e93d6c2ca0800000000000000
+      internalID: -6040332904769589837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
