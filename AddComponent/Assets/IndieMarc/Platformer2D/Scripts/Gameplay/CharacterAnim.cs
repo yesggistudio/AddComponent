@@ -22,7 +22,6 @@ namespace IndieMarc.Platformer
             animator = GetComponent<Animator>();
 
             character.onJump += OnJump;
-            character.onCrouch += OnCrouch;
             character.onHit += OnDamage;
             character.onDeath += OnDeath;
             character.onClimb += OnClimb;
@@ -41,7 +40,6 @@ namespace IndieMarc.Platformer
             //Anims
             animator.SetBool("Jumping", character.IsJumping());
             animator.SetBool("InAir", !character.IsGrounded());
-            animator.SetBool("Crouching", character.IsCrouching());
             animator.SetFloat("Speed", character.GetMove().magnitude);
             animator.SetBool("Climb", character.IsClimbing());
             if (character_item != null)

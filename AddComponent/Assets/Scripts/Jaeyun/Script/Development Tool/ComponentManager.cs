@@ -21,6 +21,12 @@ namespace UnityTemplateProjects.Jaeyun.Script.Development_Tool
 
         public List<ComponentType> usingComponents = new List<ComponentType>();
 
+
+
+
+
+
+
         [ContextMenu("Make components")]
         private void MakeComponents()
         {

@@ -44,9 +44,7 @@ namespace IndieMarc.Platformer
         public LayerMask raycast_mask;
         public float ground_raycast_dist = 0.1f;
 
-        [Header("Crouch")]
-        public bool can_crouch = true;
-        public float crouch_coll_percent = 0.5f;
+
 
         [Header("Climb")]
         public float climb_speed = 2f;
@@ -57,10 +55,9 @@ namespace IndieMarc.Platformer
         public float fall_damage = 1f;
         
         public UnityAction onDeath;
-        public UnityAction onHit;
+        public UnityAction onHit; 
         public UnityAction onJump;
         public UnityAction onLand;
-        public UnityAction onCrouch;
         public UnityAction onClimb;
 
         private Rigidbody2D rigid;
@@ -80,7 +77,6 @@ namespace IndieMarc.Platformer
         private bool is_grounded = false;
         private bool is_fronted = false;
         private bool is_ceiled = false;
-        private bool is_crouch = false;
         private bool is_jumping = false;
         private bool is_double_jump = false;
         private Vector3 grab_pos;
@@ -273,39 +269,11 @@ namespace IndieMarc.Platformer
             }
         }
 
-        private void UpdateCrouch()
-        {//앉는거로써도 좋을듯
-            if (!can_crouch)
-                return;
-
-            PlayerControls controls = PlayerControls.Get(player_id);
-
-            //Crouch
-            bool was_crouch = is_crouch;
-            if (controls.GetMove().y < -0.1f && is_grounded)
-            {
-                is_crouch = true;
-                move = Vector2.zero;
-                capsule_coll.size = new Vector2(coll_start_h.x, coll_start_h.y * crouch_coll_percent);
-                capsule_coll.offset = new Vector2(coll_start_off.x, coll_start_off.y - coll_start_h.y * (1f - crouch_coll_percent) / 2f);
-
-                if (!was_crouch && is_crouch)
-                {
-                    if (onCrouch != null)
-                        onCrouch.Invoke();
-                }
-            }
-            else
-            {
-                is_crouch = false;
-                capsule_coll.size = coll_start_h;
-                capsule_coll.offset = coll_start_off;
-            }
-        }
+     
 
         public void Jump(bool force_jump = false)
         {
-            if (can_jump && (!is_crouch || force_jump))
+            if (can_jump && (!force_jump))
             {
                 if (is_grounded || force_jump || (!is_double_jump && double_jump))
                 {
@@ -512,10 +480,7 @@ namespace IndieMarc.Platformer
             return is_grounded;
         }
 
-        public bool IsCrouching()
-        {
-            return is_crouch;
-        }
+
 
         public bool IsClimbing()
         {
