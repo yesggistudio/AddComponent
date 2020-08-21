@@ -23,18 +23,45 @@ namespace UnityTemplateProjects.Jaeyun.Script.Dialogue
             
             _textMeshPro.text = "";
             StartCoroutine(ShowTextRoutine(node.text, node.textPerDelay, callback));
+        }
+
+        IEnumerator MovePortrait()
+        {
+            var rootCanvas = portrait.canvas;
+            var pixelRect = new Vector2(rootCanvas.pixelRect.width / rootCanvas.scaleFactor, 
+                rootCanvas.pixelRect.height / rootCanvas.scaleFactor);
+            var rectTransform = portrait.rectTransform;
             
+            Debug.Log(pixelRect);
+            Debug.Log(rectTransform.sizeDelta);
+            
+            Debug.Log(-pixelRect.y / 2 + rectTransform.sizeDelta.y);
+            
+            var startPos = new Vector2(pixelRect.x / 2 + rectTransform.sizeDelta.x * 2,
+                -pixelRect.y / 2 + rectTransform.sizeDelta.y * .6f);
+            
+            var endPos = new Vector2(pixelRect.x /2 - rectTransform.sizeDelta.x,
+                startPos.y);
+
+            float timeCount = 0;
+            while (true)
+            {
+                var t = Mathf.Clamp01(timeCount / 1f);
+                rectTransform.localPosition = Vector2.Lerp(startPos, endPos, t);
+
+                if (t >= 1) break;
+                
+                timeCount += Time.deltaTime;
+                yield return null;
+            }
+            yield return new WaitForSeconds(.5f);
         }
 
         IEnumerator ShowTextRoutine(string text, float delayPerWord, Action callback)
         {
-
-            bubbleBox.enabled = false;
-            yield return new WaitForSeconds(.5f);
-            bubbleBox.enabled = true;
-            
+            yield return StartCoroutine(MovePortrait());
             var delay = new WaitForSeconds(delayPerWord);
-            
+
             var sb = new StringBuilder();
 
             int index = 0;
