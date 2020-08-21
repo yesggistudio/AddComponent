@@ -21,7 +21,6 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
             animator = GetComponent<Animator>();
 
             character.onJump += OnJump;
-            character.onHit += OnDamage;
             character.onDeath += OnDeath;
             character.onClimb += OnClimb;
         }
@@ -52,10 +51,6 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
             animator.SetBool("Climb", true);
         }
 
-        void OnCrouch()
-        {
-            animator.SetTrigger("Crouch");
-        }
 
         void OnJump()
         {
@@ -63,11 +58,6 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
             animator.SetBool("Jumping", true);
         }
 
-        void OnDamage()
-        {
-            if (!character.IsDead())
-                flash_fx_timer = 1f;
-        }
 
         void OnDeath()
         {
