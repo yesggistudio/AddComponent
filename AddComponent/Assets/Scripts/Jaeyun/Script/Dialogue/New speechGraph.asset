@@ -1,0 +1,162 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-2036351140360535438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1083964099cb4497be09657a5bfd86a9, type: 3}
+  m_Name: 2
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 1128, y: 24}
+  ports:
+    keys:
+    - prevNode
+    - nextNode
+    values:
+    - _fieldName: prevNode
+      _node: {fileID: -2036351140360535438}
+      _typeQualifiedName: UnityTemplateProjects.Jaeyun.Script.Dialogue.SpeechNode,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: nextNode
+        node: {fileID: 8533793766691434061}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: nextNode
+      _node: {fileID: -2036351140360535438}
+      _typeQualifiedName: UnityTemplateProjects.Jaeyun.Script.Dialogue.SpeechNode,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  prevNode: {fileID: 0}
+  nextNode: {fileID: 0}
+  index: 2
+  speakerData: {fileID: 11400000, guid: f9e3dc55bcbad9649adf3f655b44a8c5, type: 2}
+  textPerDelay: 0
+  portrait: {fileID: 0}
+  text: "\uD14C\uC2A4\uD2B8 \uD14D\uC2A4\uD2B8 3\uBC88\uC785\uB2C8\uB2E4"
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1228b5b4c1334e83bf0d208904402e33, type: 3}
+  m_Name: New speechGraph
+  m_EditorClassIdentifier: 
+  nodes:
+  - {fileID: 321846666274119473}
+  - {fileID: 8533793766691434061}
+  - {fileID: -2036351140360535438}
+--- !u!114 &321846666274119473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1083964099cb4497be09657a5bfd86a9, type: 3}
+  m_Name: 0
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 152, y: 24}
+  ports:
+    keys:
+    - nextNode
+    - prevNode
+    values:
+    - _fieldName: nextNode
+      _node: {fileID: 321846666274119473}
+      _typeQualifiedName: UnityTemplateProjects.Jaeyun.Script.Dialogue.SpeechNode,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: prevNode
+        node: {fileID: 8533793766691434061}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: prevNode
+      _node: {fileID: 321846666274119473}
+      _typeQualifiedName: UnityTemplateProjects.Jaeyun.Script.Dialogue.SpeechNode,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  prevNode: {fileID: 0}
+  nextNode: {fileID: 0}
+  index: 0
+  speakerData: {fileID: 11400000, guid: f9e3dc55bcbad9649adf3f655b44a8c5, type: 2}
+  textPerDelay: 0.03
+  portrait: {fileID: 21300000, guid: 767abb2dc4dac344c9d1cf538e3983c7, type: 3}
+  text: Test Text 1
+--- !u!114 &8533793766691434061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1083964099cb4497be09657a5bfd86a9, type: 3}
+  m_Name: 1
+  m_EditorClassIdentifier: 
+  graph: {fileID: 11400000}
+  position: {x: 664, y: 24}
+  ports:
+    keys:
+    - nextNode
+    - prevNode
+    values:
+    - _fieldName: nextNode
+      _node: {fileID: 8533793766691434061}
+      _typeQualifiedName: UnityTemplateProjects.Jaeyun.Script.Dialogue.SpeechNode,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: prevNode
+        node: {fileID: -2036351140360535438}
+        reroutePoints: []
+      _direction: 1
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+    - _fieldName: prevNode
+      _node: {fileID: 8533793766691434061}
+      _typeQualifiedName: UnityTemplateProjects.Jaeyun.Script.Dialogue.SpeechNode,
+        Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+      connections:
+      - fieldName: nextNode
+        node: {fileID: 321846666274119473}
+        reroutePoints: []
+      _direction: 0
+      _connectionType: 1
+      _typeConstraint: 0
+      _dynamic: 0
+  prevNode: {fileID: 0}
+  nextNode: {fileID: 0}
+  index: 1
+  speakerData: {fileID: 11400000, guid: f9e3dc55bcbad9649adf3f655b44a8c5, type: 2}
+  textPerDelay: 0
+  portrait: {fileID: 0}
+  text: "\uD14C\uC2A4\uD2B8 \uD14D\uC2A4\uD2B8 2\uBC88\uC785\uB2C8\uB2E4"
