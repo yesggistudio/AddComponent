@@ -19,13 +19,193 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="02109610-2fc1-4c59-82d2-87514a86ad69" name="Default Changelist" comment="" />
+    <list default="true" id="02109610-2fc1-4c59-82d2-87514a86ad69" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Assets.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/CHANGELOG.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/CHANGELOG.md.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/CONTRIBUTING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/CONTRIBUTING.md.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Editor.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Editor/Brushes.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Editor/Brushes/CoordinateBrush.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Editor/Brushes/CoordinateBrush/CoordinateBrush.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Editor/Brushes/CoordinateBrush/CoordinateBrush.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Editor/Brushes/GameObjectBrush.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Editor/Brushes/GameObjectBrush/GameObjectBrush.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Editor/Brushes/GameObjectBrush/GameObjectBrush.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Editor/Brushes/GroupBrush.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Editor/Brushes/GroupBrush/GroupBrush.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Editor/Brushes/GroupBrush/GroupBrush.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Editor/Brushes/LineBrush.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Editor/Brushes/LineBrush/LineBrush.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Editor/Brushes/LineBrush/LineBrush.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Editor/Brushes/PrefabBrushes.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Editor/Brushes/PrefabBrushes/BasePrefabBrush.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Editor/Brushes/PrefabBrushes/BasePrefabBrush.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Editor/Brushes/PrefabBrushes/PrefabBrush.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Editor/Brushes/PrefabBrushes/PrefabBrush/PrefabBrush.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Editor/Brushes/PrefabBrushes/PrefabBrush/PrefabBrush.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Editor/Brushes/PrefabBrushes/PrefabRandomBrush.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Editor/Brushes/PrefabBrushes/PrefabRandomBrush/PrefabRandomBrush.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Editor/Brushes/PrefabBrushes/PrefabRandomBrush/PrefabRandomBrush.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Editor/Brushes/RandomBrush.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Editor/Brushes/RandomBrush/RandomBrush.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Editor/Brushes/RandomBrush/RandomBrush.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Editor/Brushes/TintBrush.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Editor/Brushes/TintBrush/TintBrush.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Editor/Brushes/TintBrush/TintBrush.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Editor/Brushes/TintBrushSmooth.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Editor/Brushes/TintBrushSmooth/TintBrushSmooth.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Editor/Brushes/TintBrushSmooth/TintBrushSmooth.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Editor/Tiles.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Editor/Tiles/HexagonalRuleTile.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Editor/Tiles/HexagonalRuleTile/HexagonalRuleTileEditor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Editor/Tiles/HexagonalRuleTile/HexagonalRuleTileEditor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Editor/Tiles/IsometricRuleTile.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Editor/Tiles/IsometricRuleTile/IsometricRuleTileEditor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Editor/Tiles/IsometricRuleTile/IsometricRuleTileEditor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Editor/Tiles/RuleOverrideTile.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Editor/Tiles/RuleOverrideTile/AdvancedRuleOverrideTileEditor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Editor/Tiles/RuleOverrideTile/AdvancedRuleOverrideTileEditor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Editor/Tiles/RuleOverrideTile/PopulateRuleOverrideTileWizard.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Editor/Tiles/RuleOverrideTile/PopulateRuleOverrideTileWizard.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Editor/Tiles/RuleOverrideTile/RuleOverrideTileEditor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Editor/Tiles/RuleOverrideTile/RuleOverrideTileEditor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Editor/Tiles/RuleTile.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Editor/Tiles/RuleTile/CustomRuleTileMenu.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Editor/Tiles/RuleTile/CustomRuleTileMenu.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Editor/Tiles/RuleTile/RuleTileEditor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Editor/Tiles/RuleTile/RuleTileEditor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Editor/Tiles/RuleTile/ScriptTemplates.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Editor/Tiles/RuleTile/ScriptTemplates/NewCustomRuleTile.cs.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Editor/Tiles/RuleTile/ScriptTemplates/NewCustomRuleTile.cs.txt.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Editor/Unity.2D.Tilemap.Extras.Editor.asmdef" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Editor/Unity.2D.Tilemap.Extras.Editor.asmdef.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/LICENSE.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/LICENSE.md.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/QAReport.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/QAReport.md.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/README.md.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Runtime.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Runtime/Brushes.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Runtime/Brushes/TintTextureGenerator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Runtime/Brushes/TintTextureGenerator.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Runtime/Brushes/TintedTilemap.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Runtime/Brushes/TintedTilemap.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Runtime/GridInformation.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Runtime/GridInformation/GridInformation.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Runtime/GridInformation/GridInformation.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Runtime/Tiles.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Runtime/Tiles/AnimatedTile.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Runtime/Tiles/AnimatedTile/AnimatedTile.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Runtime/Tiles/AnimatedTile/AnimatedTile.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Runtime/Tiles/HexagonalRuleTile.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Runtime/Tiles/HexagonalRuleTile/HexagonalRuleTile.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Runtime/Tiles/HexagonalRuleTile/HexagonalRuleTile.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Runtime/Tiles/IsometricRuleTile.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Runtime/Tiles/IsometricRuleTile/IsometricRuleTile.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Runtime/Tiles/IsometricRuleTile/IsometricRuleTile.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Runtime/Tiles/PipelineTile.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Runtime/Tiles/PipelineTile/PipelineTile.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Runtime/Tiles/PipelineTile/PipelineTile.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Runtime/Tiles/RandomTile.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Runtime/Tiles/RandomTile/RandomTile.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Runtime/Tiles/RandomTile/RandomTile.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Runtime/Tiles/RuleOverrideTile.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Runtime/Tiles/RuleOverrideTile/AdvancedRuleOverrideTile.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Runtime/Tiles/RuleOverrideTile/AdvancedRuleOverrideTile.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Runtime/Tiles/RuleOverrideTile/RuleOverrideTile.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Runtime/Tiles/RuleOverrideTile/RuleOverrideTile.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Runtime/Tiles/RuleTile.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Runtime/Tiles/RuleTile/RuleTile.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Runtime/Tiles/RuleTile/RuleTile.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Runtime/Tiles/TerrainTile.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Runtime/Tiles/TerrainTile/TerrainTile.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Runtime/Tiles/TerrainTile/TerrainTile.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Runtime/Tiles/WeightedRandomTile.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Runtime/Tiles/WeightedRandomTile/WeightedRandomTile.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Runtime/Tiles/WeightedRandomTile/WeightedRandomTile.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Runtime/Unity.2D.Tilemap.Extras.asmdef" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Runtime/Unity.2D.Tilemap.Extras.asmdef.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Tests.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Tests/Editor.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Tests/Editor/PlaceholderTests.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Tests/Editor/PlaceholderTests.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Tests/Editor/Unity.2D.Tilemap.Extras.EditorTests.asmdef" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Tests/Editor/Unity.2D.Tilemap.Extras.EditorTests.asmdef.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Third Party Notices.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/Third Party Notices.md.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/Rule Tile/package.json.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Material/2D DrawOutline.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Material/2D DrawOutline.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Material/2D Sprite.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Material/2D Sprite.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Shader/2D DrawOutline.shadergraph" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Shader/2D DrawOutline.shadergraph.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Shader/2D Sprite.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Shader/2D Sprite.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Settings/UniversalRP.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Settings/UniversalRP.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Settings/Volume Profile.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Settings/Volume Profile.asset.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AddComponent/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AddComponent/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AddComponent/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AddComponent/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AddComponent/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AddComponent/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/JaeyunScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/JaeyunScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/ForwardRenderer.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/ForwardRenderer.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/SampleSceneProfile.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/SampleSceneProfile.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRP-HighQuality.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRP-HighQuality.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRP-LowQuality.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRP-LowQuality.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRP-MediumQuality.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRP-MediumQuality.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Shader/2D Sprite.shader" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Shader/2D DrawOneColor.shader" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Shader/2D DrawOutline.shader" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1gO8ZdClIldcGB0Gxqs8Z27C3uA" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
@@ -46,8 +226,20 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="02109610-2fc1-4c59-82d2-87514a86ad69" name="Default Changelist" comment="" />
+      <created>1597974340931</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1597974340931</updated>
+      <workItem from="1597974374059" duration="3208000" />
+    </task>
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
@@ -62,5 +254,8 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
