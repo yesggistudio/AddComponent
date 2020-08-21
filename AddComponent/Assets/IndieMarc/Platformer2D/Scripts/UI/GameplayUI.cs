@@ -29,7 +29,7 @@ namespace IndieMarc.Platformer
             if (character)
             {
                 health.value = Mathf.FloorToInt( character.GetHP());
-                health.value_max = Mathf.FloorToInt(character.max_hp);
+               // health.value_max = Mathf.FloorToInt(character.max_hp);
             }
         }
     }

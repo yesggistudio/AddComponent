@@ -34,7 +34,7 @@ namespace IndieMarc.Platformer
             PlayerData pdata = PlayerData.Get();
             if (type == PowerupType.Life)
             {
-                character.HealDamage(value);
+                //character.HealDamage(value);
             }
             if (type == PowerupType.Coin)
             {

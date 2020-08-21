@@ -23,8 +23,6 @@ namespace IndieMarc.Platformer
     {
         public int player_id;
 
-        [Header("Stats")]
-        public float max_hp = 100f;
         
         [Header("Movement")]
         public float move_accel = 20f;
@@ -98,7 +96,6 @@ namespace IndieMarc.Platformer
             start_scale = transform.localScale;
             //average_ground_pos = transform.position;
             last_ground_pos = transform.position;
-            hp = max_hp;
 
             contact_filter = new ContactFilter2D();
             contact_filter.layerMask = raycast_mask;
@@ -367,6 +364,7 @@ namespace IndieMarc.Platformer
             return grounded;
         }
 
+
         public bool RaycastObstacle(Vector2 pos, Vector2 dir)
         {
             RaycastHit2D[] hitBuffer = new RaycastHit2D[5];
@@ -409,14 +407,6 @@ namespace IndieMarc.Platformer
             last_ground_pos = pos;
         }
 
-        public void HealDamage(float heal)
-        {
-            if (!IsDead())
-            {
-                hp += heal;
-                hp = Mathf.Min(hp, max_hp);
-            }
-        }
 
         public void TakeDamage(float damage)
         {

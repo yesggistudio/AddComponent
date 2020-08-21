@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -332,6 +332,7 @@ GameObject:
   - component: {fileID: 311485288}
   - component: {fileID: 311485287}
   - component: {fileID: 311485290}
+  - component: {fileID: 311485291}
   m_Layer: 0
   m_Name: GameObject (1)
   m_TagString: Untagged
@@ -352,6 +353,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isLocked: 1
+  player_id: 0
+  move_accel: 15
+  move_deccel: 20
+  move_max: 4
+  can_jump: 1
+  double_jump: 0
+  jump_strength: 10
+  jump_time_min: 0.3
+  jump_time_max: 0.4
+  jump_gravity: 5
+  jump_fall_gravity: 20
+  jump_move_percent: 0.75
+  raycast_mask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  ground_raycast_dist: 0.1
 --- !u!212 &311485288
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -426,12 +443,33 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1, y: 1}
   m_Direction: 0
+--- !u!50 &311485291
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 311485286}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 20
+  m_LinearDrag: 10
+  m_AngularDrag: 10
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 1
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &822533556
 GameObject:
   m_ObjectHideFlags: 0
@@ -843,6 +881,7 @@ GameObject:
   - component: {fileID: 1285811460}
   - component: {fileID: 1285811459}
   - component: {fileID: 1285811462}
+  - component: {fileID: 1285811463}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -863,6 +902,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isLocked: 0
+  player_id: 0
+  move_accel: 15
+  move_deccel: 20
+  move_max: 4
+  can_jump: 1
+  double_jump: 0
+  jump_strength: 10
+  jump_time_min: 0.3
+  jump_time_max: 0.4
+  jump_gravity: 5
+  jump_fall_gravity: 20
+  jump_move_percent: 0.75
+  raycast_mask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  ground_raycast_dist: 0.1
 --- !u!212 &1285811460
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -937,12 +992,33 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1, y: 1}
   m_Direction: 0
+--- !u!50 &1285811463
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1285811458}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 20
+  m_LinearDrag: 10
+  m_AngularDrag: 10
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 1
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1001 &1415822163
 PrefabInstance:
   m_ObjectHideFlags: 0

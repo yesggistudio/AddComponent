@@ -26,14 +26,14 @@ namespace IndieMarc.Platformer
             {
                 PlayerCharacter character = PlayerCharacter.Get(player_index);
                 icon_bar.value = Mathf.RoundToInt(character.GetHP());
-                icon_bar.value_max = Mathf.RoundToInt(character.max_hp);
+               // icon_bar.value_max = Mathf.RoundToInt(character.max_hp);
             }
 
             if (health_bar != null)
             {
                 PlayerCharacter character = PlayerCharacter.Get(player_index);
                 health_bar.value = character.GetHP();
-                health_bar.value_max = character.max_hp;
+               // health_bar.value_max = character.max_hp;
             }
         }
     }
