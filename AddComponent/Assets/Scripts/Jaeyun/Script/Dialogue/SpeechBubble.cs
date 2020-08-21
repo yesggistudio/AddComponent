@@ -29,7 +29,7 @@ namespace UnityTemplateProjects.Jaeyun.Script.Dialogue
             node.speakerData.textColor.a = 1;
             _textMeshPro.color = node.speakerData.textColor;
             
-            _textMeshPro.text = "";
+            SetText("");
             StartCoroutine(ShowTextRoutine(node.text, node.textPerDelay, callback));
         }
 
@@ -72,8 +72,6 @@ namespace UnityTemplateProjects.Jaeyun.Script.Dialogue
                 yield return new WaitForSeconds(.3f);
             }
 
-            var delay = new WaitForSeconds(delayPerWord);
-
             var sb = new StringBuilder();
 
             int index = 0;
@@ -81,22 +79,28 @@ namespace UnityTemplateProjects.Jaeyun.Script.Dialogue
             while (index < text.Length)
             {
 
-                yield return null;
-                if (Input.GetKeyDown(KeyCode.E))
+                float timeCount = 0;
+                while (timeCount < delayPerWord)
                 {
-                    SkipSpeech(callback);
-                    yield break;
+                    
+                    if (Input.GetKeyDown(KeyCode.E))
+                    {
+                        SkipSpeech(callback);
+                        yield break;
+                    }
+
+                    timeCount += Time.deltaTime;
+                    yield return null;
                 }
-                
                 sb.Append(text[index]);
-                _textMeshPro.text = sb.ToString();
-                
+                SetText(sb.ToString());
+
+
                 index++;
-                bubbleBox.rectTransform.sizeDelta = _textMeshPro.GetPreferredValues();
-                yield return delay;
-                
+
+
             }
-            
+
             StartCoroutine(WaitInput(callback));
 
         }
@@ -104,10 +108,14 @@ namespace UnityTemplateProjects.Jaeyun.Script.Dialogue
         public void SkipSpeech(Action callback)
         {
             StopAllCoroutines();
-            _textMeshPro.text = _node.text;
-            _textMeshPro.ForceMeshUpdate();
-            bubbleBox.rectTransform.sizeDelta = _textMeshPro.GetPreferredValues();
+            SetText(_node.text);
             StartCoroutine(WaitInput(callback));
+        }
+
+        private void SetText(string text)
+        {
+            _textMeshPro.text = text;
+            bubbleBox.rectTransform.sizeDelta = _textMeshPro.GetPreferredValues();
         }
 
         IEnumerator WaitInput(Action callback)
@@ -122,6 +130,7 @@ namespace UnityTemplateProjects.Jaeyun.Script.Dialogue
                 }
                 yield return null;
             }
+            
             callback?.Invoke();
         }
 

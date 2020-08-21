@@ -1,36 +1,107 @@
 ﻿using System;
 using System.Collections;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace UnityTemplateProjects.Jaeyun.Script.Development_Tool
 {
     public class Drag : MonoBehaviour
     {
+
+        private ComponentButton _componentButton;
         
         private Actor.Actor _actor;
+        private RectTransform _rectTransform;
 
         public LayerMask actorMask;
 
-        public Actor.Actor GetActor()
+        private Button _button;
+
+        private Camera _cam;
+
+        public void InitializeDrag(ComponentButton componentButton, Sprite sprite)
         {
-            return _actor;
+            _button = GetComponent<Button>();
+            
+            _rectTransform = GetComponent<RectTransform>();
+            
+            _componentButton = componentButton;
+            _button.image.sprite = sprite;
+            
+            _cam = Camera.main;
+            
+            BeginDrag();
         }
 
-        private void OnEnable()
+        public void BeginDrag()
         {
+            _actor?.RemoveDrag(this);
+            
+            StartCoroutine(ChaseMouse());
             StartCoroutine(CheckActor());
+        }
+
+        public void EndDrag()
+        {
+            if (!Attach())
+            {
+                _componentButton.DestroyDrag();
+            }
+        }
+
+        public bool Attach()
+        {
+            _actor?.DrawNormal();
+
+            var allDrags = FindObjectsOfType<Drag>();
+            
+            if (_actor != null && !_actor.isLocked)
+            {
+                _actor.AddDrag(this);
+                SortUpperActorHead();
+                StopAllCoroutines();
+                return true;
+            }
+            else
+            {
+                
+                return false;
+            }
+
+            
+        }
+
+        public void SortUpperActorHead()
+        {
+            var targetPos = _actor.GetComponentPos(this);
+            _rectTransform.position = _cam.WorldToScreenPoint(targetPos);
+        }
+
+        IEnumerator ChaseMouse()
+        {
+            while (true)
+            {
+                var mousePosInScreenPort = Input.mousePosition;
+                _rectTransform.position = mousePosInScreenPort;
+                yield return null;
+            }
         }
 
         IEnumerator CheckActor()
         {
-
+            _actor = null;
+            
             var checkDelay = new WaitForSeconds(.1f);
             
-            Collider2D[] hitColliders = new Collider2D[5];
+            Collider2D[] hitColliders = new Collider2D[3];
+
+            var worldPos = Vector2.zero;
             
             while (true)
             {
-                int colliderNums = Physics2D.OverlapCircleNonAlloc(transform.position, .2f, hitColliders, actorMask);
+                worldPos = _cam.ScreenToWorldPoint(_rectTransform.position);
+
+                int colliderNums = Physics2D.OverlapCircleNonAlloc(worldPos, .2f, hitColliders, actorMask);
                 
                 float minDist = float.MaxValue;
                 Collider2D minCollider = null;
@@ -38,6 +109,7 @@ namespace UnityTemplateProjects.Jaeyun.Script.Development_Tool
                 for (int i = 0; i < colliderNums; i++)
                 {
                     var distFromDrag = Vector2.Distance(hitColliders[i].transform.position, transform.position);
+                    
                     if (distFromDrag < minDist)
                     {
                         minDist = distFromDrag;

@@ -24,41 +24,41 @@ namespace UnityTemplateProjects.Jaeyun.Script.Development_Tool
             
         }
 
+        public void SetInteractable(bool value)
+        {
+            _button.interactable = value;
+        }
+
         public void BeginDrag()
         {
             if (!_button.interactable) return;
-            StartCoroutine(DragComponentRoutine());
+            
+            _drag = Instantiate(dragSprite, _button.image.canvas.transform);
+            _drag.InitializeDrag(this, _button.image.sprite);
+
         }
         
         public void EndDrag()
         {
             if (!_button.interactable) return;
-            
-            StopAllCoroutines();
-            var actor = _drag.GetActor();
-            if (actor != null && !actor.isLocked)
+
+            if (_drag.Attach())
             {
-                actor.AddComponent(componentType);
                 _button.interactable = false;
             }
-            
-            DestroyImmediate(_drag.gameObject);
-        }
-
-        IEnumerator DragComponentRoutine()
-        {
-            _drag = Instantiate(dragSprite);
-            var cam = Camera.main;
-            while (true)
+            else
             {
-                var mousePosInViewPort = Input.mousePosition;
-                var mousePosInWorldPos = cam.ScreenToWorldPoint(mousePosInViewPort);
-                mousePosInWorldPos.z = 0;
-                _drag.transform.position = mousePosInWorldPos;
-                
-                yield return null;
+                DestroyDrag();
             }
         }
+
+        public void DestroyDrag()
+        {
+            _button.interactable = true;
+            DestroyImmediate(_drag.gameObject);
+            _drag = null;
+        }
+
         
         
     }

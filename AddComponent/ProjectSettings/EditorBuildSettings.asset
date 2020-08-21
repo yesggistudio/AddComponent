@@ -17,3 +17,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/IndieMarc/Platformer2D/Scenes/Load.unity
     guid: a0d1f7084d7c0b44e9c583e4e7745f5c
+  - enabled: 1
+    path: Assets/Resources/Levels/Level - 1.unity
+    guid: 130290d9fc37bb7448c288fb5de9f8a7
+  - enabled: 1
+    path: Assets/Resources/Levels/Level - 2.unity
+    guid: 1d98d06e536bba0499fa65b805fb6316
+  - enabled: 1
+    path: Assets/Resources/Levels/Level - 3.unity
+    guid: 14ded041dcd6c7041ad24d4d53a1948d
+  m_configObjects: {}

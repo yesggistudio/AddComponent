@@ -8,18 +8,37 @@ namespace UnityTemplateProjects.Jaeyun.Script.Development_Tool
 {
     public class ComponentManager : MonoBehaviour
     {
+
+        public static ComponentManager Instance => instance;
+
+        private static ComponentManager instance;
+        
         [Serializable]
         public class ComponentUIData
         {
             public ComponentType type;
             public ComponentButton componentButton;
+            public int count;
         }
         
         public Image componentContent;
 
         public List<ComponentUIData> componentUIDatas = new List<ComponentUIData>();
 
-        public List<ComponentType> usingComponents = new List<ComponentType>();
+        private void Awake()
+        {
+            if (instance == null)
+            {
+                instance = this;
+            }
+            else
+            {
+                if (instance != this)
+                {
+                    DestroyImmediate(gameObject);
+                }
+            }
+        }
 
 
 
@@ -30,10 +49,12 @@ namespace UnityTemplateProjects.Jaeyun.Script.Development_Tool
         [ContextMenu("Make components")]
         private void MakeComponents()
         {
-            foreach (var component in usingComponents)
+            foreach (var componentUIData in componentUIDatas)
             {
-                Instantiate(componentUIDatas.Find(x => x.type == component).componentButton,
-                    componentContent.rectTransform);
+                for (int i = 0; i < componentUIData.count; i++)
+                {
+                    Instantiate(componentUIData.componentButton, componentContent.transform);
+                }
             }
         }
     }

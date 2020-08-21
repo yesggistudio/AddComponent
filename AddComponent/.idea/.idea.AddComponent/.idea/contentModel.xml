@@ -324,6 +324,7 @@
                 <e p="ComponentButton.cs" t="Include" />
                 <e p="ComponentManager.cs" t="Include" />
                 <e p="Drag.cs" t="Include" />
+                <e p="StopButton.cs" t="Include" />
               </e>
               <e p="Dialogue" t="Include">
                 <e p="Node &amp; Graph" t="Include">
@@ -345,6 +346,13 @@
               </e>
               <e p="Editor" t="Include">
                 <e p="GenericSelectablePropertyDrawer.cs" t="Include" />
+              </e>
+              <e p="Level" t="Include">
+                <e p="Level.cs" t="Include" />
+                <e p="LevelManager.cs" t="Include" />
+              </e>
+              <e p="UI" t="Include">
+                <e p="UICanvas.cs" t="Include" />
               </e>
             </e>
             <e p="Shader" t="Include">
