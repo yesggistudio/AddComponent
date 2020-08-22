@@ -70,7 +70,7 @@ namespace IndieMarc.Platformer
         {
 
 
-            StartCoroutine(DeathCoroutine(3f));
+           // StartCoroutine(DeathCoroutine(3f));
 
 
         }
@@ -78,8 +78,8 @@ namespace IndieMarc.Platformer
 
         IEnumerator DeathCoroutine(float t)
         {
-
-            yield return new WaitForSeconds(10f);
+            //여기서 t를 입력 받아야함.
+            yield return new WaitForSeconds(t);
             DeathParticle.Play();
             Kill();
         }
