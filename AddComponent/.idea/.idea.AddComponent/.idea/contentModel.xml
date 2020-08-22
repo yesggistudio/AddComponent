@@ -372,6 +372,7 @@
                 <e p="ComponentTypeA.cs" t="Include" />
                 <e p="ComponentTypeB.cs" t="Include" />
                 <e p="ComponentTypeC.cs" t="Include" />
+                <e p="ComponentTypeD.cs" t="Include" />
                 <e p="Editor" t="Include">
                   <e p="ComponentTypeDrawer.cs" t="Include" />
                 </e>
@@ -427,6 +428,10 @@
           <e p="이예석" t="Include">
             <e p="CharacterMovement.cs" t="Include" />
             <e p="CharacterStates.cs" t="Include" />
+            <e p="event" t="Include">
+              <e p="EventManager.cs" t="Include" />
+              <e p="IListener.cs" t="Include" />
+            </e>
             <e p="manager" t="Include">
               <e p="CharacterAni.cs" t="Include" />
               <e p="ControlManager.cs" t="Include" />
