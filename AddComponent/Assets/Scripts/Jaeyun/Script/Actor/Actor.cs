@@ -197,6 +197,14 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
         void FixedUpdate()
         {
 
+            if (TheGame.IsGamePaused())
+            {
+                var rigidVelocity = rigid.velocity;
+                rigidVelocity.x = 0;
+                rigid.velocity = rigidVelocity;
+                return;
+            }
+            
             PlayerControls controls = PlayerControls.Get(player_id);
 
 

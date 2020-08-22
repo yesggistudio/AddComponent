@@ -416,6 +416,7 @@
                 <e p="GameEventListener.cs" t="Include" />
                 <e p="LoadMenuScene.cs" t="Include" />
                 <e p="OnTriggerEvent.cs" t="Include" />
+                <e p="OnTriggerSpeak.cs" t="Include" />
               </e>
               <e p="Level" t="Include">
                 <e p="ConnectDataSave.cs" t="Include" />
