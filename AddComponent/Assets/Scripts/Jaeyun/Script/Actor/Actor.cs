@@ -257,9 +257,6 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
                 if (controls.GetJumpDown())
                     Jump();
 
-
-
-
             }
             //Reset when fall
 
@@ -273,15 +270,32 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
         {
             yield return new WaitForSeconds(3f);
 
-            destroyParticle.Play();
-            DmgObj.SetActive(true);
-
-            yield return new WaitForSeconds(0.5f);
-
-          
             _canComAbility[2] = false;
-            gameObject.SetActive(false);
+
+            if (gameObject.tag == "Player")
+            {
+                Kill();
+            
+            }
+            else if (gameObject.tag == "Bomb")
+            {
+                DmgObj.SetActive(true);
+                destroyParticle.Play();
+                yield return new WaitForSeconds(0.55f);
+
+                gameObject.SetActive(false);
+            }
+            else
+            {
+                destroyParticle.Play();
+
+                yield return new WaitForSeconds(0.5f);
+                gameObject.SetActive(false);
+
+            }
+
         }
+
 
 
 

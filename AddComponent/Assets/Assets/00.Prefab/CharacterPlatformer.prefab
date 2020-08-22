@@ -212,6 +212,8 @@ MonoBehaviour:
   ground_raycast_dist: 0.04
   climb_speed: 2
   _canComAbility: 01010000
+  destroyParticle: {fileID: 0}
+  DmgObj: {fileID: 0}
 --- !u!114 &6909789641802909382
 MonoBehaviour:
   m_ObjectHideFlags: 0
