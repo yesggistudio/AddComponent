@@ -81,7 +81,7 @@ namespace UnityTemplateProjects.Jaeyun.Script.Level
             // var speechManager = GetComponent<SpeechManager>();
             // 대사 파일을 담은 speech graph 넣어주기
             // speechManager.SetSpeechGraph();
-            // SpeechGraph 안의 대사를 쭉 보여주기
+            // SpeechGraph 안의 대사를 쭉 보여주기 및 넣어준 GameEvent Raise()
             // speechManager.PlaySpeech();
             
             //게임 오버시 연출
