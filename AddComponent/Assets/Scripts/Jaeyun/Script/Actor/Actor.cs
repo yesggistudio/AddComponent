@@ -697,7 +697,7 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
 
             var index = _drags.FindIndex(x => x == drag);
 
-            targetHead.y += + (indivisibleComponents.Count + index + 1 ) * .6f;
+            targetHead.y += + (indivisibleComponents.Count + index + 1 );
 
             return targetHead;
         }
@@ -733,7 +733,7 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
             
             var targetHead = transform.position + new Vector3(spriteOffset.x, spriteOffset.y ,0);
             
-            targetHead.y += + (index + 1) * .6f;
+            targetHead.y += + (index + 1);
 
             return targetHead;
         }

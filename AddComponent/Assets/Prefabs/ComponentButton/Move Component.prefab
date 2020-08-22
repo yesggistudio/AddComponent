@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 2513686187449923208}
   - component: {fileID: 3636898868823004692}
   m_Layer: 5
-  m_Name: Component UI A
+  m_Name: Move Component
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -69,7 +69,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 871404990066866884, guid: b287e3a2822ebb243a9130bb643b55e3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 00bc057f555ec654b98979a21b355394, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

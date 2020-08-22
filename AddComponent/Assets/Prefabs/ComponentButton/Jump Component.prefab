@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 1846187386181515602}
   - component: {fileID: 535191951726835419}
   m_Layer: 5
-  m_Name: Component UI B
+  m_Name: Jump Component
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -69,8 +69,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -2635501189366475809, guid: b287e3a2822ebb243a9130bb643b55e3,
-    type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8e0eb9e7610389344bc070446cc83be8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
