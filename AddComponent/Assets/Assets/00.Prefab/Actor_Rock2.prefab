@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 5223641184694312743}
   m_Layer: 0
   m_Name: Actor_Rock2
-  m_TagString: Untagged
+  m_TagString: Rock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -179,6 +179,7 @@ MonoBehaviour:
   _canComAbility: 01010000
   destroyParticle: {fileID: 0}
   DmgObj: {fileID: 0}
+  gameEvent: {fileID: 0}
 --- !u!114 &812767862192767794
 MonoBehaviour:
   m_ObjectHideFlags: 0
