@@ -39,6 +39,11 @@ namespace IndieMarc.Platformer
             cam = GetComponent<Camera>();
         }
 
+        private void Start()
+        {
+            target = GameObject.Find("CharacterPlatformer");
+        }
+
         void LateUpdate()
         {
             GameObject cam_target = target;
@@ -50,7 +55,7 @@ namespace IndieMarc.Platformer
             {
                 //Find target
                 Vector3 target_pos = cam_target.transform.position + target_offset;
-                target_pos = LimitPos(target_pos);
+               // target_pos = LimitPos(target_pos);
 
                 //Check if need to move
                 Vector3 diff = target_pos - transform.position;
@@ -109,7 +114,7 @@ namespace IndieMarc.Platformer
 
         public void MoveTo(Vector3 targ_pos)
         {
-            targ_pos = LimitPos(targ_pos);
+            //targ_pos = LimitPos(targ_pos);
             transform.position = targ_pos + target_offset;
         }
 
