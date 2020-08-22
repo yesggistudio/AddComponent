@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityTemplateProjects.Jaeyun.Script.Development_Tool;
 using UnityTemplateProjects.Jaeyun.Script.Level;
+using System.Collections;
 
 namespace UnityTemplateProjects.Jaeyun.Script.Actor
 {
@@ -86,8 +87,8 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
 
         public bool[] _canComAbility = new bool[4];
 
-
-
+        public ParticleSystem destroyParticle;
+        public GameObject DmgObj;
 
         void Awake()
         {
@@ -143,7 +144,6 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
 
             for (int i = 0; i < 4; i++)
             {
-                Debug.Log(i);
                 _canComAbility[i] = false;
             }
 
@@ -177,6 +177,9 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
             if (typeOfComponent == typeof(DestroyComponent))
             {
                 _canComAbility[2] = true;
+
+                StartCoroutine(DestoryCoroutine());
+
                 return;
             }
             
@@ -258,11 +261,30 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
 
 
             }
-
             //Reset when fall
 
+ 
 
         }
+
+
+
+        IEnumerator DestoryCoroutine()
+        {
+            yield return new WaitForSeconds(3f);
+
+            destroyParticle.Play();
+            DmgObj.SetActive(true);
+
+            yield return new WaitForSeconds(0.5f);
+
+          
+            _canComAbility[2] = false;
+            gameObject.SetActive(false);
+        }
+
+
+
 
         private void UpdateFacing()
         {
