@@ -6,6 +6,9 @@ using UnityEngine.Events;
 using UnityTemplateProjects.Jaeyun.Script.Development_Tool;
 using UnityTemplateProjects.Jaeyun.Script.Level;
 using System.Collections;
+using DG.Tweening.Plugins.Options;
+using TMPro;
+using System.Data.Common;
 
 namespace UnityTemplateProjects.Jaeyun.Script.Actor
 {
@@ -309,6 +312,25 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
 
             gameObject.SetActive(false);
         }
+
+        public void DBombFx()
+        {
+
+
+            StartCoroutine(DBombCoroutine());
+        }
+
+        IEnumerator DBombCoroutine()
+        {
+
+            yield return new WaitForSeconds(0.1f);
+            DmgObj.SetActive(true);
+            destroyParticle.Play();
+            yield return new WaitForSeconds(0.55f);
+            gameObject.SetActive(false);
+
+        }
+
 
 
         private void UpdateFacing()

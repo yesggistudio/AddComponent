@@ -15,9 +15,14 @@ namespace Jaeyun.Script.GameEvent_System
                 other.gameObject.GetComponent<Actor>().DRockFx();
             }
 
+            if (other.gameObject.tag == "Bomb")
+            {
+                other.gameObject.GetComponent<Actor>().DBombFx();
+            }
+
             if (other.CompareTag("Player"))
             {
-                gameEvent.Raise();
+                gameEvent.Raise();  
                 Destroy(this);
             }
         }
