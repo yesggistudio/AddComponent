@@ -21,6 +21,7 @@ namespace Jaeyun.Script.GameEvent_System
         private void SetActiveScene()
         {
             var loadedScene = SceneManager.GetSceneByName(menuLevel.name);
+            SceneManager.SetActiveScene(loadedScene);
         }
 
     }

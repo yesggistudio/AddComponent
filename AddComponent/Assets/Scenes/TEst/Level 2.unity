@@ -1230,6 +1230,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   ground_raycast_dist: 0.1
   climb_speed: 2
+  _canComAbility: 00000000
 --- !u!212 &1285811460
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1438,6 +1439,11 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6427190820968313053, guid: 013ec4b1418f5cb41b384ee8b32115ed,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 169.5495
+      objectReference: {fileID: 0}
     - target: {fileID: 6427190821650184584, guid: 013ec4b1418f5cb41b384ee8b32115ed,
         type: 3}
       propertyPath: m_Name
@@ -1567,7 +1573,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 11400000, guid: 4d9e47849edee0a46b16050eda175af4,
+      objectReference: {fileID: 11400000, guid: 61dc35c9e2d6ea04296e8a76da281876,
         type: 2}
     - target: {fileID: 6427190821809206448, guid: 013ec4b1418f5cb41b384ee8b32115ed,
         type: 3}
@@ -1587,6 +1593,11 @@ PrefabInstance:
     - target: {fileID: 6427190822069412235, guid: 013ec4b1418f5cb41b384ee8b32115ed,
         type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6427190822069412235, guid: 013ec4b1418f5cb41b384ee8b32115ed,
+        type: 3}
+      propertyPath: m_AnchorMin.y
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:

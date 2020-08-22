@@ -9,8 +9,6 @@ namespace UnityTemplateProjects.Jaeyun.Script.Dialogue
 {
     public class SpeechBubble : MonoBehaviour
     {
-
-        
         public Image bubbleBox;
         public Image portrait;
         public TextMeshProUGUI _textMeshPro;
@@ -34,24 +32,31 @@ namespace UnityTemplateProjects.Jaeyun.Script.Dialogue
             StartCoroutine(ShowTextRoutine(node.text, node.textPerDelay, callback));
         }
 
-        IEnumerator MovePortrait()
+        IEnumerator MovePortrait(bool isCome)
         {
             var rootCanvas = portrait.canvas;
             var pixelRect = new Vector2(rootCanvas.pixelRect.width / rootCanvas.scaleFactor, 
                 rootCanvas.pixelRect.height / rootCanvas.scaleFactor);
             var rectTransform = portrait.rectTransform;
 
-            var startPos = new Vector2(pixelRect.x / 2 + rectTransform.sizeDelta.x * 2,
+            var rightPos = new Vector2(pixelRect.x / 2 + rectTransform.sizeDelta.x * 2,
                 -pixelRect.y / 2 + rectTransform.sizeDelta.y * .6f);
             
-            var endPos = new Vector2(pixelRect.x /2 - rectTransform.sizeDelta.x,
-                startPos.y);
+            var leftPos = new Vector2(pixelRect.x /2 - rectTransform.sizeDelta.x,
+                rightPos.y);
 
             float timeCount = 0;
             while (true)
             {
                 var t = Mathf.Clamp01(timeCount / 1f);
-                rectTransform.localPosition = Vector2.Lerp(startPos, endPos, t);
+                if (isCome)
+                {
+                    rectTransform.localPosition = Vector2.Lerp(rightPos, leftPos, t);
+                }
+                else
+                {
+                    rectTransform.localPosition = Vector2.Lerp(leftPos, rightPos, t);
+                }
 
                 if (t >= 1) break;
                 
@@ -59,13 +64,18 @@ namespace UnityTemplateProjects.Jaeyun.Script.Dialogue
                 yield return null;
             }
             yield return new WaitForSeconds(.5f);
+            
+            if (!isCome)
+            {
+                DestroyImmediate(gameObject);
+            }
         }
 
         IEnumerator ShowTextRoutine(string text, float delayPerWord, Action callback)
         {
             if (_isFirst)
             {
-                yield return StartCoroutine(MovePortrait());
+                yield return StartCoroutine(MovePortrait(true));
                 _isFirst = false;
             }
             else
@@ -139,7 +149,8 @@ namespace UnityTemplateProjects.Jaeyun.Script.Dialogue
 
         public void CloseSpeech()
         {
-            DestroyImmediate(gameObject);
+            StartCoroutine(MovePortrait(false));
+            
         }
         
     }

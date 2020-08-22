@@ -727,6 +727,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c28f12f1509a4fa29db6a8137413d298, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  audioClip: {fileID: 8300000, guid: cbc1a0ff8e9f02246aed9e3ff6466d5a, type: 3}
   endDelay: 1
   fadeTime: 0.5
   image: {fileID: 1329230500}

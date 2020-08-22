@@ -4,13 +4,14 @@ using System.Text;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityTemplateProjects.Jaeyun.Script.Audio;
 
 namespace UnityTemplateProjects.Jaeyun.Script.Dialogue
 {
     public class DialogueWithImage : MonoBehaviour
     {
-        
-        
+
+        public AudioClip audioClip;
         public float endDelay;
 
         public float fadeTime;
@@ -37,8 +38,11 @@ namespace UnityTemplateProjects.Jaeyun.Script.Dialogue
             {
                 sb.Append(text[index]);
                 tmp.text = sb.ToString();
-                index++;
                 
+                if(!char.IsWhiteSpace(text[index]))
+                    AudioManager.Instance.PlaySfx(audioClip);
+                
+                index++;
                 yield return delay;
             }
 

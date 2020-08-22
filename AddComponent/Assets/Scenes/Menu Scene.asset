@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5584a6484045477f92effee4c2379f7e, type: 3}
   m_Name: Menu Scene
   m_EditorClassIdentifier: 
-  bgm: {fileID: 0}
+  bgm: {fileID: 8300000, guid: 24535d169a02e0d4fbbccf16c9217113, type: 3}

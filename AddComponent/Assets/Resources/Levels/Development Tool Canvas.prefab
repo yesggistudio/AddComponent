@@ -759,7 +759,6 @@ GameObject:
   - component: {fileID: 6427190821790514952}
   - component: {fileID: 6427190821790514955}
   - component: {fileID: 6427190821790514954}
-  - component: {fileID: 2350018935706451063}
   m_Layer: 5
   m_Name: Stop
   m_TagString: Untagged
@@ -878,18 +877,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &2350018935706451063
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6427190821790514964}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5026fdc0020c49d79d11217c0768f0f0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &6427190821809206450
 GameObject:
   m_ObjectHideFlags: 0
@@ -1008,7 +995,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6427190821809206449}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: 61dc35c9e2d6ea04296e8a76da281876, type: 2}
+        m_MethodName: Raise
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &6427190822069412234
 GameObject:
   m_ObjectHideFlags: 0
