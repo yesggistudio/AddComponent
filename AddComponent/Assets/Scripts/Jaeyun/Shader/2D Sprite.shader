@@ -17,7 +17,7 @@
         Pass
         {
             Cull Off
-            Blend One OneMinusSrcColor
+            Blend One OneMinusSrcAlpha
 
             CGPROGRAM
             #pragma vertex vert

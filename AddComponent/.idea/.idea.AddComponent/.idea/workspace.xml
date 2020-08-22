@@ -21,7 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="02109610-2fc1-4c59-82d2-87514a86ad69" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AddComponent/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AddComponent/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Actor/Actor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Actor/Actor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Template.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Template.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Material/2D Sprite.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Material/2D Sprite.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Shader/2D Sprite.shader" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Shader/2D Sprite.shader" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +54,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/Speaker Data/Editor/SpeakerDataPropertyDrawer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/Node &amp; Graph/SpeechGraph.cs" />
         <option value="$PROJECT_DIR$/Assets/Assets/xNode-1.8.0/Scripts/NodeDataCache.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/Node &amp; Graph/Editor/SpeechGraphEditor.cs" />
@@ -103,6 +104,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/SpeechBubble.cs" />
         <option value="$PROJECT_DIR$/Assets/DeadPannel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Actor/Actor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Shader/2D Sprite.shader" />
       </list>
     </option>
   </component>
@@ -167,7 +169,7 @@
       <workItem from="1597982686904" duration="32525000" />
       <workItem from="1598062886959" duration="13336000" />
       <workItem from="1598083159368" duration="10331000" />
-      <workItem from="1598098396978" duration="19361000" />
+      <workItem from="1598098396978" duration="19924000" />
     </task>
     <servers />
   </component>
