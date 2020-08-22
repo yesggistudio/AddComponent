@@ -20,11 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="02109610-2fc1-4c59-82d2-87514a86ad69" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/Dummy.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AddComponent/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AddComponent/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AddComponent/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AddComponent/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Actor/Actor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Actor/Actor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/Drag.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/Drag.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/IndivisibleComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/IndivisibleComponent.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,15 +35,17 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../../Sannabi-URP/Sannabi/Assets/03.Scripts/Jaeyun/Speech/Graph And Node/TimelineSpeechNode.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Sannabi-URP/Sannabi/Assets/03.Scripts/Jaeyun/Save &amp; Load/Editor/SavePointManagerEditor.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../Sannabi-URP/Sannabi/Assets/03.Scripts/Jaeyun/Speech/Graph And Node/Editor/TimelineSpeechGraphEditor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A979F18D-51AF-4117-9D12-B797E8C5BE14/1d/d88c1b56/Object.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../Sannabi-URP/Sannabi/Assets/03.Scripts/Jaeyun/Speech/Graph And Node/Editor/TimelineSpeechNodeEditor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Sannabi-URP/Sannabi/Assets/03.Scripts/Jaeyun/Speech/Graph And Node/BaseSpeechNode.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/SpeechManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/../../Sannabi-URP/Sannabi/Assets/03.Scripts/Jaeyun/Editor/SeletablePropertyDrawer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../../../../../Program Files/Unity/Hub/Editor/2019.4.5f1/Editor/Data/Resources/PackageManager/BuiltInPackages/com.unity.ugui/Runtime/UI/Core/Button.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$USER_HOME$/Desktop/백업/Speech System/TimelineSpeechBubble.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Sannabi-URP/Sannabi/Assets/03.Scripts/Jaeyun/Speech/Graph And Node/Editor/BaseSpeechNodeEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../Sannabi-URP/Sannabi/Assets/03.Scripts/Jaeyun/Core/GameEvent/GameEventListener.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../Sannabi-URP/Sannabi/Assets/03.Scripts/Jaeyun/Core/GameEvent/GameEvent.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../Sannabi-URP/Sannabi/Assets/03.Scripts/Jaeyun/Speech/Graph And Node/Editor/TimelineSpeechGraphEditor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../Sannabi-URP/Sannabi/Assets/03.Scripts/Jaeyun/Speech/Graph And Node/Editor/TimelineSpeechNodeEditor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../Sannabi-URP/Sannabi/Assets/03.Scripts/Jaeyun/Editor/SeletablePropertyDrawer.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -70,23 +70,28 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/ComponentTypeB.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Component/Editor/ComponentTypeDrawer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/SpeechManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Level/Level.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Audio/AudioManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/UI/UICanvas.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/SpeechBubble.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Component/ComponentType.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/ComponentManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/ConnectDataInfo.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Level/LevelData.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Level/LevelManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/JaeyunTest.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/StopButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/ComponentButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Level/ConnectDataSave.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/Belonging.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Component/BelongComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/GameEvent/GameEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/GameEvent/GameEventListener.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/StopButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Level/SetUpScene.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/ConnectDataInfo.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Level/Level.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Level/LevelManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/ComponentManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/Drag.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/IndivisibleComponent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/ColliderCheck.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/GameEvent System/GameEventListener.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Actor/Actor.cs" />
       </list>
     </option>
@@ -143,7 +148,7 @@
       <workItem from="1597974374059" duration="6975000" />
       <workItem from="1597982686904" duration="32525000" />
       <workItem from="1598062886959" duration="13336000" />
-      <workItem from="1598083159368" duration="906000" />
+      <workItem from="1598083159368" duration="7423000" />
     </task>
     <servers />
   </component>
@@ -180,9 +185,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1598072227345" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1597982349340">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1598090319519">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1597982349340" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1598090319519" />
   </component>
 </project>

@@ -159,27 +159,47 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
                 _canComAbility[i] = false;
             }
 
+            foreach (var drag in _drags)
+            {
+                var componentType = drag.GetComponentType();
+                CheckComponent(componentType);
+            }
+            
+            foreach (var indivisibleComponent in indivisibleComponents)
+            {
+                var componentType = indivisibleComponent.GetComponentType();
+                CheckComponent(componentType);
+            }
+            
+        }
 
-            if (_drags[0].GetComponentType().GetType() == typeof(ComponentTypeA))
+        private void CheckComponent(ComponentType componentType)
+        {
+            var typeOfComponent = componentType.GetType();
+            
+            if (typeOfComponent == typeof(ComponentTypeA))
             {
                 EventManager.Instance.EventPost(EVENT_TYPE.Move);
+                return;
             }
 
-            if (_drags[1].GetComponentType().GetType() == typeof(ComponentTypeB))
+            if (typeOfComponent == typeof(ComponentTypeB))
             {
                 EventManager.Instance.EventPost(EVENT_TYPE.Jump);
+                return;
             }
 
-            if (_drags[2].GetComponentType().GetType() == typeof(ComponentTypeC))
+            if (typeOfComponent == typeof(ComponentTypeC))
             {
                 EventManager.Instance.EventPost(EVENT_TYPE.Destroy);
+                return;
             }
 
-            if (_drags[3].GetComponentType().GetType() == typeof(ComponentTypeD))
+            if (typeOfComponent == typeof(ComponentTypeD))
             {
                 EventManager.Instance.EventPost(EVENT_TYPE.GameOver);
+                return;
             }
-
         }
 
 

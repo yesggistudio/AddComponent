@@ -201,13 +201,9 @@ MonoBehaviour:
   componentContent: {fileID: 6427190820968313042}
   componentUIDatas:
   - type: {fileID: 11400000, guid: 31df3438aa6e1b444b866316018b6964, type: 2}
-    componentButton: {fileID: 2513686187449923208, guid: 17e3f44ebc4b5a442b1420140c1993a5,
-      type: 3}
-    count: 3
+    count: 0
   - type: {fileID: 11400000, guid: 8ce150d1cb3d15a4387eb7605402f5d5, type: 2}
-    componentButton: {fileID: 1846187386181515602, guid: 5f02030c417fe0c458a9bac307f0c779,
-      type: 3}
-    count: 2
+    count: 0
 --- !u!1 &6427190820135197075
 GameObject:
   m_ObjectHideFlags: 0
@@ -404,7 +400,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00002670288, y: 169.54948}
+  m_AnchoredPosition: {x: 0.00002670288, y: 169.54947}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &6427190820968313043
@@ -870,7 +866,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6427190821790514955}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11400000, guid: d936bbccb95255340803cfbd6fde078b, type: 2}
+        m_MethodName: Raise
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2350018935706451063
 MonoBehaviour:
   m_ObjectHideFlags: 0

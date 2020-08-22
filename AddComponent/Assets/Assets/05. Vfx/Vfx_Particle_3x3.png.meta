@@ -1,22 +1,28 @@
 fileFormatVersion: 2
-guid: 4a3e0c2795e4ef8468e49db4b1e0d91f
+guid: f5cf50c33564e1240901f12c2cff4c6a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6011831654150911816
-    second: Vfx_Jump_0
+      213: -7699722443330119838
+    second: Vfx_Particle_0
   - first:
-      213: 4592664474525059800
-    second: Vfx_Jump_1
+      213: 4145601314308005158
+    second: Vfx_Particle_1
   - first:
-      213: -3655656887106427195
-    second: Vfx_Jump_2
+      213: 1586293068662142954
+    second: Vfx_Particle_2
   - first:
-      213: 5759575223351332887
-    second: Vfx_Jump_3
+      213: -4797470919515456830
+    second: Vfx_Particle_3
   - first:
-      213: 8706254457873698329
-    second: Vfx_Jump_4
+      213: 6283808452250559726
+    second: Vfx_Particle_4
+  - first:
+      213: 5549801923964308635
+    second: Vfx_Particle_5
+  - first:
+      213: -6707688141144847635
+    second: Vfx_Particle_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -55,7 +61,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -138,13 +144,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Vfx_Jump_0
+      name: Vfx_Particle_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 80
-        width: 80
-        height: 80
+        y: 24
+        width: 12
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b8c2ec66fea19ca0800000000000000
-      internalID: -6011831654150911816
+      spriteID: 26794309b37152590800000000000000
+      internalID: -7699722443330119838
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Vfx_Jump_1
+      name: Vfx_Particle_1
       rect:
         serializedVersion: 2
-        x: 80
-        y: 80
-        width: 80
-        height: 80
+        x: 12
+        y: 24
+        width: 12
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8da4f90b10c6cbf30800000000000000
-      internalID: 4592664474525059800
+      spriteID: 62d98b75e62288930800000000000000
+      internalID: 4145601314308005158
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Vfx_Jump_2
+      name: Vfx_Particle_2
       rect:
         serializedVersion: 2
-        x: 160
-        y: 80
-        width: 80
-        height: 80
+        x: 24
+        y: 24
+        width: 12
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,20 +200,83 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5c6af4ffd6f744dc0800000000000000
-      internalID: -3655656887106427195
+      spriteID: ae775433425a30610800000000000000
+      internalID: 1586293068662142954
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Vfx_Jump_3
+      name: Vfx_Particle_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 12
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cab306ed95fb6db0800000000000000
+      internalID: -4797470919515456830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vfx_Particle_4
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 12
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee4edf88e72943750800000000000000
+      internalID: 6283808452250559726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vfx_Particle_5
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 12
+        width: 12
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9c0cab127bd40d40800000000000000
+      internalID: 5549801923964308635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Vfx_Particle_6
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 80
-        height: 80
+        width: 12
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,29 +284,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7105ffc662f1eef40800000000000000
-      internalID: 5759575223351332887
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Vfx_Jump_4
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 0
-        width: 80
-        height: 80
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 91e09bd3d44d2d870800000000000000
-      internalID: 8706254457873698329
+      spriteID: dea06faac2189e2a0800000000000000
+      internalID: -6707688141144847635
       vertices: []
       indices: 
       edges: []
@@ -245,7 +293,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 22c348714de877a4b8c0b23096b3bf54
+    spriteID: b60afefc9f5349a4daa6525a85f784dd
     internalID: 0
     vertices: []
     indices: 

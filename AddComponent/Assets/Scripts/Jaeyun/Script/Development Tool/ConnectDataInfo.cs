@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using UnityEditor;
 using UnityEngine;
 
 namespace UnityTemplateProjects.Jaeyun.Script.Development_Tool
@@ -33,5 +35,38 @@ namespace UnityTemplateProjects.Jaeyun.Script.Development_Tool
         {
             return actors[index];
         }
+
+        public void SetUpAllInfos()
+        {
+            var allButtons = FindObjectsOfType<ComponentButton>();
+            componentButtons = allButtons.ToList();
+
+            var allActors = FindObjectsOfType<Actor.Actor>();
+            actors = allActors.ToList();
+        }
+        
     }
+    
+    
+    #if UNITY_EDITOR
+    [CustomEditor(typeof(ConnectDataInfo))]
+    public class ConnectDataInfoEditor : Editor
+    {
+        private ConnectDataInfo _connectDataInfo;
+
+        private void OnEnable()
+        {
+            _connectDataInfo = (ConnectDataInfo) target;
+        }
+
+        public override void OnInspectorGUI()
+        {
+            base.OnInspectorGUI();
+            if (GUILayout.Button("Set Up Data"))
+            {
+                _connectDataInfo.SetUpAllInfos();
+            }
+        }
+    } 
+    #endif
 }

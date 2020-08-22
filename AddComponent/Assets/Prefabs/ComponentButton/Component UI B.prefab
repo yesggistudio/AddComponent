@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 1846187386181515604}
   - component: {fileID: 1846187386181515605}
   - component: {fileID: 1846187386181515602}
+  - component: {fileID: 535191951726835419}
   m_Layer: 5
   m_Name: Component UI B
   m_TagString: Untagged
@@ -200,3 +201,30 @@ MonoBehaviour:
   componentType: {fileID: 11400000, guid: 8ce150d1cb3d15a4387eb7605402f5d5, type: 2}
   dragSprite: {fileID: 1428949386882206928, guid: 057e3562b8f0f5743b14ef802a9bad4a,
     type: 3}
+--- !u!114 &535191951726835419
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1846187386181515600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98cdbfc0625d46d5a537a689f3be2fd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 61dc35c9e2d6ea04296e8a76da281876, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1846187386181515602}
+        m_MethodName: SetInteractable
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
