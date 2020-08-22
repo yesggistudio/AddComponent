@@ -571,14 +571,23 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
 
         private void OnCollisionEnter2D(Collision2D collision)
         {
+            Debug.Log("!@#");
+
             if (IsDead())
                 return;
 
-            Enemy enemy = collision.gameObject.GetComponent<Enemy>();
-            if (enemy != null)
+
+            if(collision.gameObject.tag== "Enemy")
             {
-                TouchEnemy(enemy);
+                //여기서 닿아서 죽기.
+                Debug.Log("col");
+
+
+
             }
+
+
+
         }
 
         public static Actor GetNearest(Vector3 pos, float range = 99999f, bool alive_only = false)
