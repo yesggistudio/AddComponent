@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using UnityEditor.SceneManagement;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 namespace UnityTemplateProjects.Jaeyun.Script.Audio

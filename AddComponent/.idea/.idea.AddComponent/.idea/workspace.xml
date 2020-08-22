@@ -20,34 +20,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="02109610-2fc1-4c59-82d2-87514a86ad69" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/DeadPannel.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Level.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Level/Level 1.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Level/Level 1.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Level/Level 1.unity" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scenes/Level/Level 1.unity.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/GameEvent System/Event List/PlayerDead.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/GameEvent System/Event List/PlayerDead.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AddComponent/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AddComponent/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AddComponent/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AddComponent/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/00.Prefab/SeongBae.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/00.Prefab/SeongBae.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Indivisible/Lock.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Indivisible/Lock.prefab.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TEst.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TEst/Level 1.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TEst/Level 1.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TEst/Level 1.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TEst/Level 1.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TEst/Level 2.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TEst/Level 2.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TEst/Level 2.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TEst/Level 2.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Template.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Template.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/GameEvent System/OnCollisionEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/GameEvent System/OnTriggerEvent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/GameEvent System/OnCollisionEvent.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/GameEvent System/OnTriggerEvent.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Audio/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Audio/AudioManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Component/ComponentType.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Component/ComponentType.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/ComponentManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/ComponentManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/ConnectDataInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/ConnectDataInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Level/SetUpScene.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Level/SetUpScene.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/이예석/StateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/이예석/StateMachine.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/GraphicsSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,8 +60,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Editor/GenericPropertyDrawer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Editor/GenericSelectablePropertyDrawer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/Speaker Data/Editor/SpeakerDataPropertyDrawer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/Node &amp; Graph/SpeechGraph.cs" />
         <option value="$PROJECT_DIR$/Assets/Assets/xNode-1.8.0/Scripts/NodeDataCache.cs" />
@@ -91,7 +71,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/ComponentTypeA.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/ComponentTypeB.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Component/Editor/ComponentTypeDrawer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Component/ComponentType.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Level/LevelData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/JaeyunTest.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/ComponentButton.cs" />
@@ -102,8 +81,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/GameEvent/GameEventListener.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/StopButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Level/SetUpScene.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/ConnectDataInfo.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/ComponentManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/Drag.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/ColliderCheck.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/GameEvent System/GameEventListener.cs" />
@@ -112,7 +89,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/UI/Title.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/GameEvent System/Event List/MenuScene.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Level/Level.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Audio/AudioManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/GameEvent System/LoadMenuScene.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/DialogueWithImage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Component/MoveComponent.cs" />
@@ -129,6 +105,12 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Actor/Actor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/GameEvent System/OnTriggerEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/DeadPannel.cs" />
+        <option value="$PROJECT_DIR$/Assets/IndieMarc/Platformer2D/Scripts/Gameplay/PlayerControls.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Audio/AudioManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Component/ComponentType.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/이예석/StateMachine.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/ComponentManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/ConnectDataInfo.cs" />
       </list>
     </option>
   </component>
@@ -154,6 +136,14 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$USER_HOME$/Desktop/Add Component\AddComponent.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="C:\Users\정재윤\Desktop\Add Component" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
@@ -185,7 +175,7 @@
       <workItem from="1597982686904" duration="32525000" />
       <workItem from="1598062886959" duration="13336000" />
       <workItem from="1598083159368" duration="10331000" />
-      <workItem from="1598098396978" duration="13390000" />
+      <workItem from="1598098396978" duration="14893000" />
     </task>
     <servers />
   </component>
@@ -214,6 +204,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1597995551667" />
+    <state x="93" y="93" width="1350" height="638" key="VCS.FileHistoryDialog" timestamp="1598114081698">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="93" y="93" width="1350" height="638" key="VCS.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1598114081698" />
     <state x="372" y="10" width="792" height="804" key="find.popup" timestamp="1597995555234">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -222,9 +216,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1598094358215" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1598094866814">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1598114074591">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1598094866814" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1598114074591" />
   </component>
 </project>
