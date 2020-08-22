@@ -45,6 +45,7 @@ namespace UnityTemplateProjects.Jaeyun.Script.Development_Tool
         public void BeginDrag()
         {
             _actor?.RemoveDrag(this);
+            StopAllCoroutines();
 
             SetButtonAlpha(.6f);
 
@@ -77,8 +78,8 @@ namespace UnityTemplateProjects.Jaeyun.Script.Development_Tool
             {
                 SetButtonAlpha(1);
                 _actor.AddDrag(this);
-                SortUpperActorHead();
                 StopAllCoroutines();
+                SortUpperActorHead();
                 return true;
             }
             else
@@ -92,13 +93,23 @@ namespace UnityTemplateProjects.Jaeyun.Script.Development_Tool
         {
             _actor = actor;
             actor.AddDrag(this);
+            SetButtonAlpha(1);
             SortUpperActorHead();
         }
 
         public void SortUpperActorHead()
         {
-            var targetPos = _actor.GetComponentPos(this);
-            _rectTransform.position = _cam.WorldToScreenPoint(targetPos);
+            StartCoroutine(ChaseActorRoutine());
+        }
+
+        IEnumerator ChaseActorRoutine()
+        {
+            while (true)
+            {
+                var targetPos = _actor.GetDragPos(this);
+                _rectTransform.position = _cam.WorldToScreenPoint(targetPos);
+                yield return null;
+            }
         }
 
         IEnumerator ChaseMouse()
@@ -157,11 +168,10 @@ namespace UnityTemplateProjects.Jaeyun.Script.Development_Tool
                 else
                 {
                     
-                    var newActor = actor.GetComponent<Actor.Actor>();
-                    if (_actor != newActor)
+                    if (_actor != actor)
                     {
                         _actor?.DrawNormal();
-                        _actor = newActor;
+                        _actor = actor;
                         _actor.DrawOutline();
                     }
                     

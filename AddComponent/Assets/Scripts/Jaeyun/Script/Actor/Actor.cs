@@ -12,6 +12,8 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
         public bool isLocked;
 
         private List<Drag> _drags = new List<Drag>();
+        [SerializeField]
+        public List<IndivisibleComponent> indivisibleComponents;
         
 
         private Material _myMat;
@@ -540,14 +542,18 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
         public void DrawOutline()
         {
             _myMat.shader = _OutlineShader;
-            // if (isLocked)
-            // {
-            //     _myMat.SetColor(OutlineColor, Color.red * 2);
-            // }
-            // else
-            // {
+            
             _myMat.SetColor(OutlineColor, Color.cyan * 2);
-            //}
+        }
+
+        public void AddIndivisible(IndivisibleComponent indivisible)
+        {
+            indivisibleComponents.Add(indivisible);
+        }
+        
+        public void RemoveIndivisible(IndivisibleComponent indivisible)
+        {
+            indivisibleComponents.Remove(indivisible);
         }
 
         public void AddDrag(Drag drag)
@@ -569,39 +575,60 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
             }
         }
 
-        public Vector2 GetComponentPos(Drag drag)
+        public Vector2 GetDragPos(Drag drag)
         {
 
             var targetSprite = _spriteRenderer.sprite;
-            var croppedRect = GetCroppedRect();
+            var croppedRect = GetCroppedRect(targetSprite);
             
-            Rect GetCroppedRect()
-            {
-                var result = new Rect(targetSprite.textureRectOffset.x / targetSprite.pixelsPerUnit,
-                    targetSprite.textureRectOffset.y / targetSprite.pixelsPerUnit,
-                    targetSprite.textureRect.width / targetSprite.pixelsPerUnit,
-                    targetSprite.textureRect.height / targetSprite.pixelsPerUnit);
-
-                return result;
-            }
-
-            Vector2 GetSpriteOffset()
-            {
-                var result = new Vector2(_spriteRenderer.bounds.extents.x - croppedRect.center.x,
-                    -_spriteRenderer.bounds.extents.y + croppedRect.yMax);
-                return result;
-            }
-
-            var spriteOffset = GetSpriteOffset();
+            var spriteOffset = GetSpriteOffset(croppedRect, _spriteRenderer);
             
             var targetHead = transform.position + new Vector3(spriteOffset.x, spriteOffset.y ,0);
 
             var index = _drags.FindIndex(x => x == drag);
 
-            targetHead.y += + (index + 1 ) * .6f;
+            targetHead.y += + (indivisibleComponents.Count + index + 1 ) * .6f;
 
             return targetHead;
         }
+        
+        Rect GetCroppedRect(Sprite targetSprite)
+        {
+            var result = new Rect(targetSprite.textureRectOffset.x / targetSprite.pixelsPerUnit,
+                targetSprite.textureRectOffset.y / targetSprite.pixelsPerUnit,
+                targetSprite.textureRect.width / targetSprite.pixelsPerUnit,
+                targetSprite.textureRect.height / targetSprite.pixelsPerUnit);
+
+            return result;
+        }
+        
+                    
+        Vector2 GetSpriteOffset(Rect croppedRect, SpriteRenderer spriteRenderer)
+        {
+            var result = new Vector2(spriteRenderer.bounds.extents.x - croppedRect.center.x,
+                -spriteRenderer.bounds.extents.y + croppedRect.yMax);
+            return result;
+        }
+
+        public Vector2 GetIndivisiblePos(IndivisibleComponent indivisibleComponent)
+        {
+            var spriteRenderer = GetComponent<SpriteRenderer>();
+            
+            var targetSprite = spriteRenderer.sprite;
+            var croppedRect = GetCroppedRect(targetSprite);
+            
+            var spriteOffset = GetSpriteOffset(croppedRect, spriteRenderer);
+            
+            var index = indivisibleComponents.FindIndex(x => x == indivisibleComponent);
+            
+            var targetHead = transform.position + new Vector3(spriteOffset.x, spriteOffset.y ,0);
+            
+            targetHead.y += + (index + 1) * .6f;
+
+            return targetHead;
+        }
+        
+        
 
     }
 }
