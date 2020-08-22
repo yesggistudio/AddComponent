@@ -123,9 +123,11 @@ namespace UnityTemplateProjects.Jaeyun.Script.Development_Tool
                 return;
             }
             _indivisible.AttachToActor(_actor);
-            var so = new SerializedObject(_actor.gameObject);
-            so.ApplyModifiedProperties();
-            serializedObject.ApplyModifiedProperties();
+            
+            PrefabUtility.ApplyPrefabInstance(_indivisible.gameObject, InteractionMode.UserAction);
+            //PrefabUtility.ApplyPrefabInstance(_actor.gameObject, InteractionMode.UserAction);
+            AssetDatabase.SaveAssets();
+            AssetDatabase.Refresh();
         }
 
         void FindActor()

@@ -32,8 +32,15 @@ namespace UnityTemplateProjects.Jaeyun.Script.Development_Tool
             
         }
 
+        public void SetInteractable(bool value)
+        {
+            _button.interactable = value;
+        }
+
         public ComponentType GetComponentType()
         {
+            
+            
             return _componentButton.componentType;
         }
 
@@ -49,6 +56,7 @@ namespace UnityTemplateProjects.Jaeyun.Script.Development_Tool
 
         public void BeginDrag()
         {
+            if (!_button.interactable) return;
             _actor?.RemoveDrag(this);
             StopAllCoroutines();
 
@@ -67,6 +75,8 @@ namespace UnityTemplateProjects.Jaeyun.Script.Development_Tool
 
         public void EndDrag()
         {
+            if (!_button.interactable) return;
+            
             if (!Attach())
             {
                 _componentButton.DestroyDrag();

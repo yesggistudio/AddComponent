@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -40,17 +41,39 @@ namespace UnityTemplateProjects.Jaeyun.Script.Development_Tool
         }
         
         
-
-        [ContextMenu("Make components")]
-        private void MakeComponents()
+        public void MakeComponents()
         {
+            var allbuttons = FindObjectsOfType<ComponentButton>();
+
+            foreach (ComponentButton button in allbuttons)
+            {
+                DestroyImmediate(button.gameObject);
+            }
+            
             foreach (var componentUIData in componentUIDatas)
             {
                 for (int i = 0; i < componentUIData.count; i++)
                 {
-                    Instantiate(componentUIData.type.buttonPrefab, componentContent.transform);
+                    PrefabUtility.InstantiatePrefab(componentUIData.type.buttonPrefab, componentContent.transform);
                 }
             }
         }
     }
+    
+    #if UNITY_EDITOR
+    [CustomEditor(typeof(ComponentManager))]
+    public class ComponentManagerEditor : Editor
+    {
+        public override void OnInspectorGUI()
+        {
+            base.OnInspectorGUI();
+            if (GUILayout.Button("Make Buttons"))
+            {
+                var manager = (ComponentManager) target;
+                manager.MakeComponents();
+            }
+        }
+    }
+    #endif
+    
 }

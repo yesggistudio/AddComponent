@@ -366,6 +366,7 @@
               <e p="Audio" t="Include">
                 <e p="AudioManager.cs" t="Include" />
               </e>
+              <e p="ColliderCheck.cs" t="Include" />
               <e p="Component" t="Include">
                 <e p="ComponentType.cs" t="Include" />
                 <e p="ComponentTypeA.cs" t="Include" />
@@ -381,7 +382,6 @@
                 <e p="ConnectDataInfo.cs" t="Include" />
                 <e p="Drag.cs" t="Include" />
                 <e p="IndivisibleComponent.cs" t="Include" />
-                <e p="StopButton.cs" t="Include" />
               </e>
               <e p="Dialogue" t="Include">
                 <e p="Node &amp; Graph" t="Include">
@@ -404,11 +404,16 @@
               <e p="Editor" t="Include">
                 <e p="GenericSelectablePropertyDrawer.cs" t="Include" />
               </e>
+              <e p="GameEvent System" t="Include">
+                <e p="GameEvent.cs" t="Include" />
+                <e p="GameEventListener.cs" t="Include" />
+              </e>
               <e p="Level" t="Include">
                 <e p="ConnectDataSave.cs" t="Include" />
                 <e p="Level.cs" t="Include" />
                 <e p="LevelData.cs" t="Include" />
                 <e p="LevelManager.cs" t="Include" />
+                <e p="SetUpScene.cs" t="Include" />
               </e>
               <e p="UI" t="Include">
                 <e p="UICanvas.cs" t="Include" />
