@@ -20,10 +20,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="02109610-2fc1-4c59-82d2-87514a86ad69" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/05. Vfx/Vfx_Jump_3x2.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/05. Vfx/Vfx_Jump_3x2.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/05. Vfx/Vfx_Jump_3x2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/05. Vfx/Vfx_Jump_3x2.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/05. Vfx/Vfx_Jump_3x2.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/05. Vfx/Vfx_Jump_3x2.prefab.meta" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/Assets/05. Vfx/Vfx_Particle_3x3.mat" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/Assets/05. Vfx/Vfx_Particle_3x3.mat.meta" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/Assets/05. Vfx/Vfx_Particle_3x3.png" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/Assets/05. Vfx/Vfx_Particle_3x3.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/05. Vfx/Vfx_Particle_3x3.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Assets/05. Vfx/Vfx_Particle_3x3.prefab.meta" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity.meta" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/Assets/Scenes/TEst.meta" afterDir="false" />
@@ -57,6 +65,8 @@
       <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Level/SetUpScene.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AddComponent/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AddComponent/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AddComponent/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AddComponent/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/05. Vfx/Vfx_Jump.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/05. Vfx/Vfx_Jump.png.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Assets/05. Vfx/Vfx_Particle.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Assets/05. Vfx/Vfx_Particle.png.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/ComponentButton/Component UI A.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/ComponentButton/Component UI A.prefab" afterDir="false" />
@@ -202,7 +212,7 @@
       <workItem from="1597974374059" duration="6975000" />
       <workItem from="1597982686904" duration="32525000" />
       <workItem from="1598062886959" duration="13336000" />
-      <workItem from="1598083159368" duration="6609000" />
+      <workItem from="1598083159368" duration="6919000" />
     </task>
     <servers />
   </component>
