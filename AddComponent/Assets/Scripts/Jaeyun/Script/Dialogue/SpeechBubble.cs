@@ -13,6 +13,10 @@ namespace UnityTemplateProjects.Jaeyun.Script.Dialogue
         public Image portrait;
         public TextMeshProUGUI _textMeshPro;
 
+        public float textEndDelay;
+
+        public Vector2 offset;
+
         private bool _isFirst = true;
 
         private SpeechNode _node;
@@ -43,8 +47,12 @@ namespace UnityTemplateProjects.Jaeyun.Script.Dialogue
             var rightPos = new Vector2(pixelRect.x / 2 + rectTransform.sizeDelta.x * 2,
                 -pixelRect.y / 2 + rectTransform.sizeDelta.y * .6f);
             
+            rightPos.y += offset.y;
+            
+            
             var leftPos = new Vector2(pixelRect.x /2 - rectTransform.sizeDelta.x,
                 rightPos.y);
+            leftPos += offset;
 
             float timeCount = 0;
             while (true)
@@ -117,7 +125,8 @@ namespace UnityTemplateProjects.Jaeyun.Script.Dialogue
 
             }
 
-            StartCoroutine(WaitInput(callback));
+            yield return new WaitForSeconds(textEndDelay);
+            callback?.Invoke();
 
         }
 
@@ -147,7 +156,7 @@ namespace UnityTemplateProjects.Jaeyun.Script.Dialogue
                 yield return null;
             }
             
-            callback?.Invoke();
+            
         }
 
         public void CloseSpeech(Action callback)
