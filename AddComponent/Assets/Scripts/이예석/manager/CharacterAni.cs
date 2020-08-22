@@ -22,7 +22,6 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
 
             character.onJump += OnJump;
             character.onDeath += OnDeath;
-            character.onClimb += OnClimb;
         }
 
 
@@ -33,7 +32,6 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
             animator.SetBool("Jumping", character.IsJumping());
             animator.SetBool("InAir", !character.IsGrounded());
             animator.SetFloat("Speed", character.GetMove().magnitude);
-            animator.SetBool("Climb", character.IsClimbing());
 
             //Hit flashing
             render.color = new Color(render.color.r, render.color.g, render.color.b, 1f);
@@ -45,11 +43,6 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
             }
         }
 
-        void OnClimb()
-        {
-            animator.SetTrigger("ChangeState");
-            animator.SetBool("Climb", true);
-        }
 
 
         void OnJump()

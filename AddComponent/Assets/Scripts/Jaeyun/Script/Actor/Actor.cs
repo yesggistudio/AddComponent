@@ -114,7 +114,10 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
 
         private void Start()
         {
-
+            for (int i = 0; i < 4; i++)
+            {
+                _canComAbility[i] = false;
+            }
             EventManager.Instance.AddListener(EVENT_TYPE.GameOver, this);
         }
 
@@ -155,7 +158,6 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
                 var componentType = indivisibleComponent.GetComponentType();
                 CheckComponent(componentType);
             }
-            
         }
 
         private void CheckComponent(ComponentType componentType)
@@ -229,7 +231,6 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
             }
 
 
-
             if (state == PlayerCharacterState.Dead)
             {
                 move.x = 0f;
@@ -243,8 +244,6 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
         //Handle render and controls
         void Update()
         {
-            if (TheGame.IsGamePaused())
-                return;
 
             hit_timer += Time.deltaTime;
             state_timer += Time.deltaTime;
@@ -257,11 +256,6 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
             {
                 if (controls.GetJumpDown())
                     Jump();
-
-                Ladder ladder = Ladder.GetOverlapLadder(gameObject);
-                if (ladder && controls.GetMove().y > 0.1f && state_timer > 0.7f)
-                    Climb();
-
 
             }
 
@@ -377,14 +371,7 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
             }
         }
 
-        public void Climb()
-        {
-            state = PlayerCharacterState.Climb;
-            state_timer = 0f;
 
-            if (onClimb != null)
-                onClimb.Invoke();
-        }
 
         private void CheckForFloorTrigger()
         {
@@ -498,9 +485,6 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
             last_ground_pos = pos;
         }
 
-
-
-
         public void Kill()
         {
             if (!IsDead())
@@ -543,10 +527,7 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
 
 
 
-        public bool IsClimbing()
-        {
-            return state == PlayerCharacterState.Climb;
-        }
+
 
 
 
@@ -580,7 +561,7 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
             if (diff.y > 0f)
             {
                 Jump(true); //Bounce on enemy
-                enemy.Kill(); //Kill enemy
+               // enemy.Kill(); //Kill enemy
             }
             else
             {
