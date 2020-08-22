@@ -14,15 +14,35 @@ public class DeadPannel : MonoBehaviour
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
     }
-    //
-    // public void DoDead()
-    // {
-    //     DeadRoutine();
-    // }
-    //
-    // IEnumerator DeadRoutine()
-    // {
-    //     
-    // }
+    
+    [ContextMenu("Test")]
+    public void DoDead()
+    {
+        StartCoroutine(DeadRoutine());
+    }
+    
+    IEnumerator DeadRoutine()
+    {
+        yield return StartCoroutine(ColorChange(Color.black, .06f));
+        yield return StartCoroutine(ColorChange(Color.white,.06f));
+        yield return StartCoroutine(ColorChange(Color.black, .1f));
+        gameEvent.Raise();
+    }
+
+    IEnumerator ColorChange(Color color, float duration)
+    {
+        var currentColor = _spriteRenderer.color;
+        
+        float timeCount = 0;
+        while (true)
+        {
+            var t = Mathf.Clamp01(timeCount / duration);
+            var lerpColor = Color.Lerp(currentColor, color, t);
+            _spriteRenderer.color = lerpColor;
+            timeCount += Time.deltaTime;
+            if (t >= 1) break;
+            yield return null;
+        }
+    }
     
 }
