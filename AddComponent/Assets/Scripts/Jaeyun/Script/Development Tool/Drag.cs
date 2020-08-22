@@ -45,9 +45,18 @@ namespace UnityTemplateProjects.Jaeyun.Script.Development_Tool
         public void BeginDrag()
         {
             _actor?.RemoveDrag(this);
-            
+
+            SetButtonAlpha(.6f);
+
             StartCoroutine(ChaseMouse());
             StartCoroutine(CheckActor());
+        }
+
+        private void SetButtonAlpha(float alpha)
+        {
+            var c0 = _button.image.color;
+            c0.a = alpha;
+            _button.image.color = c0;
         }
 
         public void EndDrag()
@@ -66,6 +75,7 @@ namespace UnityTemplateProjects.Jaeyun.Script.Development_Tool
             
             if (_actor != null && !_actor.isLocked)
             {
+                SetButtonAlpha(1);
                 _actor.AddDrag(this);
                 SortUpperActorHead();
                 StopAllCoroutines();
@@ -140,6 +150,8 @@ namespace UnityTemplateProjects.Jaeyun.Script.Development_Tool
                         _actor.DrawNormal();
                         _actor = null;
                     }
+                    _button.image.color = Color.white;
+                    SetButtonAlpha(.6f);
                 }
                 
                 else
@@ -150,7 +162,17 @@ namespace UnityTemplateProjects.Jaeyun.Script.Development_Tool
                     {
                         _actor?.DrawNormal();
                         _actor = newActor;
-                        _actor.DrawOutline(); 
+                        _actor.DrawOutline();
+                    }
+                    
+                    if (_actor.isLocked)
+                    {
+                        _button.image.color *= Color.red;
+                    }
+                    else
+                    {
+                        _button.image.color = Color.white;
+                        SetButtonAlpha(.6f);
                     }
                        
                 }

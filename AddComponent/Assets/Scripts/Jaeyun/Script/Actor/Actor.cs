@@ -77,12 +77,15 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
 
         private static List<Actor> character_list = new List<Actor>();
 
+        private SpriteRenderer _spriteRenderer;
+
         void Awake()
         {
 
             _myMat = GetComponent<SpriteRenderer>().material;
             _defaultShader = Shader.Find("Custom/2D Sprite");
             _OutlineShader = Shader.Find("Shader Graphs/2D DrawOutline");
+            _spriteRenderer = GetComponent<SpriteRenderer>();
 
             character_list.Add(this);
             rigid = GetComponent<Rigidbody2D>();
@@ -469,7 +472,7 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
             }
             else
             {
-              //  TakeDamage(enemy.damage);
+                //  TakeDamage(enemy.damage);
             }
         }
 
@@ -537,14 +540,14 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
         public void DrawOutline()
         {
             _myMat.shader = _OutlineShader;
-            if (isLocked)
-            {
-                _myMat.SetColor(OutlineColor, Color.magenta);
-            }
-            else
-            {
-                _myMat.SetColor(OutlineColor, Color.cyan);
-            }
+            // if (isLocked)
+            // {
+            //     _myMat.SetColor(OutlineColor, Color.red * 2);
+            // }
+            // else
+            // {
+            _myMat.SetColor(OutlineColor, Color.cyan * 2);
+            //}
         }
 
         public void AddDrag(Drag drag)
@@ -568,13 +571,36 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
 
         public Vector2 GetComponentPos(Drag drag)
         {
-            var result = transform.position;
+
+            var targetSprite = _spriteRenderer.sprite;
+            var croppedRect = GetCroppedRect();
+            
+            Rect GetCroppedRect()
+            {
+                var result = new Rect(targetSprite.textureRectOffset.x / targetSprite.pixelsPerUnit,
+                    targetSprite.textureRectOffset.y / targetSprite.pixelsPerUnit,
+                    targetSprite.textureRect.width / targetSprite.pixelsPerUnit,
+                    targetSprite.textureRect.height / targetSprite.pixelsPerUnit);
+
+                return result;
+            }
+
+            Vector2 GetSpriteOffset()
+            {
+                var result = new Vector2(_spriteRenderer.bounds.extents.x - croppedRect.center.x,
+                    -_spriteRenderer.bounds.extents.y + croppedRect.yMax);
+                return result;
+            }
+
+            var spriteOffset = GetSpriteOffset();
+            
+            var targetHead = transform.position + new Vector3(spriteOffset.x, spriteOffset.y ,0);
 
             var index = _drags.FindIndex(x => x == drag);
 
-            result.y += + (index + 1) * .6f;
+            targetHead.y += + (index + 1 ) * .6f;
 
-            return result;
+            return targetHead;
         }
 
     }

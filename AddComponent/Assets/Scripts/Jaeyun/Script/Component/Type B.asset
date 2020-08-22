@@ -12,3 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6beb1474c7e744929155a65ac51bb50a, type: 3}
   m_Name: Type B
   m_EditorClassIdentifier: 
+  buttonPrefab: {fileID: 1846187386181515602, guid: 5f02030c417fe0c458a9bac307f0c779,
+    type: 3}

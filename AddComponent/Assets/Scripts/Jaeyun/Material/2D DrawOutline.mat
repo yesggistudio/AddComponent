@@ -29,7 +29,8 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - OutlineTickness: 0.0395
+    - OutlineTickness: 1
     - _AlphaClipTreshold: 0.01
     m_Colors:
     - OutlineColor: {r: 1, g: 0, b: 0.010215759, a: 0}
+    - _OutlineColor: {r: 0, g: 1, b: 0.9293938, a: 0}

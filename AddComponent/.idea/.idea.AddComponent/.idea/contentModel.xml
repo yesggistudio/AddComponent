@@ -376,11 +376,11 @@
                 </e>
               </e>
               <e p="Development Tool" t="Include">
-                <e p="Belonging.cs" t="Include" />
                 <e p="ComponentButton.cs" t="Include" />
                 <e p="ComponentManager.cs" t="Include" />
                 <e p="ConnectDataInfo.cs" t="Include" />
                 <e p="Drag.cs" t="Include" />
+                <e p="IndivisibleComponent.cs" t="Include" />
                 <e p="StopButton.cs" t="Include" />
               </e>
               <e p="Dialogue" t="Include">
@@ -423,6 +423,7 @@
             <e p="CharacterMovement.cs" t="Include" />
             <e p="CharacterStates.cs" t="Include" />
             <e p="manager" t="Include">
+              <e p="CharacterAni.cs" t="Include" />
               <e p="ControlManager.cs" t="Include" />
             </e>
             <e p="StateMachine.cs" t="Include" />
