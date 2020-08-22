@@ -10,6 +10,7 @@ namespace UnityTemplateProjects.Jaeyun.Script.Dialogue
     public class SpeechBubble : MonoBehaviour
     {
 
+        
         public Image bubbleBox;
         public Image portrait;
         public TextMeshProUGUI _textMeshPro;
@@ -71,6 +72,8 @@ namespace UnityTemplateProjects.Jaeyun.Script.Dialogue
             {
                 yield return new WaitForSeconds(.3f);
             }
+
+            text = text.Replace("\\n", "\n");
 
             var sb = new StringBuilder();
 

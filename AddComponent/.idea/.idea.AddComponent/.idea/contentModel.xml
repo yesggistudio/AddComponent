@@ -385,6 +385,7 @@
                 <e p="IndivisibleComponent.cs" t="Include" />
               </e>
               <e p="Dialogue" t="Include">
+                <e p="DialogueWithImage.cs" t="Include" />
                 <e p="Node &amp; Graph" t="Include">
                   <e p="Editor" t="Include">
                     <e p="SpeechGraphEditor.cs" t="Include" />
@@ -406,8 +407,12 @@
                 <e p="GenericSelectablePropertyDrawer.cs" t="Include" />
               </e>
               <e p="GameEvent System" t="Include">
+                <e p="Event List" t="Include">
+                  <e p="MenuScene.cs" t="Include" />
+                </e>
                 <e p="GameEvent.cs" t="Include" />
                 <e p="GameEventListener.cs" t="Include" />
+                <e p="LoadMenuScene.cs" t="Include" />
               </e>
               <e p="Level" t="Include">
                 <e p="ConnectDataSave.cs" t="Include" />
@@ -417,6 +422,7 @@
                 <e p="SetUpScene.cs" t="Include" />
               </e>
               <e p="UI" t="Include">
+                <e p="Title.cs" t="Include" />
                 <e p="UICanvas.cs" t="Include" />
               </e>
             </e>
