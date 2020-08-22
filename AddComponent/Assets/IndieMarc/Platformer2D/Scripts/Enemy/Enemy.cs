@@ -40,6 +40,8 @@ namespace IndieMarc.Platformer
 
         private static List<Enemy> enemy_list = new List<Enemy>();
 
+        public ParticleSystem DeathParticle;
+
         private void Awake()
         {
             enemy_list.Add(this);
@@ -66,9 +68,21 @@ namespace IndieMarc.Platformer
 
         void Start()
         {
-            
+
+
+           // StartCoroutine(DeathCoroutine(3f));
+
+
         }
 
+
+        IEnumerator DeathCoroutine(float t)
+        {
+            //여기서 t를 입력 받아야함.
+            yield return new WaitForSeconds(t);
+            DeathParticle.Play();
+            Kill();
+        }
         private void FixedUpdate()
         {
             if (TheGame.IsGamePaused())
@@ -83,16 +97,16 @@ namespace IndieMarc.Platformer
             bool grounded = DetectObstacle(Vector3.down);
 
             if (fall_speed > 0.1f && !flying)
-			{
-				if (grounded)
-					fall_value = 0f;
-				else
-					fall_value += fall_accel * Time.deltaTime;
-				fall_value = Mathf.Clamp(fall_value, 0f, fall_speed);
-				move_vect.y = -fall_value;
-			}
-			
-			rigid.velocity = move_vect;
+            {
+                if (grounded)
+                    fall_value = 0f;
+                else
+                    fall_value += fall_accel * Time.deltaTime;
+                fall_value = Mathf.Clamp(fall_value, 0f, fall_speed);
+                move_vect.y = -fall_value;
+            }
+
+            rigid.velocity = move_vect;
         }
 
         private void Update()
@@ -113,7 +127,7 @@ namespace IndieMarc.Platformer
                 float side = (dir.x < 0f) ? -1f : 1f;
                 transform.localScale = new Vector3(Mathf.Abs(start_scale.x) * side, start_scale.y, start_scale.z);
             }
-            
+
             //Vision angle
             if (dir.magnitude > 0.1f)
             {
@@ -175,7 +189,7 @@ namespace IndieMarc.Platformer
 
         public bool CheckFronted(Vector3 dir)
         {
-            return RaycastObstacle(transform.position, dir);
+            return RaycastObstacle(transform.position, dir*2f);
         }
 
         public Vector2 GetSize()
@@ -198,7 +212,7 @@ namespace IndieMarc.Platformer
             current_rot_target = pos;
             current_rot_mult = speed_mult;
         }
-        
+
         public void Kill()
         {
             dead = true;
@@ -206,9 +220,10 @@ namespace IndieMarc.Platformer
             if (onDeath != null)
                 onDeath.Invoke();
 
-            Destroy(gameObject, 4f);
+
+            Destroy(gameObject, 0.5f);
         }
-        
+
         public Vector3 GetMove()
         {
             return move_vect;
@@ -238,7 +253,7 @@ namespace IndieMarc.Platformer
         {
             return dead;
         }
-        
+
         public static Enemy GetNearest(Vector3 pos, float range = 999f)
         {
             float min_dist = range;
@@ -254,7 +269,7 @@ namespace IndieMarc.Platformer
             }
             return nearest;
         }
-        
+
         public static List<Enemy> GetAll()
         {
             return enemy_list;
