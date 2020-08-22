@@ -118,7 +118,7 @@ namespace UnityTemplateProjects.Jaeyun.Script.Development_Tool
                 return;
             }
             _indivisible.AttachToActor(_actor);
-            var so = new SerializedObject(_actor);
+            var so = new SerializedObject(_actor.gameObject);
             so.ApplyModifiedProperties();
             serializedObject.ApplyModifiedProperties();
         }
