@@ -1,5 +1,6 @@
 ﻿using IndieMarc.Platformer;
 using System.Collections.Generic;
+using Jaeyun.Script.GameEvent_System;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityTemplateProjects.Jaeyun.Script.Development_Tool;
@@ -14,7 +15,8 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
         private List<Drag> _drags = new List<Drag>();
         [SerializeField]
         public List<IndivisibleComponent> indivisibleComponents;
-        
+
+        public float buttonHeight = 1;
 
         private Material _myMat;
 
@@ -669,7 +671,7 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
 
             var index = _drags.FindIndex(x => x == drag);
 
-            targetHead.y += + (indivisibleComponents.Count + index + 1 );
+            targetHead.y += + (indivisibleComponents.Count + index + 1 ) * buttonHeight;
 
             return targetHead;
         }
@@ -705,7 +707,7 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
             
             var targetHead = transform.position + new Vector3(spriteOffset.x, spriteOffset.y ,0);
             
-            targetHead.y += + (index + 1);
+            targetHead.y += + (index + 1) * buttonHeight;
 
             return targetHead;
         }

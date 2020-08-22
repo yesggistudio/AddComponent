@@ -48,6 +48,7 @@ GameObject:
   - component: {fileID: 6806737256532865434}
   - component: {fileID: 4437712221637910659}
   - component: {fileID: 2816634501676665192}
+  - component: {fileID: 2079837271279966931}
   m_Layer: 0
   m_Name: CharacterPlatformer
   m_TagString: Player
@@ -191,6 +192,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isLocked: 0
   indivisibleComponents: []
+  buttonHeight: 1
   player_id: 0
   move_accel: 25
   move_deccel: 30
@@ -279,6 +281,33 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 7400000, guid: da5293bf6231de2409e4676c5709f3d8,
             type: 2}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AnimationClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &2079837271279966931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6806737256532865432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98cdbfc0625d46d5a537a689f3be2fd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 61dc35c9e2d6ea04296e8a76da281876, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 6806737256532865433}
+        m_MethodName: GameStartSetting
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
