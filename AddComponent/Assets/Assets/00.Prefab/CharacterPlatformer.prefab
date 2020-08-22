@@ -190,16 +190,16 @@ MonoBehaviour:
   isLocked: 0
   indivisibleComponents: []
   player_id: 0
-  move_accel: 15
-  move_deccel: 20
-  move_max: 4
+  move_accel: 25
+  move_deccel: 30
+  move_max: 6
   can_jump: 1
   double_jump: 0
-  jump_strength: 7
-  jump_time_min: 0.25
-  jump_time_max: 0.5
+  jump_strength: 10
+  jump_time_min: 0.08
+  jump_time_max: 0.15
   jump_gravity: 5
-  jump_fall_gravity: 20
+  jump_fall_gravity: 30
   jump_move_percent: 0.75
   raycast_mask:
     serializedVersion: 2
