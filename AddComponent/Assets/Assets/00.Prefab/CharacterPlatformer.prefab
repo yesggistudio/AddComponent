@@ -278,7 +278,7 @@ MonoBehaviour:
         m_MethodName: PlayAnimationClip
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 7400000, guid: da5293bf6231de2409e4676c5709f3d8,
+          m_ObjectArgument: {fileID: 7400000, guid: 0060978febc4b3640aa8ffd507717d58,
             type: 2}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.AnimationClip, UnityEngine
           m_IntArgument: 0

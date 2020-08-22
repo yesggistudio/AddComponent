@@ -565,8 +565,8 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
             {
                 //여기서 닿아서 죽기.
                 Debug.Log("col");
-
-
+                var deadPannel = FindObjectOfType<DeadPannel>();
+                deadPannel.DoDead();
 
             }
 
