@@ -15,7 +15,7 @@ public class OnTriggerSpeak : MonoBehaviour
             var speechManager = FindObjectOfType<SpeechManager>();
             speechManager.SetSpeechGraph(graph);
             speechManager.PlaySpeech(null);
-            Destroy(this);
+            Destroy(gameObject);
         }
     }
 }

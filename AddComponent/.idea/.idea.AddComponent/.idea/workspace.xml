@@ -21,7 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="02109610-2fc1-4c59-82d2-87514a86ad69" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AddComponent/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AddComponent/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Level/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Level/LevelManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/GameEvent System/OnTriggerSpeak.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/GameEvent System/OnTriggerSpeak.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,10 +100,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/SpeechBubble.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Shader/2D Sprite.shader" />
         <option value="$PROJECT_DIR$/Assets/DeadPannel.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/GameEvent System/OnTriggerSpeak.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/SpeechManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Actor/Actor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Level/LevelManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/GameEvent System/OnTriggerSpeak.cs" />
       </list>
     </option>
   </component>
@@ -168,7 +168,7 @@
       <workItem from="1597982686904" duration="32525000" />
       <workItem from="1598062886959" duration="13336000" />
       <workItem from="1598083159368" duration="10331000" />
-      <workItem from="1598098396978" duration="23078000" />
+      <workItem from="1598098396978" duration="23471000" />
     </task>
     <servers />
   </component>
