@@ -6,7 +6,7 @@ using UnityTemplateProjects.Jaeyun.Script.Development_Tool;
 
 namespace UnityTemplateProjects.Jaeyun.Script.Actor
 {
-    public class Actor : MonoBehaviour
+    public class Actor : MonoBehaviour,IListener
     {
 
         public bool isLocked;
@@ -81,8 +81,14 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
 
         private SpriteRenderer _spriteRenderer;
 
+        public bool[] _canComAbility = new bool[4];
+
+
+
+
         void Awake()
         {
+
 
             _myMat = GetComponent<SpriteRenderer>().material;
             _defaultShader = Shader.Find("Custom/2D Sprite");
@@ -105,6 +111,80 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
 
         }
 
+
+        private void Start()
+        {
+            EventManager.Instance.AddListener(EVENT_TYPE.Move, this);
+            EventManager.Instance.AddListener(EVENT_TYPE.Jump, this);
+            EventManager.Instance.AddListener(EVENT_TYPE.Destroy, this);
+            EventManager.Instance.AddListener(EVENT_TYPE.GameOver, this);
+        }
+
+        public void OnEvent(EVENT_TYPE eventType, Component sender, Object param = null)
+        {
+            switch (eventType)
+            {
+                case EVENT_TYPE.Move:
+
+                    _canComAbility[0] = true;
+
+
+                    break;
+                case EVENT_TYPE.Jump:
+                    _canComAbility[1] = true;
+
+                    break;
+                case EVENT_TYPE.Destroy:
+                    _canComAbility[2] = true;
+
+                    break;
+                case EVENT_TYPE.GameOver:
+
+                    // 마지막 대사 이벤트 실행
+                    _canComAbility[3] = true;
+
+                    break;
+                default:
+                    break;
+
+            }
+        }
+
+        public void GameStartSetting()
+        {
+
+            for (int i = 0; i < 4; i++)
+            {
+                Debug.Log(i);
+                _canComAbility[i] = false;
+            }
+
+
+            if (_drags[0].GetComponentType().GetType() == typeof(ComponentTypeA))
+            {
+                EventManager.Instance.EventPost(EVENT_TYPE.Move);
+            }
+
+            if (_drags[1].GetComponentType().GetType() == typeof(ComponentTypeB))
+            {
+                EventManager.Instance.EventPost(EVENT_TYPE.Jump);
+            }
+
+            if (_drags[2].GetComponentType().GetType() == typeof(ComponentTypeC))
+            {
+                EventManager.Instance.EventPost(EVENT_TYPE.Destroy);
+            }
+
+            if (_drags[3].GetComponentType().GetType() == typeof(ComponentTypeD))
+            {
+                EventManager.Instance.EventPost(EVENT_TYPE.GameOver);
+            }
+
+        }
+
+
+
+
         void OnDestroy()
         {
             character_list.Remove(this);
@@ -120,16 +200,16 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
 
             PlayerControls controls = PlayerControls.Get(player_id);
 
+
+            UpdateMove();
+
             //Movement velocity
-            Vector3 move_input = controls.GetMove();
-            float desiredSpeed = Mathf.Abs(move_input.x) > 0.1f ? move_input.x * move_max : 0f;
-            float acceleration = Mathf.Abs(move_input.x) > 0.1f ? move_accel : move_deccel;
-            acceleration = !is_grounded ? jump_move_percent * acceleration : acceleration;
-            move.x = Mathf.MoveTowards(move.x, desiredSpeed, acceleration * Time.fixedDeltaTime);
+
 
             was_grounded = is_grounded;
             is_grounded = DetectObstacle(Vector3.down);
             is_fronted = IsFronted();
+
 
             if (state == PlayerCharacterState.Normal)
             {
@@ -137,17 +217,15 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
                 UpdateJump();
 
                 //Move
-                move.x = is_fronted ? 0f : move.x;
-                rigid.velocity = move;
 
-                CheckForFloorTrigger();
+                    move.x = is_fronted ? 0f : move.x;
+                    rigid.velocity = move;
+
+                    CheckForFloorTrigger();
+                
             }
 
-            if (state == PlayerCharacterState.Climb)
-            {
-                move = controls.GetMove() * climb_speed;
-                rigid.velocity = move;
-            }
+
 
             if (state == PlayerCharacterState.Dead)
             {
@@ -155,6 +233,8 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
                 UpdateJump(); //Keep falling
                 rigid.velocity = move;
             }
+
+
         }
 
         //Handle render and controls
@@ -202,6 +282,12 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
 
         private void UpdateFacing()
         {
+            if (!_canComAbility[0])
+            {
+                return;
+            }
+
+
             if (Mathf.Abs(move.x) > 0.01f)
             {
                 float side = (move.x < 0f) ? -1f : 1f;
@@ -209,8 +295,28 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
             }
         }
 
+        private void UpdateMove()
+        {
+            if (!_canComAbility[0])
+            {
+                return;
+            }
+            PlayerControls controls = PlayerControls.Get(player_id);
+            Vector3 move_input = controls.GetMove();
+            float desiredSpeed = Mathf.Abs(move_input.x) > 0.1f ? move_input.x * move_max : 0f;
+            float acceleration = Mathf.Abs(move_input.x) > 0.1f ? move_accel : move_deccel;
+            acceleration = !is_grounded ? jump_move_percent * acceleration : acceleration;
+            move.x = Mathf.MoveTowards(move.x, desiredSpeed, acceleration * Time.fixedDeltaTime);
+
+        }
+
+
         private void UpdateJump()
         {
+
+
+
+
             PlayerControls controls = PlayerControls.Get(player_id);
 
             //Jump
@@ -251,6 +357,11 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
 
         public void Jump(bool force_jump = false)
         {
+            if (!_canComAbility[1])
+            {
+                return;
+            }
+
             if (can_jump && (!force_jump))
             {
                 if (is_grounded || force_jump || (!is_double_jump && double_jump))
