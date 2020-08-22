@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -35,7 +34,7 @@ public class EventManager : MonoBehaviour
 		Listeners.Add(eventType, ListenList);
 	}
 
-	public void EventPost(EVENT_TYPE eventType, Component sender, UnityEngine.Object param = null)
+	public void EventPost(EVENT_TYPE eventType, Component sender, Object param = null)
 	{
 		List<IListener> ListenList = null;
 		if (!Listeners.TryGetValue(eventType, out ListenList))
@@ -68,8 +67,4 @@ public class EventManager : MonoBehaviour
 		Listeners = tempListeners;
 	}
 
-    internal void EventPost(EVENT_TYPE move)
-    {
-        throw new NotImplementedException();
-    }
 }

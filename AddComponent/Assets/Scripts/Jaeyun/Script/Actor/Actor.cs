@@ -179,25 +179,25 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
             
             if (typeOfComponent == typeof(ComponentTypeA))
             {
-                EventManager.Instance.EventPost(EVENT_TYPE.Move);
+                EventManager.Instance.EventPost(EVENT_TYPE.Move,this);
                 return;
             }
 
             if (typeOfComponent == typeof(ComponentTypeB))
             {
-                EventManager.Instance.EventPost(EVENT_TYPE.Jump);
+                EventManager.Instance.EventPost(EVENT_TYPE.Jump,this);
                 return;
             }
 
             if (typeOfComponent == typeof(ComponentTypeC))
             {
-                EventManager.Instance.EventPost(EVENT_TYPE.Destroy);
+                EventManager.Instance.EventPost(EVENT_TYPE.Destroy,this);
                 return;
             }
 
             if (typeOfComponent == typeof(ComponentTypeD))
             {
-                EventManager.Instance.EventPost(EVENT_TYPE.GameOver);
+                EventManager.Instance.EventPost(EVENT_TYPE.GameOver,this);
                 return;
             }
         }
