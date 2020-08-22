@@ -20,24 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="02109610-2fc1-4c59-82d2-87514a86ad69" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Scripts.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Scripts/Opening Dialogue.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Scripts/Opening Dialogue.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Scripts/Opening Talk.asset" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Scripts/Opening Talk.asset.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/Dummy.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AddComponent/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AddComponent/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Levels/Development Tool Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Levels/Development Tool Canvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu Scene.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu Scene.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Menu Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Menu Scene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TEst/Level 2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TEst/Level 2.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/DialogueWithImage.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/DialogueWithImage.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/Opening Dialogue.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/Opening Dialogue.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/Opening Talk.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/Opening Talk.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/SpeechBubble.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/SpeechBubble.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Audio/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Audio/AudioManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/GameEvent System/LoadMenuScene.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/GameEvent System/LoadMenuScene.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Level/Level.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Level/Level.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Level/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Level/LevelManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +71,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/ComponentTypeA.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/ComponentTypeB.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Component/Editor/ComponentTypeDrawer.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Audio/AudioManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/UI/UICanvas.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Component/ComponentType.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Level/LevelData.cs" />
@@ -98,21 +84,22 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/StopButton.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Level/SetUpScene.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/ConnectDataInfo.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Level/LevelManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/ComponentManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/Drag.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/ColliderCheck.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/GameEvent System/GameEventListener.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/IndivisibleComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Actor/Actor.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Level/Level.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/GameEvent System/OpeningEvent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/GameEvent System/Event List/MenuScene.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/SpeechManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/UI/Title.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/DialogueWithImage.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/GameEvent System/LoadMenuScene.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/SpeechBubble.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/GameEvent System/Event List/MenuScene.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Level/Level.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Audio/AudioManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Level/LevelManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/GameEvent System/LoadMenuScene.cs" />
       </list>
     </option>
   </component>
@@ -169,7 +156,7 @@
       <workItem from="1597982686904" duration="32525000" />
       <workItem from="1598062886959" duration="13336000" />
       <workItem from="1598083159368" duration="10331000" />
-      <workItem from="1598098396978" duration="4799000" />
+      <workItem from="1598098396978" duration="5177000" />
     </task>
     <servers />
   </component>

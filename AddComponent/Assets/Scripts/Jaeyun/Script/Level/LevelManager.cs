@@ -50,7 +50,7 @@ namespace UnityTemplateProjects.Jaeyun.Script.Level
             var loadedScene = SceneManager.GetSceneByName(loadLevel.name);
             SceneManager.SetActiveScene(loadedScene);
             
-            AudioManager.Instance.PlayBgm(loadLevel.bgm);
+            AudioManager.Instance.PlayBgm(loadLevel.bgm, loadLevel.volume);
 
             if (isReLoad)
             {

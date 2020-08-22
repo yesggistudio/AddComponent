@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Menu Scene
   m_EditorClassIdentifier: 
   bgm: {fileID: 8300000, guid: 24535d169a02e0d4fbbccf16c9217113, type: 3}
+  volume: 0.5

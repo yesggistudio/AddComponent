@@ -43,10 +43,11 @@ namespace UnityTemplateProjects.Jaeyun.Script.Audio
             }
         }
 
-        public void PlayBgm(AudioClip clip)
+        public void PlayBgm(AudioClip clip, float volume)
         {
             var audioSource = GetPlayableAudio(bgms);
             audioSource.clip = clip;
+            audioSource.volume = volume;
             audioSource.Play();
         }
         

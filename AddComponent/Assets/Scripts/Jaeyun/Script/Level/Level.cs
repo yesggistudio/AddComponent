@@ -6,5 +6,6 @@ namespace UnityTemplateProjects.Jaeyun.Script.Level
     public class Level : ScriptableObject
     {
         public AudioClip bgm;
+        public float volume;
     }
 }

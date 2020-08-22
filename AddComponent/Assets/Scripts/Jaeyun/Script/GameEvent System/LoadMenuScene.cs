@@ -14,7 +14,7 @@ namespace Jaeyun.Script.GameEvent_System
             
             SceneManager.LoadScene(menuLevel.name, LoadSceneMode.Additive);
 
-            AudioManager.Instance.PlayBgm(menuLevel.bgm);
+            AudioManager.Instance.PlayBgm(menuLevel.bgm, menuLevel.volume);
             Invoke(nameof(SetActiveScene), .1f);
         }
 
