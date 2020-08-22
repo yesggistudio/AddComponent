@@ -114,9 +114,7 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
 
         private void Start()
         {
-            EventManager.Instance.AddListener(EVENT_TYPE.Move, this);
-            EventManager.Instance.AddListener(EVENT_TYPE.Jump, this);
-            EventManager.Instance.AddListener(EVENT_TYPE.Destroy, this);
+
             EventManager.Instance.AddListener(EVENT_TYPE.GameOver, this);
         }
 
@@ -124,20 +122,7 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
         {
             switch (eventType)
             {
-                case EVENT_TYPE.Move:
 
-                    _canComAbility[0] = true;
-
-
-                    break;
-                case EVENT_TYPE.Jump:
-                    _canComAbility[1] = true;
-
-                    break;
-                case EVENT_TYPE.Destroy:
-                    _canComAbility[2] = true;
-
-                    break;
                 case EVENT_TYPE.GameOver:
 
                     // 마지막 대사 이벤트 실행
@@ -177,24 +162,6 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
         {
             var typeOfComponent = componentType.GetType();
             
-            if (typeOfComponent == typeof(ComponentTypeA))
-            {
-                EventManager.Instance.EventPost(EVENT_TYPE.Move,this);
-                return;
-            }
-
-            if (typeOfComponent == typeof(ComponentTypeB))
-            {
-                EventManager.Instance.EventPost(EVENT_TYPE.Jump,this);
-                return;
-            }
-
-            if (typeOfComponent == typeof(ComponentTypeC))
-            {
-                EventManager.Instance.EventPost(EVENT_TYPE.Destroy,this);
-                return;
-            }
-
             if (typeOfComponent == typeof(ComponentTypeD))
             {
                 EventManager.Instance.EventPost(EVENT_TYPE.GameOver,this);
