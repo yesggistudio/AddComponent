@@ -88,8 +88,6 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
 
         void Awake()
         {
-
-
             _myMat = GetComponent<SpriteRenderer>().material;
             _defaultShader = Shader.Find("Custom/2D Sprite");
             _OutlineShader = Shader.Find("Shader Graphs/2D DrawOutline");
@@ -108,7 +106,6 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
             contact_filter.layerMask = raycast_mask;
             contact_filter.useLayerMask = true;
             contact_filter.useTriggers = false;
-
         }
 
 
@@ -188,20 +185,15 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
         }
 
 
-
-
         void OnDestroy()
         {
             character_list.Remove(this);
         }
 
 
-
         //Handle physics
         void FixedUpdate()
         {
-            if (TheGame.IsGamePaused())
-                return;
 
             PlayerControls controls = PlayerControls.Get(player_id);
 
@@ -257,19 +249,9 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
                 if (controls.GetJumpDown())
                     Jump();
 
-            }
 
-            if (state == PlayerCharacterState.Climb)
-            {
-                Ladder ladder = Ladder.GetOverlapLadder(gameObject);
-                if (ladder == null)
-                {
-                    state = PlayerCharacterState.Normal;
-                    state_timer = 0f;
-                }
 
-                if (controls.GetJumpDown())
-                    Jump(true);
+
             }
 
             //Reset when fall
