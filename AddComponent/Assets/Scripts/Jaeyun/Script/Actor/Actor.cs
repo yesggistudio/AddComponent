@@ -161,6 +161,22 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
         private void CheckComponent(ComponentType componentType)
         {
             var typeOfComponent = componentType.GetType();
+
+            if (typeOfComponent == typeof(ComponentTypeA))
+            {
+                _canComAbility[0] = true;
+                return;
+            }
+            if (typeOfComponent == typeof(ComponentTypeB))
+            {
+                _canComAbility[1] = true;
+                return;
+            }
+            if (typeOfComponent == typeof(ComponentTypeC))
+            {
+                _canComAbility[2] = true;
+                return;
+            }
             
             if (typeOfComponent == typeof(ComponentTypeD))
             {
