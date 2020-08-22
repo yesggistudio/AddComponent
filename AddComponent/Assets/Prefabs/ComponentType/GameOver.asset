@@ -9,8 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e2b4c1f32d184e74b68d4ac1e3cd5ae4, type: 3}
-  m_Name: Type A
+  m_Script: {fileID: 11500000, guid: 90ecbddd188ecba4cb44a0a1dadb2621, type: 3}
+  m_Name: GameOver
   m_EditorClassIdentifier: 
-  buttonPrefab: {fileID: 2513686187449923208, guid: 17e3f44ebc4b5a442b1420140c1993a5,
-    type: 3}
+  buttonPrefab: {fileID: 0}

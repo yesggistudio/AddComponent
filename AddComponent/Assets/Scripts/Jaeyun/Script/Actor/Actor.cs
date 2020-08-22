@@ -162,23 +162,23 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
         {
             var typeOfComponent = componentType.GetType();
 
-            if (typeOfComponent == typeof(ComponentTypeA))
+            if (typeOfComponent == typeof(MoveComponent))
             {
                 _canComAbility[0] = true;
                 return;
             }
-            if (typeOfComponent == typeof(ComponentTypeB))
+            if (typeOfComponent == typeof(JumpComponent))
             {
                 _canComAbility[1] = true;
                 return;
             }
-            if (typeOfComponent == typeof(ComponentTypeC))
+            if (typeOfComponent == typeof(DestroyComponent))
             {
                 _canComAbility[2] = true;
                 return;
             }
             
-            if (typeOfComponent == typeof(ComponentTypeD))
+            if (typeOfComponent == typeof(GameOverComponent))
             {
                 EventManager.Instance.EventPost(EVENT_TYPE.GameOver,this);
                 return;
