@@ -21,6 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="02109610-2fc1-4c59-82d2-87514a86ad69" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AddComponent/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AddComponent/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level/Level 1.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/SpeechBubble.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/SpeechBubble.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -167,7 +168,7 @@
       <workItem from="1597982686904" duration="32525000" />
       <workItem from="1598062886959" duration="13336000" />
       <workItem from="1598083159368" duration="10331000" />
-      <workItem from="1598098396978" duration="15679000" />
+      <workItem from="1598098396978" duration="15949000" />
     </task>
     <servers />
   </component>

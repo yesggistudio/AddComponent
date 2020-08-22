@@ -47,6 +47,8 @@ namespace UnityTemplateProjects.Jaeyun.Script.Dialogue
             var rightPos = new Vector2(pixelRect.x / 2 + rectTransform.sizeDelta.x * 2,
                 -pixelRect.y / 2 + rectTransform.sizeDelta.y * .6f);
             
+            rightPos.y += offset.y;
+            
             
             var leftPos = new Vector2(pixelRect.x /2 - rectTransform.sizeDelta.x,
                 rightPos.y);
