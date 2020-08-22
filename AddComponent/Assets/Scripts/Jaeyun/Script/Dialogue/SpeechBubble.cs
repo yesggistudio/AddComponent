@@ -32,7 +32,7 @@ namespace UnityTemplateProjects.Jaeyun.Script.Dialogue
             StartCoroutine(ShowTextRoutine(node.text, node.textPerDelay, callback));
         }
 
-        IEnumerator MovePortrait(bool isCome)
+        IEnumerator MovePortrait(bool isCome, Action callback = null)
         {
             var rootCanvas = portrait.canvas;
             var pixelRect = new Vector2(rootCanvas.pixelRect.width / rootCanvas.scaleFactor, 
@@ -67,6 +67,7 @@ namespace UnityTemplateProjects.Jaeyun.Script.Dialogue
             
             if (!isCome)
             {
+                callback?.Invoke();
                 DestroyImmediate(gameObject);
             }
         }
@@ -147,9 +148,10 @@ namespace UnityTemplateProjects.Jaeyun.Script.Dialogue
             callback?.Invoke();
         }
 
-        public void CloseSpeech()
+        public void CloseSpeech(Action callback)
         {
-            StartCoroutine(MovePortrait(false));
+            SetText("");
+            StartCoroutine(MovePortrait(false, callback));
             
         }
         

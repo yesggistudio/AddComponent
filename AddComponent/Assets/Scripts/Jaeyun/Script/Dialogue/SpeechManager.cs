@@ -28,8 +28,7 @@ public class SpeechManager : MonoBehaviour
             var nextNode = speechNode.GetNextNode();
             if (nextNode == null)
             {
-                bubble.CloseSpeech();
-                gameEvent?.Raise();
+                bubble.CloseSpeech(() => gameEvent?.Raise());
             }
             else
             {

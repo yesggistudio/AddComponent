@@ -31,6 +31,8 @@ namespace UnityTemplateProjects.Jaeyun.Script.Dialogue
         {
             var delay = new WaitForSeconds(textDelay);
             
+            text = text.Replace("\\n", "\n");
+            
             yield return StartCoroutine(FadeRoutine(1));
             var sb = new StringBuilder();
             var index = 0;

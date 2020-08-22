@@ -60,7 +60,7 @@ MonoBehaviour:
   index: 0
   speakerData: {fileID: 11400000, guid: f9e3dc55bcbad9649adf3f655b44a8c5, type: 2}
   textPerDelay: 0.04
-  portrait: {fileID: 21300000, guid: 8b00c59fe8b388d4d8293b70b47c2dd1, type: 3}
+  portrait: {fileID: 21300000, guid: c16ee3ab828b6b14097b7d29272db16e, type: 3}
   text: "\uBB50\uC57C? \uB204\uAD6C\uC138\uC694?"
 --- !u!114 &8533793766691434061
 MonoBehaviour:
@@ -107,6 +107,6 @@ MonoBehaviour:
   index: 1
   speakerData: {fileID: 11400000, guid: f9e3dc55bcbad9649adf3f655b44a8c5, type: 2}
   textPerDelay: 0.03
-  portrait: {fileID: 21300000, guid: c0c09605919ac134293765a94b8e66f9, type: 3}
+  portrait: {fileID: 21300000, guid: dc42bf7ca7193bc438d49e9ac1e51ba6, type: 3}
   text: "\uAC8C\uC784 \uC544\uC9C1 \uC644\uC131 \uC548 \uB410\uC5B4\uC694.\\n \uAC8C\uC784
     \uAEBC\uC8FC\uC138\uC694."
