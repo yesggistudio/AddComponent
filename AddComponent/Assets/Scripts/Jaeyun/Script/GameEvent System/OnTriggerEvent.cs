@@ -3,13 +3,13 @@ using UnityEngine;
 
 namespace Jaeyun.Script.GameEvent_System
 {
-    public class OnCollisionEvent : MonoBehaviour
+    public class OnTriggerEvent : MonoBehaviour
     {
         public GameEvent gameEvent;
 
-        private void OnCollisionEnter2D(Collision2D other)
+        private void OnTriggerEnter2D(Collider2D other)
         {
-            if (other.gameObject.CompareTag("Player"))
+            if (other.CompareTag("Player"))
             {
                 gameEvent.Raise();
                 Destroy(this);

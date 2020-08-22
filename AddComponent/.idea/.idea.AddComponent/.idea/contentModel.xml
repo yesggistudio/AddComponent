@@ -191,6 +191,7 @@
             </e>
           </e>
         </e>
+        <e p="DeadPannel.cs" t="Include" />
         <e p="IndieMarc" t="Include">
           <e p="DialogueSystem" t="Include">
             <e p="Editor" t="Include">
@@ -414,7 +415,7 @@
                 <e p="GameEvent.cs" t="Include" />
                 <e p="GameEventListener.cs" t="Include" />
                 <e p="LoadMenuScene.cs" t="Include" />
-                <e p="OnCollisionEvent.cs" t="Include" />
+                <e p="OnTriggerEvent.cs" t="Include" />
               </e>
               <e p="Level" t="Include">
                 <e p="ConnectDataSave.cs" t="Include" />
