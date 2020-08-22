@@ -12,4 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 90ecbddd188ecba4cb44a0a1dadb2621, type: 3}
   m_Name: GameOver
   m_EditorClassIdentifier: 
-  buttonPrefab: {fileID: 0}
+  buttonPrefab: {fileID: 1846187386181515602, guid: c9253ac6e212d394f9f7e3baa3b380bc,
+    type: 3}

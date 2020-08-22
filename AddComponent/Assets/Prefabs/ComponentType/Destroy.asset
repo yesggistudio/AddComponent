@@ -12,8 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fd258494bf62034c939d891ab563a55, type: 3}
   m_Name: Destroy
   m_EditorClassIdentifier: 
-  buttonPrefab: {fileID: 0}
-  player_id: 0
-  move_accel: 20
-  move_deccel: 20
-  move_max: 5
+  buttonPrefab: {fileID: 1846187386181515602, guid: 708e4d7d8542b9c45883c85050726ca9,
+    type: 3}
