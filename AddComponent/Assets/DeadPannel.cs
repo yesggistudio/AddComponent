@@ -26,7 +26,7 @@ public class DeadPannel : MonoBehaviour
         yield return StartCoroutine(ColorChange(Color.black, .06f));
         yield return StartCoroutine(ColorChange(Color.white,.06f));
         yield return StartCoroutine(ColorChange(Color.black, .1f));
-        yield return new WaitForSeconds(.5f);
+        yield return new WaitForSeconds(1);
         gameEvent.Raise();
     }
 
