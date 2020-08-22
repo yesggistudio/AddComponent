@@ -75,7 +75,16 @@ namespace UnityTemplateProjects.Jaeyun.Script.Level
 
         public void GameOver()
         {
+               
             
+            //대사 출력
+            // var speechManager = GetComponent<SpeechManager>();
+            // 대사 파일을 담은 speech graph 넣어주기
+            // speechManager.SetSpeechGraph();
+            // SpeechGraph 안의 대사를 쭉 보여주기
+            // speechManager.PlaySpeech();
+            
+            //게임 오버시 연출
         }
         
     }
