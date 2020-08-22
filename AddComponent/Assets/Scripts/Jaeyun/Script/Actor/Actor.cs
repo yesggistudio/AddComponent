@@ -508,14 +508,7 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
         {
             return is_grounded;
         }
-
-
-        public void DeathProduction()
-        {
-            var deadPannel = FindObjectOfType<DeadPannel>();
-            deadPannel.DoDead();
-        }
-
+        
 
 
 
