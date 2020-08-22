@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -40,7 +42,7 @@ namespace UnityTemplateProjects.Jaeyun.Script.Development_Tool
             }
         }
         
-        
+        #if UNITY_EDITOR
         public void MakeComponents()
         {
             var allbuttons = FindObjectsOfType<ComponentButton>();
@@ -58,6 +60,7 @@ namespace UnityTemplateProjects.Jaeyun.Script.Development_Tool
                 }
             }
         }
+        #endif
     }
     
     #if UNITY_EDITOR

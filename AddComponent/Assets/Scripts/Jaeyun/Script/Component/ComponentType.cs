@@ -1,5 +1,4 @@
-﻿using UnityEditor.SceneManagement;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace UnityTemplateProjects.Jaeyun.Script.Development_Tool
 {

@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Data;
-using UnityEditorInternal;
 using UnityEngine;
 
 public struct StateChangeEvent<T>where T: struct,IComparable, IConvertible, IFormattable
