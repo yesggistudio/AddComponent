@@ -32,6 +32,11 @@ namespace UnityTemplateProjects.Jaeyun.Script.Development_Tool
             
         }
 
+        public ComponentType GetComponentType()
+        {
+            return _componentButton.componentType;
+        }
+
         public ComponentButton GetButton()
         {
             return _componentButton;

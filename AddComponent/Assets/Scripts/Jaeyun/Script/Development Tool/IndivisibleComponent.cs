@@ -16,6 +16,11 @@ namespace UnityTemplateProjects.Jaeyun.Script.Development_Tool
             transform.position =attahcedActor.GetIndivisiblePos(this);
         }
 
+        public ComponentType GetComponentType()
+        {
+            return componentType;
+        }
+
         public void SetColor(Color color)
         {
             var spriteRenderer = GetComponent<SpriteRenderer>();
