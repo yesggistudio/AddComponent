@@ -20,10 +20,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="02109610-2fc1-4c59-82d2-87514a86ad69" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Actor/PlayAnim.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Actor/PlayAnim.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/Dummy.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/GameEvent System/Event List/GameClear.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/GameEvent System/Event List/GameClear.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/GameEvent System/OnCollisionEvent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/GameEvent System/OnCollisionEvent.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.AddComponent/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AddComponent/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AddComponent/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AddComponent/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Assets/08.image/말풍선.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/08.image/말풍선.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/BubblePrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/BubblePrefab.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/SpeechBubble.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/SpeechBubble.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/00.Prefab/CharacterPlatformer.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/00.Prefab/CharacterPlatformer.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/00.Prefab/SeongBae.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/00.Prefab/SeongBae.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IndieMarc/Platformer2D/Prefabs/Managers.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IndieMarc/Platformer2D/Prefabs/Managers.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/IndieMarc/Platformer2D/Sprites/Character/CharacteAnimCrouch.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/IndieMarc/Platformer2D/Sprites/Character/CharacteAnimCrouch.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TEst/Level 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TEst/Level 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Template.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Template.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/SpeechManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/SpeechManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Level/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Level/LevelManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +49,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/../../Sannabi-URP/Sannabi/Assets/03.Scripts/Jaeyun/Speech/Graph And Node/TimelineSpeechNode.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../Sannabi-URP/Sannabi/Assets/03.Scripts/Jaeyun/PlayAnim.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Sannabi-URP/Sannabi/Assets/03.Scripts/Jaeyun/Save &amp; Load/Editor/SavePointManagerEditor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/A979F18D-51AF-4117-9D12-B797E8C5BE14/1d/d88c1b56/Object.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Sannabi-URP/Sannabi/Assets/03.Scripts/Jaeyun/Speech/Graph And Node/BaseSpeechNode.cs" root0="SKIP_HIGHLIGHTING" />
@@ -52,10 +67,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Shader/2D DrawOneColor.shader" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Shader/2D DrawOutline.shader" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/SpeechGraph.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/SpeakerData.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/SpeechNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Editor/GenericPropertyDrawer.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Editor/GenericSelectablePropertyDrawer.cs" />
@@ -94,15 +105,19 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Level/Level.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Audio/AudioManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/GameEvent System/LoadMenuScene.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/SpeechManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/DialogueWithImage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Component/MoveComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Component/JumpComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Component/GameOverComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Component/DestroyComponent.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Level/LevelManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/UI/UICanvas.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/SpeechBubble.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Actor/PlayAnim.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/GameEvent System/OnTriggerEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/SpeechManager.cs" />
+        <option value="$PROJECT_DIR$/../../Sannabi-URP/Sannabi/Assets/03.Scripts/Jaeyun/PlayAnim.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/GameEvent System/OnCollisionEvent.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Level/LevelManager.cs" />
       </list>
     </option>
   </component>
@@ -159,7 +174,7 @@
       <workItem from="1597982686904" duration="32525000" />
       <workItem from="1598062886959" duration="13336000" />
       <workItem from="1598083159368" duration="10331000" />
-      <workItem from="1598098396978" duration="8919000" />
+      <workItem from="1598098396978" duration="11290000" />
     </task>
     <servers />
   </component>

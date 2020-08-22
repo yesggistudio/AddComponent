@@ -362,6 +362,7 @@
             <e p="Script" t="Include">
               <e p="Actor" t="Include">
                 <e p="Actor.cs" t="Include" />
+                <e p="PlayAnim.cs" t="Include" />
               </e>
               <e p="Audio" t="Include">
                 <e p="AudioManager.cs" t="Include" />
@@ -413,6 +414,7 @@
                 <e p="GameEvent.cs" t="Include" />
                 <e p="GameEventListener.cs" t="Include" />
                 <e p="LoadMenuScene.cs" t="Include" />
+                <e p="OnCollisionEvent.cs" t="Include" />
               </e>
               <e p="Level" t="Include">
                 <e p="ConnectDataSave.cs" t="Include" />

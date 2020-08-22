@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 6965059785617029094}
   - component: {fileID: 102539207673601500}
   - component: {fileID: 3626139524208471755}
+  - component: {fileID: 8750144724083598698}
   m_Layer: 0
   m_Name: SeongBae
   m_TagString: Untagged
@@ -187,3 +188,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8750144724083598698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6965059785617029093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8d15e57b6b14635810bf05e60efa6e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: b220c2904216ea347a89fb2d101a3062, type: 2}

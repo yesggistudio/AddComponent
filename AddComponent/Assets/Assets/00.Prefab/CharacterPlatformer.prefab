@@ -46,6 +46,8 @@ GameObject:
   - component: {fileID: 6806737256532865433}
   - component: {fileID: 6909789641802909382}
   - component: {fileID: 6806737256532865434}
+  - component: {fileID: 4437712221637910659}
+  - component: {fileID: 2816634501676665192}
   m_Layer: 0
   m_Name: CharacterPlatformer
   m_TagString: Player
@@ -242,3 +244,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b6be1d1765282b4cb4686d2af943b30, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &4437712221637910659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6806737256532865432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9b32c3acabd40889322c25992707563, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2816634501676665192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6806737256532865432}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98cdbfc0625d46d5a537a689f3be2fd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: b220c2904216ea347a89fb2d101a3062, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 4437712221637910659}
+        m_MethodName: PlayAnimationClip
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 7400000, guid: da5293bf6231de2409e4676c5709f3d8,
+            type: 2}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.AnimationClip, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

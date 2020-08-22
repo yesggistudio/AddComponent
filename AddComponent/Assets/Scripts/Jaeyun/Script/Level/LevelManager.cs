@@ -28,9 +28,16 @@ namespace UnityTemplateProjects.Jaeyun.Script.Level
             var levelData = FindObjectOfType<LevelData>();
             StartCoroutine(LoadLevelAsync(levelData.nextLevel));
         }
-        
-        private IEnumerator LoadLevelAsync(Level loadLevel, bool isReLoad = false)
+
+        public void ClearStage()
         {
+            var levelData = FindObjectOfType<LevelData>();
+            StartCoroutine(LoadLevelAsync(levelData.nextLevel, false, 1));
+        }
+        
+        private IEnumerator LoadLevelAsync(Level loadLevel, bool isReLoad = false, float delay = 0)
+        {
+            yield return new WaitForSeconds(delay);
             yield return uiCanvas.FadeOut();
             
             var connectDataSaver = FindObjectOfType<ConnectDataSave>();
