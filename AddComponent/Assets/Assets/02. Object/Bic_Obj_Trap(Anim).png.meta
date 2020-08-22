@@ -1,34 +1,28 @@
 fileFormatVersion: 2
-guid: c3bded36b7aa87e469ab9640be8a8e2f
+guid: 93037a8126177f241a6195fb82f1eaf6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7233350366537824243
-    second: Obj_HolyGrail_Pop_0
+      213: -8218685546329233585
+    second: Bic_Obj_Trap_0
   - first:
-      213: 4162001917739379565
-    second: Obj_HolyGrail_Pop_1
+      213: -1239881324469172903
+    second: Bic_Obj_Trap_1
   - first:
-      213: 5319702501312521149
-    second: Obj_HolyGrail_Pop_2
+      213: -7063076670091986691
+    second: Bic_Obj_Trap_2
   - first:
-      213: 1919988140526899829
-    second: Obj_HolyGrail_Pop_3
+      213: 924320790449374062
+    second: Bic_Obj_Trap_3
   - first:
-      213: 8137629167565242069
-    second: Obj_HolyGrail_Pop_4
+      213: -5284632036526086844
+    second: Bic_Obj_Trap_4
   - first:
-      213: -6345429784427550745
-    second: Obj_HolyGrail_Pop_5
+      213: -4769917421064023637
+    second: Bic_Obj_Trap_5
   - first:
-      213: 4982355956149620596
-    second: Obj_HolyGrail_Pop_6
-  - first:
-      213: -1263162841817021259
-    second: Obj_HolyGrail_Pop_7
-  - first:
-      213: 6084519290755411822
-    second: Obj_HolyGrail_Pop_8
+      213: 2367404070977337337
+    second: Bic_Obj_Trap_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -150,13 +144,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Obj_HolyGrail_Pop_0
+      name: Bic_Obj_Trap_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 512
-        width: 64
-        height: 64
+        y: 96
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,20 +158,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0842926a2afd9b90800000000000000
-      internalID: -7233350366537824243
+      spriteID: f47a8624a0d51fd80800000000000000
+      internalID: -8218685546329233585
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Obj_HolyGrail_Pop_1
+      name: Bic_Obj_Trap_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 448
-        width: 64
-        height: 64
+        x: 48
+        y: 96
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -185,20 +179,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6ba95561b662c930800000000000000
-      internalID: 4162001917739379565
+      spriteID: 955cf5b218e0bcee0800000000000000
+      internalID: -1239881324469172903
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Obj_HolyGrail_Pop_2
+      name: Bic_Obj_Trap_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 384
-        width: 64
-        height: 64
+        x: 96
+        y: 96
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: db36d7d6d3163d940800000000000000
-      internalID: 5319702501312521149
+      spriteID: df871d9b039eafd90800000000000000
+      internalID: -7063076670091986691
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Obj_HolyGrail_Pop_3
+      name: Bic_Obj_Trap_3
       rect:
         serializedVersion: 2
         x: 0
-        y: 320
-        width: 64
-        height: 64
+        y: 48
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -227,20 +221,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 57291119a0b25aa10800000000000000
-      internalID: 1919988140526899829
+      spriteID: e634e359cd8d3dc00800000000000000
+      internalID: 924320790449374062
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Obj_HolyGrail_Pop_4
+      name: Bic_Obj_Trap_4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 256
-        width: 64
-        height: 64
+        x: 48
+        y: 48
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -248,20 +242,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5de7596ec9aaee070800000000000000
-      internalID: 8137629167565242069
+      spriteID: 445a636792739a6b0800000000000000
+      internalID: -5284632036526086844
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Obj_HolyGrail_Pop_5
+      name: Bic_Obj_Trap_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 192
-        width: 64
-        height: 64
+        x: 96
+        y: 48
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -269,62 +263,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e723080b3180f7a0800000000000000
-      internalID: -6345429784427550745
+      spriteID: ba1188da069ddcdb0800000000000000
+      internalID: -4769917421064023637
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Obj_HolyGrail_Pop_6
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 128
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 47f89de2852e42540800000000000000
-      internalID: 4982355956149620596
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Obj_HolyGrail_Pop_7
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 64
-        width: 64
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5b406008618587ee0800000000000000
-      internalID: -1263162841817021259
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Obj_HolyGrail_Pop_8
+      name: Bic_Obj_Trap_6
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 64
-        height: 64
+        width: 48
+        height: 48
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,8 +284,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e6fec7ace0e807450800000000000000
-      internalID: 6084519290755411822
+      spriteID: 9f7fa62a575bad020800000000000000
+      internalID: 2367404070977337337
       vertices: []
       indices: 
       edges: []
@@ -341,7 +293,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: f265f817c0086444fa329a05746cab48
     internalID: 0
     vertices: []
     indices: 
