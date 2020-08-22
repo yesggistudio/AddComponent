@@ -313,10 +313,6 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
 
         private void UpdateJump()
         {
-
-
-
-
             PlayerControls controls = PlayerControls.Get(player_id);
 
             //Jump
