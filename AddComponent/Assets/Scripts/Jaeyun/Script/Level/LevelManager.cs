@@ -2,12 +2,15 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityTemplateProjects.Jaeyun.Script.Audio;
+using UnityTemplateProjects.Jaeyun.Script.UI;
 
 namespace UnityTemplateProjects.Jaeyun.Script.Level
 {
     public class LevelManager : MonoBehaviour
     {
 
+        public UICanvas uiCanvas;
+        
         public void LoadPrevLevel()
         {
             var levelData = FindObjectOfType<LevelData>();
@@ -28,7 +31,8 @@ namespace UnityTemplateProjects.Jaeyun.Script.Level
         
         private IEnumerator LoadLevelAsync(Level loadLevel, bool isReLoad = false)
         {
-
+            yield return uiCanvas.FadeOut();
+            
             var connectDataSaver = FindObjectOfType<ConnectDataSave>();
             if (isReLoad)
             {
@@ -49,6 +53,8 @@ namespace UnityTemplateProjects.Jaeyun.Script.Level
 
             var loadedScene = SceneManager.GetSceneByName(loadLevel.name);
             SceneManager.SetActiveScene(loadedScene);
+            
+            yield return uiCanvas.FadeIn();
             
             AudioManager.Instance.PlayBgm(loadLevel.bgm, loadLevel.volume);
 
