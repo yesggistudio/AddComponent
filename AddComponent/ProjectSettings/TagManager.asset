@@ -8,6 +8,7 @@ TagManager:
   - AttackCollider
   - Enemy
   - Bomb
+  - Rock
   layers:
   - Default
   - TransparentFX

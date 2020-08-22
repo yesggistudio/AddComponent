@@ -89,6 +89,7 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
 
         public ParticleSystem destroyParticle;
         public GameObject DmgObj;
+        public GameEvent gameEvent;
 
         void Awake()
         {
@@ -274,8 +275,8 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
 
             if (gameObject.tag == "Player")
             {
-                Kill();
-            
+               // Kill();
+                gameEvent.Raise();
             }
             else if (gameObject.tag == "Bomb")
             {
@@ -296,8 +297,18 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
 
         }
 
+        public void DRockFx()
+        {
+            StartCoroutine(DRockCoroutine());
+        }
 
+        IEnumerator DRockCoroutine()
+        {
+            destroyParticle.Play();
+            yield return new WaitForSeconds(0.55f);
 
+            gameObject.SetActive(false);
+        }
 
 
         private void UpdateFacing()

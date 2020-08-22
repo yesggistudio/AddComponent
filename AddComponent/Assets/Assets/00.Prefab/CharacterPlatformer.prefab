@@ -214,6 +214,7 @@ MonoBehaviour:
   _canComAbility: 01010000
   destroyParticle: {fileID: 0}
   DmgObj: {fileID: 0}
+  gameEvent: {fileID: 11400000, guid: 2c91340d16d0feb40ad2e9d557cea85e, type: 2}
 --- !u!114 &6909789641802909382
 MonoBehaviour:
   m_ObjectHideFlags: 0
