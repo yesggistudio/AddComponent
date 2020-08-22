@@ -719,10 +719,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   componentButtons:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1950756569}
   actors:
   - {fileID: 873921992}
   - {fileID: 1716817928}
@@ -1768,6 +1765,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 17e3f44ebc4b5a442b1420140c1993a5, type: 3}
+--- !u!114 &1950756569 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2513686187449923208, guid: 17e3f44ebc4b5a442b1420140c1993a5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1950756568}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 362e5ac811944435bd9af792c73358eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &5257788983507766023
 Transform:
   m_ObjectHideFlags: 0
