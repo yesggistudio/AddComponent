@@ -994,6 +994,7 @@ GameObject:
   - component: {fileID: 1285811459}
   - component: {fileID: 1285811462}
   - component: {fileID: 1285811463}
+  - component: {fileID: 1285811464}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1033,6 +1034,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   ground_raycast_dist: 0.1
   climb_speed: 2
+  _canComAbility: 00000000
 --- !u!212 &1285811460
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1134,6 +1136,33 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1285811464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1285811458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98cdbfc0625d46d5a537a689f3be2fd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Event: {fileID: 11400000, guid: 61dc35c9e2d6ea04296e8a76da281876, type: 2}
+  Response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1285811459}
+        m_MethodName: GameStartSetting
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &1415822163
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1644,6 +1673,7 @@ MonoBehaviour:
     m_Bits: 4294967295
   ground_raycast_dist: 0.1
   climb_speed: 2
+  _canComAbility: 00000000
 --- !u!212 &1919868531
 SpriteRenderer:
   m_ObjectHideFlags: 0
