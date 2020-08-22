@@ -21,10 +21,9 @@
   <component name="ChangeListManager">
     <list default="true" id="02109610-2fc1-4c59-82d2-87514a86ad69" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AddComponent/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AddComponent/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Level/LevelManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Level/LevelManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/UI/UICanvas.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/UI/UICanvas.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/Volume Profile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/Volume Profile.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Assets/08.image/말풍선.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Assets/08.image/말풍선.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/BubblePrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/BubblePrefab.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/SpeechBubble.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/SpeechBubble.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +44,7 @@
     <setting file="file://$PROJECT_DIR$/../../Sannabi-URP/Sannabi/Assets/03.Scripts/Jaeyun/Speech/Graph And Node/Editor/BaseSpeechNodeEditor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Sannabi-URP/Sannabi/Assets/03.Scripts/Jaeyun/Core/GameEvent/GameEventListener.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Sannabi-URP/Sannabi/Assets/03.Scripts/Jaeyun/Core/GameEvent/GameEvent.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/Desktop/백업/Speech System/TextBoxSizeController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Sannabi-URP/Sannabi/Assets/03.Scripts/Jaeyun/Speech/Graph And Node/Editor/TimelineSpeechGraphEditor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Sannabi-URP/Sannabi/Assets/03.Scripts/Jaeyun/Speech/Graph And Node/Editor/TimelineSpeechNodeEditor.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Sannabi-URP/Sannabi/Assets/03.Scripts/Jaeyun/Editor/SeletablePropertyDrawer.cs" root0="SKIP_HIGHLIGHTING" />
@@ -95,7 +95,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Audio/AudioManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/GameEvent System/LoadMenuScene.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/SpeechManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/SpeechBubble.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/DialogueWithImage.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Component/MoveComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Component/JumpComponent.cs" />
@@ -103,6 +102,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Component/DestroyComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Level/LevelManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/UI/UICanvas.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/SpeechBubble.cs" />
       </list>
     </option>
   </component>
@@ -159,7 +159,7 @@
       <workItem from="1597982686904" duration="32525000" />
       <workItem from="1598062886959" duration="13336000" />
       <workItem from="1598083159368" duration="10331000" />
-      <workItem from="1598098396978" duration="7607000" />
+      <workItem from="1598098396978" duration="8919000" />
     </task>
     <servers />
   </component>

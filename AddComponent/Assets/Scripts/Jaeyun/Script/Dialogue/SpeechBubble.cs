@@ -27,6 +27,7 @@ namespace UnityTemplateProjects.Jaeyun.Script.Dialogue
             
             node.speakerData.textColor.a = 1;
             _textMeshPro.color = node.speakerData.textColor;
+            bubbleBox.enabled = false;
             
             SetText("");
             StartCoroutine(ShowTextRoutine(node.text, node.textPerDelay, callback));
@@ -83,6 +84,7 @@ namespace UnityTemplateProjects.Jaeyun.Script.Dialogue
             {
                 yield return new WaitForSeconds(.3f);
             }
+            bubbleBox.enabled = true;
 
             text = text.Replace("\\n", "\n");
 
@@ -151,6 +153,7 @@ namespace UnityTemplateProjects.Jaeyun.Script.Dialogue
         public void CloseSpeech(Action callback)
         {
             SetText("");
+            bubbleBox.enabled = false;
             StartCoroutine(MovePortrait(false, callback));
             
         }
