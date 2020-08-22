@@ -210,8 +210,8 @@ MonoBehaviour:
   bubbleBox: {fileID: 2371312069035859292}
   portrait: {fileID: 7165695924656440704}
   _textMeshPro: {fileID: 5845686494298309381}
-  textEndDelay: 1.5
-  offset: {x: 70, y: -40}
+  textEndDelay: 1.3
+  offset: {x: 60, y: -20}
 --- !u!114 &6236668377005714347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -278,7 +278,7 @@ RectTransform:
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 6.0000076, y: -4.9999924}
   m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.6, y: 0.05}
+  m_Pivot: {x: 0.4, y: 0.4}
 --- !u!222 &2921483583886477562
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1228b5b4c1334e83bf0d208904402e33, type: 3}
-  m_Name: Opening Talk
+  m_Name: 2_Start
   m_EditorClassIdentifier: 
   nodes:
   - {fileID: 321846666274119473}
@@ -60,8 +60,8 @@ MonoBehaviour:
   index: 0
   speakerData: {fileID: 11400000, guid: f9e3dc55bcbad9649adf3f655b44a8c5, type: 2}
   textPerDelay: 0.04
-  portrait: {fileID: 21300000, guid: 2a431cd825efa334c895c5e31fec753a, type: 3}
-  text: "\uBB50\uC57C? \uB204\uAD6C\uC138\uC694?"
+  portrait: {fileID: 21300000, guid: c16ee3ab828b6b14097b7d29272db16e, type: 3}
+  text: "\uBB50\uC57C?! \uC5B4\uB5BB\uAC8C?"
 --- !u!114 &8533793766691434061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -106,7 +106,6 @@ MonoBehaviour:
   nextNode: {fileID: 0}
   index: 1
   speakerData: {fileID: 11400000, guid: f9e3dc55bcbad9649adf3f655b44a8c5, type: 2}
-  textPerDelay: 0.03
+  textPerDelay: 0.04
   portrait: {fileID: 21300000, guid: c16ee3ab828b6b14097b7d29272db16e, type: 3}
-  text: "\uAC8C\uC784 \uC544\uC9C1 \uC644\uC131 \uC548 \uB410\uC5B4\uC694.\\n \uAC8C\uC784
-    \uAEBC\uC8FC\uC138\uC694."
+  text: "\uBC29\uAE08 \uC5B4\uB5BB\uAC8C \uAE6C\uAC70\uC5D0\uC694?!"
