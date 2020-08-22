@@ -33,7 +33,8 @@ namespace UnityTemplateProjects.Jaeyun.Script.Development_Tool
         {
             if (attahcedActor != null)
             {
-                attahcedActor.RemoveIndivisible(this);   
+                attahcedActor.RemoveIndivisible(this);
+                attahcedActor = null;
             }
         }
         

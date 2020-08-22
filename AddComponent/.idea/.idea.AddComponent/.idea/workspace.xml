@@ -22,9 +22,6 @@
     <list default="true" id="02109610-2fc1-4c59-82d2-87514a86ad69" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.AddComponent/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AddComponent/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Resources/Levels/Level - 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Levels/Level - 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/JaeyunScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/JaeyunScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Actor/Actor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Actor/Actor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/Drag.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/Drag.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/IndivisibleComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/IndivisibleComponent.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -143,7 +140,7 @@
       <updated>1597974340931</updated>
       <workItem from="1597974374059" duration="6975000" />
       <workItem from="1597982686904" duration="32525000" />
-      <workItem from="1598062886959" duration="10645000" />
+      <workItem from="1598062886959" duration="11150000" />
     </task>
     <servers />
   </component>
