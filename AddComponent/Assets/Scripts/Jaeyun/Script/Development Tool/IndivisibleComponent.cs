@@ -89,7 +89,6 @@ namespace UnityTemplateProjects.Jaeyun.Script.Development_Tool
                 //Drag Start
                 _dragStartPos = mousePosition;
                 _isDragging = true;
-                Debug.Log("Drag Start");
             }
             else if (guiEvent.type == EventType.MouseDrag && guiEvent.button == 0 &&
                      guiEvent.modifiers == EventModifiers.None)
@@ -98,7 +97,6 @@ namespace UnityTemplateProjects.Jaeyun.Script.Development_Tool
                 {
                     var delta = mousePosition - _dragStartPos;
                     _indivisible.transform.Translate(delta);
-                    Debug.Log("Dragging");
                     FindActor();
 
                 }
@@ -109,7 +107,6 @@ namespace UnityTemplateProjects.Jaeyun.Script.Development_Tool
             {
                 _isDragging = false;
                 AttachToActor();
-                Debug.Log("Drag Done");
             }
 
         }
@@ -157,7 +154,6 @@ namespace UnityTemplateProjects.Jaeyun.Script.Development_Tool
             {
                 _actor = null;
                 _indivisible.SetColor(Color.white);
-                Debug.Log($"Cannot Find Actor");
             }
             else
             {
@@ -165,11 +161,9 @@ namespace UnityTemplateProjects.Jaeyun.Script.Development_Tool
                 {
                     _actor = null;
                     _indivisible.SetColor(Color.red * .6f);
-                    Debug.Log($"Find Actor : {actor.name}, but Locked!");
                 }
                 else
                 {
-                    Debug.Log($"Find Actor : {actor.name}");
                     _actor = actor;
                     _indivisible.SetColor(Color.cyan * .6f); 
                 }
