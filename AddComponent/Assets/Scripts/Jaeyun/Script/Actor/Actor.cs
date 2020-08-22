@@ -4,6 +4,7 @@ using Jaeyun.Script.GameEvent_System;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityTemplateProjects.Jaeyun.Script.Development_Tool;
+using UnityTemplateProjects.Jaeyun.Script.Level;
 
 namespace UnityTemplateProjects.Jaeyun.Script.Actor
 {
@@ -181,7 +182,8 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
             
             if (typeOfComponent == typeof(GameOverComponent))
             {
-                EventManager.Instance.EventPost(EVENT_TYPE.GameOver,this);
+                var levelManager = FindObjectOfType<LevelManager>();
+                levelManager.GameOver();
                 return;
             }
         }
@@ -197,13 +199,6 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
         void FixedUpdate()
         {
 
-            if (TheGame.IsGamePaused())
-            {
-                var rigidVelocity = rigid.velocity;
-                rigidVelocity.x = 0;
-                rigid.velocity = rigidVelocity;
-                return;
-            }
             
             PlayerControls controls = PlayerControls.Get(player_id);
 

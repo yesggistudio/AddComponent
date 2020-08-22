@@ -26,7 +26,6 @@ public class SpeechManager : MonoBehaviour
     {
         var node = _speechGraph.GetFirstNode();
         var bubble = Instantiate(bubblePrefab, transform);
-        theGame?.Pause();
         void PlayNextNode(SpeechNode speechNode)
         {
             var nextNode = speechNode.GetNextNode();
@@ -35,7 +34,6 @@ public class SpeechManager : MonoBehaviour
                 bubble.CloseSpeech(() =>
                 {
                     gameEvent?.Raise();
-                    theGame?.Unpause();
                 });
             }
             else

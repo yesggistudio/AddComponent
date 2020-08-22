@@ -72,6 +72,11 @@ namespace UnityTemplateProjects.Jaeyun.Script.Level
 
             yield return null;
         }
+
+        public void GameOver()
+        {
+            
+        }
         
     }
 }
