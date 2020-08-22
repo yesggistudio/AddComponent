@@ -13,6 +13,8 @@ namespace UnityTemplateProjects.Jaeyun.Script.Dialogue
         public Image portrait;
         public TextMeshProUGUI _textMeshPro;
 
+        public float textEndDelay;
+
         public Vector2 offset;
 
         private bool _isFirst = true;
@@ -121,7 +123,8 @@ namespace UnityTemplateProjects.Jaeyun.Script.Dialogue
 
             }
 
-            StartCoroutine(WaitInput(callback));
+            yield return new WaitForSeconds(textEndDelay);
+            callback?.Invoke();
 
         }
 
@@ -151,7 +154,7 @@ namespace UnityTemplateProjects.Jaeyun.Script.Dialogue
                 yield return null;
             }
             
-            callback?.Invoke();
+            
         }
 
         public void CloseSpeech(Action callback)
