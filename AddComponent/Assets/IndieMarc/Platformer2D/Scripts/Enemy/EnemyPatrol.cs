@@ -36,7 +36,7 @@ namespace IndieMarc.Platformer
                 if (patrol)
                     path_list.Add(patrol.transform.position);
             }
-            
+
             current_path = 0;
             if (path_list.Count >= 2)
                 current_path = 1; //Dont start at start pos
@@ -124,7 +124,7 @@ namespace IndieMarc.Platformer
             current_path += path_rewind ? -1 : 1;
             current_path = Mathf.Clamp(current_path, 0, path_list.Count - 1);
         }
-        
+
         public bool HasFallen()
         {
             float distY = Mathf.Abs(transform.position.y - start_pos.y);
