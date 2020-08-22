@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5584a6484045477f92effee4c2379f7e, type: 3}
-  m_Name: Level 1
+  m_Name: Level_2
   m_EditorClassIdentifier: 
-  bgm: {fileID: 8300000, guid: 57376a2add5d39f439d8e481004274a7, type: 3}
-  volume: 0.6
+  bgm: {fileID: 0}
+  volume: 0.3
