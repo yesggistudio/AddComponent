@@ -327,6 +327,22 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
             gameObject.SetActive(false);
         }
 
+        public void DDDDDBomb()
+        {
+            StartCoroutine(ggadsf());
+        }
+
+        IEnumerator ggadsf()
+        {
+            DmgObj.SetActive(true);
+            destroyParticle.Play();
+            SoundManager.Instance.SoundFx(0);
+            yield return new WaitForSeconds(0.1f);
+
+            gameObject.SetActive(false);
+
+        }
+
         public void DBombFx()
         {
 

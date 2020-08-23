@@ -6,6 +6,7 @@ using UnityTemplateProjects.Jaeyun.Script.Level;
 using DG.Tweening;
 using System.Net.Http.Headers;
 using UnityTemplateProjects.Jaeyun.Script.Actor;
+using UnityTemplateProjects.Jaeyun.Script;
 
 public class BossAttack : MonoBehaviour
 {
@@ -31,6 +32,9 @@ public class BossAttack : MonoBehaviour
 
     public Image RedImg;
     private int bossDmg;
+
+    MakeButton btnboom;
+    public GameObject BombOBJ;
 
     void Awake()
     {
@@ -76,7 +80,8 @@ public class BossAttack : MonoBehaviour
 
         yield return new WaitForSeconds(4f);
 
-
+        StartCoroutine(MakeCompBtn());
+        StartCoroutine(MakeBomb());
         bossani.Play("bossClosingVisor");
         lefthandObj.SetActive(true);
         righthandObj.SetActive(true);
@@ -106,6 +111,32 @@ public class BossAttack : MonoBehaviour
                 break;
         }
 
+    }
+
+    IEnumerator MakeCompBtn()
+    {
+
+        while (bossDmg < 5)
+        {
+            btnboom.StartMake();
+            yield return new WaitForSeconds(6f);
+
+        }
+
+
+
+    }
+
+    IEnumerator MakeBomb()
+    {
+
+        while (bossDmg < 5)
+        {
+            GameObject ddd = Instantiate(BombOBJ);
+
+            ddd.transform.position = new Vector3(3f, 21f, 0f);
+            yield return new WaitForSeconds(7f);
+        }
     }
 
 
@@ -146,7 +177,7 @@ public class BossAttack : MonoBehaviour
             break;
     }
     */
-        
+
 
     IEnumerator LeftOneCoroutine()
     {
