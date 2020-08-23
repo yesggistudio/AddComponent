@@ -441,6 +441,7 @@
             <e p="event" t="Include">
               <e p="EventManager.cs" t="Include" />
               <e p="IListener.cs" t="Include" />
+              <e p="SoundManager.cs" t="Include" />
             </e>
             <e p="manager" t="Include">
               <e p="BossAttack.cs" t="Include" />

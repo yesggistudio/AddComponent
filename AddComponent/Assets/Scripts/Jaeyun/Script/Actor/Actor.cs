@@ -710,6 +710,7 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
             if (isRealTime)
             {
                 GameStartSetting();
+                drag.SetInteractable(false);
             }
         }
         

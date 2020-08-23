@@ -122,7 +122,7 @@ namespace UnityTemplateProjects.Jaeyun.Script.Development_Tool
             _indivisible.AttachToActor(_actor);
             
             PrefabUtility.ApplyPrefabInstance(_indivisible.gameObject, InteractionMode.UserAction);
-            //PrefabUtility.ApplyPrefabInstance(_actor.gameObject, InteractionMode.UserAction);
+            PrefabUtility.ApplyPrefabInstance(_actor.gameObject, InteractionMode.UserAction);
             AssetDatabase.SaveAssets();
             AssetDatabase.Refresh();
         }
