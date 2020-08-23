@@ -193,7 +193,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isLocked: 0
   isRealTime: 0
-  indivisibleComponents: []
+  indivisibleComponents:
+  - {fileID: 0}
+  - {fileID: 0}
   buttonHeight: 1
   player_id: 0
   move_accel: 25
