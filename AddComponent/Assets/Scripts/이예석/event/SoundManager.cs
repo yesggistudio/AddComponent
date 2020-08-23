@@ -32,8 +32,14 @@ public class SoundManager : MonoBehaviour
 
     public void SoundFx(int t)
     {
-        
-      //  soundeffect[t]
+
+        effectsource.clip = soundeffect[t];
+        effectsource.Play();
+     
+        //0 폭탄
+        //1 클리어
+        //2 플레이어 점프
+        //3 바위부서짐.
 
     }
 

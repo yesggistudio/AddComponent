@@ -281,6 +281,7 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
                     drag.Bomb();
                 }
                 destroyParticle.Play();
+                SoundManager.Instance.SoundFx(0);
                 yield return new WaitForSeconds(0.55f);
 
                 gameObject.SetActive(false);
@@ -288,7 +289,7 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
             else
             {
                 destroyParticle.Play();
-
+                SoundManager.Instance.SoundFx(3);
                 yield return new WaitForSeconds(0.5f);
                 gameObject.SetActive(false);
 
@@ -304,6 +305,9 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
         IEnumerator DRockCoroutine()
         {
             destroyParticle.Play();
+
+            SoundManager.Instance.SoundFx(3);
+
             yield return new WaitForSeconds(0.55f);
 
             gameObject.SetActive(false);
@@ -322,9 +326,10 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
             yield return new WaitForSeconds(0.1f);
             DmgObj.SetActive(true);
             destroyParticle.Play();
+            SoundManager.Instance.SoundFx(0);
+
             yield return new WaitForSeconds(0.55f);
             gameObject.SetActive(false);
-
         }
 
 
