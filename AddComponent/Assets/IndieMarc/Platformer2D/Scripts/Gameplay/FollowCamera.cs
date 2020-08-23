@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 /// <summary>
 /// Platformer camera script
 /// Author: Indie Marc (Marc-Antoine Desbiens)
@@ -39,10 +39,13 @@ namespace IndieMarc.Platformer
             cam = GetComponent<Camera>();
         }
 
-        private void Start()
+
+        private void Update()
         {
             target = GameObject.Find("CharacterPlatformer");
+
         }
+
 
         void LateUpdate()
         {
