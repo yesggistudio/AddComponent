@@ -226,12 +226,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   componentButtons:
-  - {fileID: 1747692293}
-  - {fileID: 1432791460}
   - {fileID: 1274568527}
+  - {fileID: 1432791460}
+  - {fileID: 1747692293}
   actors:
-  - {fileID: 842799977}
   - {fileID: 601688647}
+  - {fileID: 842799977}
   - {fileID: 873921992}
   - {fileID: 1716817928}
 --- !u!4 &249372681
@@ -574,6 +574,11 @@ PrefabInstance:
     - target: {fileID: 1512729851491349611, guid: d8822f52231c4c9429e3b22dddcbf758,
         type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3611408592787354823, guid: d8822f52231c4c9429e3b22dddcbf758,
+        type: 3}
+      propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

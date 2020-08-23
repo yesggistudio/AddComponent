@@ -345,8 +345,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   componentButtons:
-  - {fileID: 1117036596}
   - {fileID: 490328953}
+  - {fileID: 1117036596}
   actors:
   - {fileID: 873921992}
   - {fileID: 1716817928}

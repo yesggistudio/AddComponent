@@ -151,19 +151,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   componentButtons:
-  - {fileID: 2132293110}
-  - {fileID: 1921880786}
-  - {fileID: 1913199281}
-  - {fileID: 1055430504}
-  - {fileID: 548862815}
   - {fileID: 270250481}
+  - {fileID: 548862815}
+  - {fileID: 1055430504}
+  - {fileID: 1913199281}
+  - {fileID: 1921880786}
+  - {fileID: 2132293110}
   actors:
-  - {fileID: 6931816387385480442}
-  - {fileID: 842799977}
-  - {fileID: 534669535}
   - {fileID: 448700371}
+  - {fileID: 534669535}
+  - {fileID: 842799977}
   - {fileID: 873921992}
   - {fileID: 1716817928}
+  - {fileID: 6931816387385480442}
 --- !u!4 &249372681
 Transform:
   m_ObjectHideFlags: 0
