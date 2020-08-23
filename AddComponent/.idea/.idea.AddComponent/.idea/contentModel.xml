@@ -442,12 +442,21 @@
               <e p="IListener.cs" t="Include" />
             </e>
             <e p="manager" t="Include">
+              <e p="BossAttack.cs" t="Include" />
               <e p="CharacterAni.cs" t="Include" />
               <e p="ControlManager.cs" t="Include" />
             </e>
             <e p="StateMachine.cs" t="Include" />
             <e p="test.cs" t="Include" />
           </e>
+        </e>
+        <e p="Simple Particle Scaler" t="Include">
+          <e p="Scripts" t="Include">
+            <e p="Editor" t="Include">
+              <e p="ParticleScaler.cs" t="Include" />
+            </e>
+          </e>
+          <e p="Simple Particle Scaler - Readme.txt" t="Include" />
         </e>
         <e p="TextMesh Pro" t="Include">
           <e p="Fonts" t="Include">
