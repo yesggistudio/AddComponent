@@ -9,8 +9,8 @@ namespace UnityTemplateProjects.Jaeyun.Script
 {
     public class MakeButton : MonoBehaviour
     {
-
-        public bool isMake;
+        
+        [Serializable]
         public class MakeButtonsInfos
         {
             public ComponentType componentType;
