@@ -445,6 +445,8 @@
               <e p="BossAttack.cs" t="Include" />
               <e p="CharacterAni.cs" t="Include" />
               <e p="ControlManager.cs" t="Include" />
+              <e p="Hand.cs" t="Include" />
+              <e p="playcom.cs" t="Include" />
             </e>
             <e p="StateMachine.cs" t="Include" />
             <e p="test.cs" t="Include" />

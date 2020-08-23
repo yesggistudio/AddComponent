@@ -16,6 +16,7 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
     {
 
         public bool isLocked;
+        public bool isRealTime;
 
         private List<Drag> _drags = new List<Drag>();
         [SerializeField]
@@ -701,6 +702,10 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
         public void AddDrag(Drag drag)
         {
             _drags.Add(drag);
+            if (isRealTime)
+            {
+                GameStartSetting();
+            }
         }
         
         public void RemoveDrag(Drag drag)
