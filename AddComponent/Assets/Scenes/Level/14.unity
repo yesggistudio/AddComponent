@@ -1093,6 +1093,11 @@ PrefabInstance:
       propertyPath: attahcedActor
       value: 
       objectReference: {fileID: 873921992}
+    - target: {fileID: 8943914705288282273, guid: 317a83d5dc0a9dd429ce574eb829c33d,
+        type: 3}
+      propertyPath: isActiveAtStart
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8943914705288282275, guid: 317a83d5dc0a9dd429ce574eb829c33d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5453,6 +5458,11 @@ PrefabInstance:
       propertyPath: attahcedActor
       value: 
       objectReference: {fileID: 873921992}
+    - target: {fileID: 8943914705288282273, guid: f1b994bda43692449968426837f30c27,
+        type: 3}
+      propertyPath: isActiveAtStart
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8943914705288282275, guid: f1b994bda43692449968426837f30c27,
         type: 3}
       propertyPath: m_LocalPosition.x

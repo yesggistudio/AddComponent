@@ -8,6 +8,8 @@ namespace UnityTemplateProjects.Jaeyun.Script.Development_Tool
     {
         public ComponentType componentType;
 
+        public bool isActiveAtStart; 
+
         [SerializeField]
         private Actor.Actor attahcedActor;
 

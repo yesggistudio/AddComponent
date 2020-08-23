@@ -125,6 +125,20 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
                 _canComAbility[i] = false;
             }
             EventManager.Instance.AddListener(EVENT_TYPE.GameOver, this);
+            
+            bool isActive = false;
+            
+            foreach (var indivisibleComponent in indivisibleComponents)
+            {
+                if (indivisibleComponent.isActiveAtStart)
+                {
+                    isActive = true;
+                    break;
+                }
+            }
+            
+            if(isActive)
+                GameStartSetting();
         }
 
         public void OnEvent(EVENT_TYPE eventType, Component sender, Object param = null)
