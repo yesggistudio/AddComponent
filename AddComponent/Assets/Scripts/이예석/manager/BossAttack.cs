@@ -44,7 +44,6 @@ public class BossAttack : MonoBehaviour
     private void Start()
     {
 
-
         target = GameObject.Find("CharacterPlatformer");
 
         StartCoroutine(bossCheck());
@@ -70,7 +69,7 @@ public class BossAttack : MonoBehaviour
 
     IEnumerator AttackStartCoroutine()
     {
-
+        SoundManager.Instance.SoundFx(4);
         bossani.Play("bossTalk");
 
         //사운드 재생.
