@@ -118,6 +118,7 @@ public class BossAttack : MonoBehaviour
     IEnumerator MakeCompBtn()
     {
 
+        btnboom = GameObject.FindObjectOfType<MakeButton>();
         while (bossDmg < 5)
         {
             btnboom.StartMake();

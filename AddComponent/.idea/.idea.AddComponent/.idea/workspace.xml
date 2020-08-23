@@ -20,7 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="02109610-2fc1-4c59-82d2-87514a86ad69" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.AddComponent/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.AddComponent/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level/14.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level/14.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/이예석/manager/BossAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/이예석/manager/BossAttack.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,7 +53,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/Node &amp; Graph/Editor/SpeechGraphEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/Node &amp; Graph/SpeechNode.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/Node &amp; Graph/Editor/SpeechNodeEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/ComponentButtom.cs" />
@@ -96,13 +96,14 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Shader/2D Sprite.shader" />
         <option value="$PROJECT_DIR$/Assets/DeadPannel.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Dialogue/SpeechManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Level/LevelManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/GameEvent System/OnTriggerSpeak.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/GameEvent System/OnTriggerEvent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/Drag.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Development Tool/IndivisibleComponent.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Actor/Actor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/MakeButton.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Jaeyun/Script/Level/LevelManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/이예석/manager/BossAttack.cs" />
       </list>
     </option>
   </component>
@@ -171,6 +172,7 @@
       <workItem from="1598139711242" duration="205000" />
       <workItem from="1598146673173" duration="2913000" />
       <workItem from="1598150130857" duration="1775000" />
+      <workItem from="1598155166982" duration="459000" />
     </task>
     <servers />
   </component>
@@ -211,9 +213,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1598094358215" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1598116743105">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1598155503889">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1598116743105" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1598155503889" />
   </component>
 </project>
