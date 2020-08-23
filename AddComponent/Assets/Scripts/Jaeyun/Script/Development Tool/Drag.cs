@@ -32,6 +32,12 @@ namespace UnityTemplateProjects.Jaeyun.Script.Development_Tool
             
         }
 
+        public void Bomb()
+        {
+            DestroyImmediate(_componentButton.gameObject);
+            DestroyImmediate(gameObject);
+        }
+
         public void SetInteractable(bool value)
         {
             _button.interactable = value;
@@ -39,8 +45,6 @@ namespace UnityTemplateProjects.Jaeyun.Script.Development_Tool
 
         public ComponentType GetComponentType()
         {
-            
-            
             return _componentButton.componentType;
         }
 

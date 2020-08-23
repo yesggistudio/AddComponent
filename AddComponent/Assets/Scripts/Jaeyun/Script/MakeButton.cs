@@ -10,22 +10,16 @@ namespace UnityTemplateProjects.Jaeyun.Script
     public class MakeButton : MonoBehaviour
     {
         
-        [Serializable]
-        public class MakeButtonsInfos
-        {
-            public ComponentType componentType;
-            public float makeMinTime;
-            public float makeMaxTime;
-        }
 
-        public List<MakeButtonsInfos> makeButtonsInfoses = new List<MakeButtonsInfos>();
+        public List<ComponentType> componentTypes = new List<ComponentType>();
 
+        [ContextMenu("Test Start")]
         public void StartMake()
         {
-            foreach (var makeButtonsInfose in makeButtonsInfoses)
+            foreach (var componentType in componentTypes)
             {
-                var buttonPrefab = makeButtonsInfose.componentType.buttonPrefab;
-                StartCoroutine(MakeButtonRoutine(makeButtonsInfose.makeMinTime, makeButtonsInfose.makeMaxTime, buttonPrefab));
+                var buttonPrefab = componentType.buttonPrefab;
+                StartCoroutine(MakeButtonRoutine(buttonPrefab));
             }
         }
 
@@ -34,17 +28,15 @@ namespace UnityTemplateProjects.Jaeyun.Script
             StopAllCoroutines();
         }
 
-        IEnumerator MakeButtonRoutine(float minTime, float maxTime, ComponentButton buttonPrefab)
+        IEnumerator MakeButtonRoutine(ComponentButton buttonPrefab)
         {
+            ComponentButton button = Instantiate(buttonPrefab, transform);
             while (true)
             {
-                var randomTime = Random.Range(minTime, maxTime);
-                yield return new WaitForSeconds(randomTime);
-
-                
-                //이 부분 오브젝트 풀링 써주시는게 좋을듯?
-                Instantiate(buttonPrefab);
+                yield return new WaitWhile(() => button != null);
+                 button = Instantiate(buttonPrefab, transform);
             }
+
         }
         
     }

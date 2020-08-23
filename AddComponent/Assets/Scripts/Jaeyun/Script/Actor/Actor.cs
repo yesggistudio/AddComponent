@@ -275,6 +275,11 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
             else if (gameObject.tag == "Bomb")
             {
                 DmgObj.SetActive(true);
+
+                foreach (var drag in _drags)
+                {
+                    drag.Bomb();
+                }
                 destroyParticle.Play();
                 yield return new WaitForSeconds(0.55f);
 
