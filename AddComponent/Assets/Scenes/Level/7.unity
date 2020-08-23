@@ -187,7 +187,7 @@ PrefabInstance:
         type: 3}
       propertyPath: graph
       value: 
-      objectReference: {fileID: 11400000, guid: ea6dc9a96d80da343b0620962b534eb0,
+      objectReference: {fileID: 11400000, guid: 8933dc6ee73511b4fbcbfe1a4d56e8d4,
         type: 2}
     - target: {fileID: 376151030836209155, guid: a26608bb0e884d3409f84d7e4c35350a,
         type: 3}
