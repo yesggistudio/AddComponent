@@ -59,9 +59,9 @@ MonoBehaviour:
   nextNode: {fileID: 0}
   index: 0
   speakerData: {fileID: 11400000, guid: f9e3dc55bcbad9649adf3f655b44a8c5, type: 2}
-  textPerDelay: 0.04
+  textPerDelay: 0.02
   portrait: {fileID: 21300000, guid: c16ee3ab828b6b14097b7d29272db16e, type: 3}
-  text: "\uC5C7..."
+  text: "\uC5C7.."
 --- !u!114 &8533793766691434061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -106,6 +106,7 @@ MonoBehaviour:
   nextNode: {fileID: 0}
   index: 1
   speakerData: {fileID: 11400000, guid: f9e3dc55bcbad9649adf3f655b44a8c5, type: 2}
-  textPerDelay: 0.04
+  textPerDelay: 0.02
   portrait: {fileID: 21300000, guid: c16ee3ab828b6b14097b7d29272db16e, type: 3}
-  text: "\uC544\uC9C1 \uCE90\uB9AD\uD130\uC5D0 \uC810\uD504 \uC548 \uB123\uC5C8\uB294\uB370..?"
+  text: "\uBD84\uBA85 \uCE90\uB9AD\uD130\uC5D0 \uC544\uBB34 \uAE30\uB2A5\uB3C4 \uC548
+    \uB123\uC5C8\uB294\uB370..?"
