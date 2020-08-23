@@ -424,6 +424,7 @@
                 <e p="LevelData.cs" t="Include" />
                 <e p="LevelManager.cs" t="Include" />
               </e>
+              <e p="MakeButton.cs" t="Include" />
               <e p="UI" t="Include">
                 <e p="Title.cs" t="Include" />
                 <e p="UICanvas.cs" t="Include" />
@@ -446,7 +447,6 @@
               <e p="CharacterAni.cs" t="Include" />
               <e p="ControlManager.cs" t="Include" />
               <e p="Hand.cs" t="Include" />
-              <e p="playcom.cs" t="Include" />
             </e>
             <e p="StateMachine.cs" t="Include" />
             <e p="test.cs" t="Include" />
