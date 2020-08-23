@@ -946,9 +946,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   componentButtons:
-  - {fileID: 1700496066}
-  - {fileID: 945568812}
   - {fileID: 281223142}
+  - {fileID: 945568812}
+  - {fileID: 1700496066}
   actors:
   - {fileID: 28285031}
   - {fileID: 873921992}

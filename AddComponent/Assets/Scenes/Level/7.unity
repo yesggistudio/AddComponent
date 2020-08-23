@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_UseShadowmask: 0
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -357,13 +357,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   componentButtons:
-  - {fileID: 1988822793}
-  - {fileID: 1880463583}
   - {fileID: 205229196}
+  - {fileID: 1880463583}
+  - {fileID: 1988822793}
   actors:
-  - {fileID: 6931816387385480442}
   - {fileID: 873921992}
   - {fileID: 1716817928}
+  - {fileID: 6931816387385480442}
 --- !u!4 &249372681
 Transform:
   m_ObjectHideFlags: 0

@@ -95,4 +95,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   componentType: {fileID: 11400000, guid: 31df3438aa6e1b444b866316018b6964, type: 2}
+  isActiveAtStart: 1
   attahcedActor: {fileID: 0}
