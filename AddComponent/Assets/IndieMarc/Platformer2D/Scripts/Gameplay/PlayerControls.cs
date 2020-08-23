@@ -72,10 +72,8 @@ namespace IndieMarc.Platformer
             if (Input.GetKey(jump_key))
                 jump_hold = true;
             if (Input.GetKeyDown(jump_key))
-            {
-                SoundManager.Instance.SoundFx(2);
                 jump_press = true;
-            }
+            
             if (Input.GetKey(action_key))
                 action_hold = true;
             if (Input.GetKeyDown(action_key))
@@ -96,11 +94,13 @@ namespace IndieMarc.Platformer
 
         public bool GetJumpDown()
         {
+
             return jump_press;
         }
 
         public bool GetJumpHold()
         {
+
             return jump_hold;
         }
 

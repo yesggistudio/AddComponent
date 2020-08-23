@@ -452,6 +452,8 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
                     is_jumping = true;
                     state = PlayerCharacterState.Normal;
                     state_timer = 0f;
+                    SoundManager.Instance.SoundFx(2);
+
                     if (onJump != null)
                         onJump.Invoke();
                 }
