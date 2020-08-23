@@ -51,6 +51,8 @@ public class BossAttack : MonoBehaviour
         target = GameObject.Find("CharacterPlatformer");
 
         StartCoroutine(bossCheck());
+
+        RedImg.fillAmount = (float)(5) / (float)(5);
     }
 
     IEnumerator bossCheck()
@@ -224,6 +226,8 @@ public class BossAttack : MonoBehaviour
         if (bossDmg == 0)
         {
             // 근데 이전에 보스 죽는 모션 .
+
+            bossani.Play("bossDead");
 
             var levelManager = FindObjectOfType<LevelManager>();
             levelManager.GameOver();
