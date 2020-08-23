@@ -205,16 +205,11 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
         //Handle physics
         void FixedUpdate()
         {
-
             
             PlayerControls controls = PlayerControls.Get(player_id);
 
-
             UpdateMove();
-
             //Movement velocity
-
-
             was_grounded = is_grounded;
             is_grounded = DetectObstacle(Vector3.down);
             is_fronted = IsFronted();
@@ -231,9 +226,7 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
                     rigid.velocity = move;
 
                     CheckForFloorTrigger();
-                
             }
-
 
             if (state == PlayerCharacterState.Dead)
             {
@@ -264,10 +257,7 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
             }
             //Reset when fall
 
- 
-
         }
-
 
 
         IEnumerator DestoryCoroutine()
@@ -625,7 +615,6 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
 
         private void OnCollisionEnter2D(Collision2D collision)
         {
-            Debug.Log("!@#");
 
             if (IsDead())
                 return;
