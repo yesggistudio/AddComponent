@@ -433,16 +433,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5de7b03c53ab4616bc0e7611bafa3910, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  makeButtonsInfoses:
-  - componentType: {fileID: 11400000, guid: 8ce150d1cb3d15a4387eb7605402f5d5, type: 2}
-    makeMinTime: 0.33
-    makeMaxTime: 0.52
-  - componentType: {fileID: 11400000, guid: 31df3438aa6e1b444b866316018b6964, type: 2}
-    makeMinTime: 0
-    makeMaxTime: 0
-  - componentType: {fileID: 11400000, guid: 45d0d8f65c8115b47b03176579b0c327, type: 2}
-    makeMinTime: 0
-    makeMaxTime: 0
+  componentTypes: []
 --- !u!4 &283311663
 Transform:
   m_ObjectHideFlags: 0
@@ -2426,34 +2417,6 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1415822163}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1415822165 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6427190820968313052, guid: 013ec4b1418f5cb41b384ee8b32115ed,
-    type: 3}
-  m_PrefabInstance: {fileID: 1415822163}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1415822166
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1415822165}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5de7b03c53ab4616bc0e7611bafa3910, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  makeButtonsInfoses:
-  - componentType: {fileID: 11400000, guid: 31df3438aa6e1b444b866316018b6964, type: 2}
-    makeMinTime: 1
-    makeMaxTime: 1
-  - componentType: {fileID: 11400000, guid: 8ce150d1cb3d15a4387eb7605402f5d5, type: 2}
-    makeMinTime: 1
-    makeMaxTime: 1
-  - componentType: {fileID: 11400000, guid: 45d0d8f65c8115b47b03176579b0c327, type: 2}
-    makeMinTime: 1
-    makeMaxTime: 1
 --- !u!1001 &1496144585
 PrefabInstance:
   m_ObjectHideFlags: 0
