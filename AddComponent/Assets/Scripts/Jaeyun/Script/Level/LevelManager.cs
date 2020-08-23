@@ -1,7 +1,9 @@
 ﻿using System.Collections;
+using Jaeyun.Script.GameEvent_System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityTemplateProjects.Jaeyun.Script.Audio;
+using UnityTemplateProjects.Jaeyun.Script.Dialogue;
 using UnityTemplateProjects.Jaeyun.Script.UI;
 
 namespace UnityTemplateProjects.Jaeyun.Script.Level
@@ -10,6 +12,8 @@ namespace UnityTemplateProjects.Jaeyun.Script.Level
     {
 
         public UICanvas uiCanvas;
+        public SpeechGraph endSpeech;
+        public GameEvent ending;
         
         public void LoadPrevLevel()
         {
@@ -78,14 +82,19 @@ namespace UnityTemplateProjects.Jaeyun.Script.Level
                
             
             //대사 출력
-            // var speechManager = GetComponent<SpeechManager>();
-            // 대사 파일을 담은 speech graph 넣어주기
-            // speechManager.SetSpeechGraph();
-            // SpeechGraph 안의 대사를 쭉 보여주기 및 넣어준 GameEvent Raise()
-            // speechManager.PlaySpeech();
+            var speechManager = FindObjectOfType<SpeechManager>();
+            
+            speechManager.SetSpeechGraph(endSpeech);
+            
+            speechManager.PlaySpeech(ending);
             
             //게임 오버시 연출
 
+        }
+
+        public void QuitGame()
+        {
+            Application.Quit();
         }
         
     }
