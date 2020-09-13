@@ -722,13 +722,6 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
         }
 
 
-
-
-
-
-
-
-
         public void DrawNormal()
         {
             _myMat.shader = _defaultShader;
@@ -779,6 +772,7 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
         {
 
             var targetSprite = _spriteRenderer.sprite;
+         
             var croppedRect = GetCroppedRect(targetSprite);
             
             var spriteOffset = GetSpriteOffset(croppedRect, _spriteRenderer);
@@ -794,6 +788,11 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
         
         Rect GetCroppedRect(Sprite targetSprite)
         {
+            if(targetSprite == null)
+            {
+                return new Rect(0,0,0,0);
+            }
+
             var result = new Rect(targetSprite.textureRectOffset.x / targetSprite.pixelsPerUnit,
                 targetSprite.textureRectOffset.y / targetSprite.pixelsPerUnit,
                 targetSprite.textureRect.width / targetSprite.pixelsPerUnit,
