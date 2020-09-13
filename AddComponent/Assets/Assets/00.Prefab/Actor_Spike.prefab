@@ -143,8 +143,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.3}
-  m_Size: {x: 0.8, y: 0.4}
+  m_Offset: {x: 0, y: -0.2}
+  m_Size: {x: 1.2, y: 0.6}
   m_Direction: 1
 --- !u!114 &6510755439421845430
 MonoBehaviour:
@@ -704,7 +704,7 @@ PrefabInstance:
     - target: {fileID: 1326586268898361607, guid: 043ff89a4e397834392e721121ef37ab,
         type: 3}
       propertyPath: m_Size.y
-      value: 1
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 1326586268898361607, guid: 043ff89a4e397834392e721121ef37ab,
         type: 3}
@@ -714,12 +714,12 @@ PrefabInstance:
     - target: {fileID: 1326586268898361607, guid: 043ff89a4e397834392e721121ef37ab,
         type: 3}
       propertyPath: m_Offset.y
-      value: -0.1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1326586268898361607, guid: 043ff89a4e397834392e721121ef37ab,
         type: 3}
       propertyPath: m_AutoTiling
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1326586268898361607, guid: 043ff89a4e397834392e721121ef37ab,
         type: 3}
