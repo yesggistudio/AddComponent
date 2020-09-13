@@ -130,6 +130,11 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
             
             foreach (var indivisibleComponent in indivisibleComponents)
             {
+                if(indivisibleComponent == null)
+                {
+                    continue;
+                }
+
                 if (indivisibleComponent.isActiveAtStart)
                 {
                     isActive = true;
@@ -174,6 +179,11 @@ namespace UnityTemplateProjects.Jaeyun.Script.Actor
             
             foreach (var indivisibleComponent in indivisibleComponents)
             {
+                if(indivisibleComponent == null)
+                {
+                    continue;
+                }
+
                 var componentType = indivisibleComponent.GetComponentType();
                 CheckComponent(componentType);
             }
