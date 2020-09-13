@@ -1052,6 +1052,11 @@ PrefabInstance:
       propertyPath: m_SortingLayer
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 4101880592515693961, guid: ab4bc0e61204da94c9524002c75868f0,
+        type: 3}
+      propertyPath: m_Radius
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4101880592515693966, guid: ab4bc0e61204da94c9524002c75868f0,
         type: 3}
       propertyPath: m_IsActive
@@ -1071,6 +1076,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SortingLayer
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4101880593797387395, guid: ab4bc0e61204da94c9524002c75868f0,
+        type: 3}
+      propertyPath: m_Radius
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2792121918294833070, guid: ab4bc0e61204da94c9524002c75868f0, type: 3}
@@ -1482,7 +1492,7 @@ PrefabInstance:
     - target: {fileID: 6427190821650184584, guid: 013ec4b1418f5cb41b384ee8b32115ed,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6427190821650184585, guid: 013ec4b1418f5cb41b384ee8b32115ed,
         type: 3}
@@ -1602,12 +1612,12 @@ PrefabInstance:
     - target: {fileID: 6427190822069412235, guid: 013ec4b1418f5cb41b384ee8b32115ed,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6427190822069412235, guid: 013ec4b1418f5cb41b384ee8b32115ed,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6427190822069412235, guid: 013ec4b1418f5cb41b384ee8b32115ed,
         type: 3}

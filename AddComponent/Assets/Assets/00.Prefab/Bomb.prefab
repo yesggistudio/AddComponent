@@ -159,6 +159,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isLocked: 0
+  isRealTime: 0
   indivisibleComponents: []
   buttonHeight: 1
   player_id: 0
