@@ -140,12 +140,12 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.066268444, y: 0.18810397}
-  m_Size: {x: 0.6378722, y: 1.3618609}
-  m_Direction: 0
+  m_Offset: {x: 0, y: -0.3}
+  m_Size: {x: 0.8, y: 0.4}
+  m_Direction: 1
 --- !u!114 &6510755439421845430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -704,7 +704,27 @@ PrefabInstance:
     - target: {fileID: 1326586268898361607, guid: 043ff89a4e397834392e721121ef37ab,
         type: 3}
       propertyPath: m_Size.y
-      value: 1.08
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1326586268898361607, guid: 043ff89a4e397834392e721121ef37ab,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 1326586268898361607, guid: 043ff89a4e397834392e721121ef37ab,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1326586268898361607, guid: 043ff89a4e397834392e721121ef37ab,
+        type: 3}
+      propertyPath: m_AutoTiling
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1326586268898361607, guid: 043ff89a4e397834392e721121ef37ab,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 1.3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 043ff89a4e397834392e721121ef37ab, type: 3}

@@ -179,7 +179,7 @@ MonoBehaviour:
   ground_raycast_dist: 0.04
   climb_speed: 2
   _canComAbility: 01010000
-  destroyParticle: {fileID: 0}
+  destroyParticle: {fileID: 5282648071711053013}
   DmgObj: {fileID: 0}
   gameEvent: {fileID: 0}
 --- !u!114 &1543795284190790453
@@ -624,6 +624,12 @@ PrefabInstance:
 --- !u!4 &3611408592787354823 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2603917525951950918, guid: d4dd12685d189da4b933682c4ed0fe2f,
+    type: 3}
+  m_PrefabInstance: {fileID: 1602355449597101185}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &5282648071711053013 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 6877851656081952852, guid: d4dd12685d189da4b933682c4ed0fe2f,
     type: 3}
   m_PrefabInstance: {fileID: 1602355449597101185}
   m_PrefabAsset: {fileID: 0}
